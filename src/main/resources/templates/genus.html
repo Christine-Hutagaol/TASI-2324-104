@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants by Genus</title>
+    <!-- Link CSS atau styling sesuai kebutuhan -->
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<h2>Plants by Genus</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Genus</th>
+        <th>Species</th>
+        <!-- Tambahkan kolom lainnya sesuai kebutuhan -->
+    </tr>
+    </thead>
+    <tbody id="plant-list">
+    <!-- Data tanaman akan ditambahkan di sini menggunakan JavaScript -->
+    </tbody>
+</table>
+
+<script>
+    // Ambil parameter dari URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const genus = urlParams.get('genus');
+
+    // Fungsi untuk mengambil data tanaman berdasarkan genus
+    function getPlantsByGenus() {
+        // Lakukan request AJAX ke backend (misalnya menggunakan fetch atau XMLHttpRequest)
+        // Gantilah URL dan metode sesuai dengan backend Anda
+        fetch(`/api/plants?genus=${genus}`)
+            .then(response => response.json())
+            .then(data => {
+                const plantList = document.getElementById('plant-list');
+                // Bersihkan isi tabel sebelum menambahkan data baru
+                plantList.innerHTML = '';
+
+                // Tambahkan data tanaman ke dalam tabel
+                data.forEach(plant => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                            <td>${plant.genus}</td>
+                            <td>${plant.species}</td>
+                            <!-- Tambahkan kolom lainnya sesuai kebutuhan -->
+                        `;
+                    plantList.appendChild(row);
+                });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+
+    // Panggil fungsi untuk mendapatkan data tanaman berdasarkan genus saat halaman dimuat
+    window.onload = function() {
+        getPlantsByGenus();
+    };
+</script>
+</body>
+</html>
