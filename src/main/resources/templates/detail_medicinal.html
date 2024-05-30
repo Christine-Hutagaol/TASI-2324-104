@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
@@ -7,80 +7,104 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
     <title>Detail Medicinal Plant</title>
-
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/starter-template/">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen"/>
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
-    <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#563d7c">
-
     <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
+        .container {
+            margin-top: 0;
+            text-align: left;
+            background-color: #F5FFF4;
         }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
+        .medicinal-content {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: left;
+            background-color: white;
+        }
+        .medicinal-content table {
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: left;
+            border-collapse: collapse;
+        }
+        .medicinal-content table td, .medicinal-content table th {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        .medicinal-content table th {
+            background-color: #f2f2f2;
+        }
+        .top-section {
+            background-color: #2CA046;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .side-by-side {
+            display: flex;
+            justify-content: space-between;
+        }
+        .side-by-side .medicinal-content {
+            width: calc(75% - 10px);
+        }
+        .side-by-side .medicinal-content:nth-child(2) {
+            width: calc(25% - 10px);
+        }
+        @media (max-width: 767.98px) {
+            .side-by-side .medicinal-content {
+                width: 100%;
+                margin-right: 0;
             }
         }
     </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Toba Medicinal Plant</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    </div>
-</nav>
-<br>
-<br>
-<br>
-<br>
-
 <main role="main" class="container">
-
-    <div class="starter-template">
-        <center><h4>Detail Medicinal Plant</h4></center>
-        <br>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="top-section">
+                <h2>Detail Medicinal Plant</h2>
+            </div>
+        </div>
     </div>
-    <div class="row">
-        <hr color="black" th:height="200px">
-        <div class="col-sm"></div>
-        <div class="col-sm-10">
-            <table class="table" rules="none" border="1">
+    <div class="row justify-content-center side-by-side">
+        <div class="col-md-6 medicinal-content">
+            <h2>Name</h2>
+            <table class="table table-bordered" rules="all">
                 <tbody id="detail-medicinal"></tbody>
             </table>
-            <br>
-            <input action="action" type="button" class="btn btn-primary" value="Back" onclick="history.go(-1);"/>
         </div>
-        <div class="col-sm"></div>
-        <hr color="black" th:height="200px">
+        <div class="col-md-3 medicinal-content">
+            <h2>Image</h2>
+            <table class="table table-bordered" rules="all">
+                <tbody id="image"></tbody>
+            </table>
+        </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-
-</main><!-- /.container -->
-
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="medicinal-content">
+                <h2>Another Information</h2>
+                <table class="table" rules="all" border="1">
+                    <tbody id="another"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="medicinal-content">
+                <h2>Taxonomy</h2>
+                <table class="table" rules="all" border="1">
+                    <tbody id="taxonomy"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script>
@@ -88,8 +112,8 @@
         getProducts();
 
         function getProducts() {
-            var full_url = document.URL; // Get current url
-            var url_array = full_url.split('/')// Split the string into an array with / as separator
+            var full_url = document.URL;
+            var url_array = full_url.split('/');
             var last_segment = url_array[url_array.length - 1];
 
             jQuery.ajax({
@@ -97,77 +121,44 @@
                 url: "http://localhost:8080/medicinal/byId/" + last_segment,
                 success: function (response) {
                     if (Array.isArray(response) && response.length) {
-                        response.forEach(function (data) {
-                            jQuery("#detail-medicinal").append(
-                                "<tr>" +
-                                "<th>Name</th>" +
-                                "<td>" + data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</td>" +
-                                "</tr>" +
-                                "<tr>" +
-                                "<th>Disease</th>" +
-                                "<td>" + data.treatDisease.substring(data.treatDisease.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</td>" +
-                                "</tr>" +
-                                "<tr>" +
-                                "<th>Part</th>" +
-                                "<td>" + data.utilizingParts.substring(data.utilizingParts.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</td>" +
-                                "</tr>" +
-                                "<tr>" +
-                                "<th>Active Compounds</th>" +
-                                "<td>" + data.containsActiveCompounds.substring(data.containsActiveCompounds.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</td>" +
-                                "</tr>" +
-                                "<tr>" +
-                                "<th>Used By Means</th>" +
-                                "<td>" + data.usedByMeansOf.substring(data.usedByMeansOf.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</td>" +
-                                "</tr>" +
-                                "<tr>" +
-                                "<th>Division</th>" +
-                                "<td>" + data.hasDivisions.substring(data.hasDivisions.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</td>" +
-                                "</tr>" +
-                                "<tr>" +
-                                "<th>Family</th>" +
-                                "<td>" + data.hasFamily.substring(data.hasFamily.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</td>" +
-                                "</tr>" +
-                                "<th>Part</th>" +
-                                "<td><a href='/medicinal/id/genus'>" + data.hasGenus.substring(data.hasGenus.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td>" +
-                                "</tr>" +
-                                "<tr>" +
-                                "<th>Kingdom</th>" +
-                                "<td>" + data.hasKingdom.substring(data.hasKingdom.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</td>" +
-                                "</tr>" +
-                                "<tr>" +
-                                "<th>Order</th>" +
-                                "<td>" + data.hasOrder.substring(data.hasOrder.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</td>" +
-                                "</tr>" +
-                                "<tr>" +
-                                "<th>Species</th>" +
-                                "<td>" + data.hasSpecies.substring(data.hasSpecies.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</td>" +
-                                "</tr>" +
-                                "<tr>" +
-                                "<th>English Name</th>" +
-                                "<td>" + data.hasEnglishName + "</td>" +
-                                "</tr>" +
-                                "<tr>" +
-                                "<th>Local Name</th>" +
-                                "<td>" + data.hasLocalName + "</td>" +
-                                "</tr>" +
-                                "<tr>" +
-                                "<th>Benefit</th>" +
-                                "<td>" + data.hasBenefits + "</td>" +
-                                "</tr>" +
-                                "<tr>" +
-                                "<th>Side Effect</th>" +
-                                "<td>" + data.hasSideEffect + "</td>" +
-                                "</tr>"
-                            );
-                        });
+                        const data = response[0]; // Assuming response contains only one item
+
+                        jQuery("#detail-medicinal").append(
+                            "<tr><th>Name</th><td>" + data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</td></tr>" +
+                            "<tr><th>English Name</th><td>" + data.hasEnglishName + "</td></tr>" +
+                            "<tr><th>Local Name</th><td>" + data.hasLocalName + "</td></tr>"
+                        );
+
+                        jQuery("#another").append(
+                            "<tr><th>Disease</th><td><a href='/medicinal/id/disease=" + encodeURIComponent(data.treatDisease.substring(data.treatDisease.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.treatDisease.substring(data.treatDisease.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
+                            "<tr><th>Part</th><td><a href='/medicinal/id/part=" + encodeURIComponent(data.utilizingParts.substring(data.utilizingParts.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.utilizingParts.substring(data.utilizingParts.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
+                            "<tr><th>Processing Method</th><td><a href='/medicinal/id/managedBy=" + encodeURIComponent(data.managedBy.substring(data.managedBy.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.managedBy.substring(data.managedBy.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
+                            "<tr><th>Active Compounds</th><td><a href='/medicinal/id/containsActiveCompounds=" + encodeURIComponent(data.containsActiveCompounds.substring(data.containsActiveCompounds.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.containsActiveCompounds.substring(data.containsActiveCompounds.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
+                            "<tr><th>Used By Means</th><td><a href='/medicinal/id/usedByMeansOf=" + encodeURIComponent(data.usedByMeansOf.substring(data.usedByMeansOf.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.usedByMeansOf.substring(data.usedByMeansOf.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
+                            "<tr><th>Benefit</th><td>" + data.hasBenefits + "</td></tr>" +
+                            "<tr><th>Side Effect</th><td>" + data.hasSideEffect + "</td></tr>" +
+                            "<tr><th>ImageURL</th><td>" + data.hasImageURL + "</td></tr>"
+                        );
+
+                        jQuery("#taxonomy").append(
+                            "<tr><th>Class</th><td><a href='/medicinal/id/hasClass=" + encodeURIComponent(data.hasClass.substring(data.hasClass.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.hasClass.substring(data.hasClass.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
+                            "<tr><th>Division</th><td><a href='/medicinal/id/hasDivisions=" + encodeURIComponent(data.hasDivisions.substring(data.hasDivisions.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.hasDivisions.substring(data.hasDivisions.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
+                            "<tr><th>Family</th><td><a href='/medicinal/id/hasFamily=" + encodeURIComponent(data.hasFamily.substring(data.hasFamily.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.hasFamily.substring(data.hasFamily.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
+                            "<tr><th>Genus</th><td><a href='/medicinal/id/hasGenus=" + encodeURIComponent(data.hasGenus.substring(data.hasGenus.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.hasGenus.substring(data.hasGenus.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
+                            "<tr><th>Order</th><td><a href='/medicinal/id/hasOrder=" + encodeURIComponent(data.hasOrder.substring(data.hasOrder.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.hasOrder.substring(data.hasOrder.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
+                            "<tr><th>Species</th><td><a href='/medicinal/id/hasSpecies=" + encodeURIComponent(data.hasSpecies.substring(data.hasSpecies.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.hasSpecies.substring(data.hasSpecies.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>"
+                        );
+
+                        jQuery("#image").append(
+                            "<tr><td><img src='" + data.hasImageURL + "' alt='" + data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf('#') + 1).replace(/_/g , ' ') + "' style='max-width: 100%;'></td></tr>"
+                        );
                     } else {
-                        $("#detail-medicinal").append("<tr><td colspan='2'>No data available</td></tr>");
+                        console.error("Response format is incorrect or empty.");
                     }
                 }
             });
         }
     });
 </script>
-
 </body>
 </html>

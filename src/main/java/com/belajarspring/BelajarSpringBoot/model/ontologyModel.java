@@ -15,7 +15,7 @@ import java.util.List;
 public class ontologyModel {
     public List<JSONObject> searchById(String key) {
         List<JSONObject> list = new ArrayList<>();
-        String fileName = "Tanaman Obat.owl";
+        String fileName = "Medicinal Plant Ontology.owl";
         try {
             File file = new File(fileName);
             FileReader reader = new FileReader(file);
@@ -117,7 +117,7 @@ public class ontologyModel {
 
     public List<JSONObject> detailById(String key) {
         List<JSONObject> list = new ArrayList<>();
-        String fileName = "Tanaman Obat.owl";
+        String fileName = "Medicinal Plant Ontology.owl";
         try {
             File file = new File(fileName);
             FileReader reader = new FileReader(file);
@@ -132,7 +132,7 @@ public class ontologyModel {
                     "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
                     "PREFIX d: <http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#>\n" +
                     "\n" +
-                    "SELECT ?medicinalPlant ?treatDisease ?managedBy ?utilizingParts ?containsActiveCompounds ?usedByMeansOf ?hasSideEffect ?id ?hasBenefits ?hasEnglishName ?hasLocalName ?hasDivisions ?hasFamily ?hasGenus ?hasKingdom ?hasOrder ?hasSpecies\n" +
+                    "SELECT ?medicinalPlant ?treatDisease ?managedBy ?utilizingParts ?containsActiveCompounds ?usedByMeansOf ?hasSideEffect ?id ?hasBenefits ?hasEnglishName ?hasLocalName ?hasClass ?hasDivisions ?hasFamily ?hasGenus ?hasKingdom ?hasOrder ?hasSpecies ?hasImageURL\n" +
                     "WHERE\n" +
                     "  {\n" +
                     "?medicinalPlant d:hasId ?id;\n" +
@@ -145,12 +145,14 @@ public class ontologyModel {
                     "d:hasEnglishName ?hasEnglishName;" +
                     "d:hasLocalName ?hasLocalName;" +
                     "d:hasSideEffect ?hasSideEffect;" +
+                    "d:hasClass ?hasClass;" +
                     "d:hasDivisions ?hasDivisions;" +
                     "d:hasFamily ?hasFamily;" +
                     "d:hasGenus ?hasGenus;" +
                     "d:hasKingdom ?hasKingdom;" +
                     "d:hasOrder ?hasOrder;" +
                     "d:hasSpecies ?hasSpecies;" +
+                    "d:hasImageURL ?hasImageURL;" +
                     "    FILTER (?id = '" + key + "')\n" +
                     "  }\n";
 //            FILTER (?medicinalPlant = 'd_a')
@@ -182,6 +184,9 @@ public class ontologyModel {
                 RDFNode usedByMeansOfNode = solution.get("usedByMeansOf");
                 System.out.println(usedByMeansOfNode != null ? usedByMeansOfNode.toString() : "Unknown");
 
+                RDFNode hasClassNode = solution.get("hasClass");
+                System.out.println(hasClassNode != null ? hasClassNode.toString() : "Unknown");
+
                 RDFNode hasDivisionsNode = solution.get("hasDivisions");
                 System.out.println(hasDivisionsNode != null ? hasDivisionsNode.toString() : "Unknown");
 
@@ -200,6 +205,9 @@ public class ontologyModel {
                 RDFNode hasSpeciesNode = solution.get("hasSpecies");
                 System.out.println(hasSpeciesNode != null ? hasSpeciesNode.toString() : "Unknown");
 
+                RDFNode hasImageURLNode = solution.get("hasImageURL");
+                System.out.println(hasImageURLNode != null ? hasImageURLNode.toString() : "Unknown");
+
                 // Now, you can continue with putting the values into JSON object
                 // Make sure to handle the null values appropriately
 
@@ -209,12 +217,14 @@ public class ontologyModel {
                 obj.put("utilizingParts", utilizingPartsNode != null ? utilizingPartsNode.toString() : "Unknown");
                 obj.put("containsActiveCompounds", containsActiveCompoundsNode != null ? containsActiveCompoundsNode.toString() : "Unknown");
                 obj.put("usedByMeansOf", usedByMeansOfNode != null ? usedByMeansOfNode.toString() : "Unknown");
+                obj.put("hasClass", hasClassNode != null ? hasClassNode.toString() : "Unknown");
                 obj.put("hasDivisions", hasDivisionsNode != null ? hasDivisionsNode.toString() : "Unknown");
                 obj.put("hasFamily", hasFamilyNode != null ? hasFamilyNode.toString() : "Unknown");
                 obj.put("hasGenus", hasGenusNode != null ? hasGenusNode.toString() : "Unknown");
                 obj.put("hasKingdom", hasKingdomNode != null ? hasKingdomNode.toString() : "Unknown");
                 obj.put("hasOrder", hasOrderNode != null ? hasOrderNode.toString() : "Unknown");
                 obj.put("hasSpecies", hasSpeciesNode != null ? hasSpeciesNode.toString() : "Unknown");
+                obj.put("hasImageURL", hasImageURLNode != null ? hasImageURLNode.toString() : "Unknown");
 
                 if (solution.contains("hasEnglishName")) {
                     String[] hasEnglishName = solution.get("hasEnglishName").toString().split(";");
@@ -242,6 +252,13 @@ public class ontologyModel {
                     obj.put("hasSideEffect", hasSideEffect);
                 } else {
                     obj.put("hasSideEffect", new String[]{"Unknown"});
+                }
+
+                if (solution.contains("hasImageURL")) {
+                    String[] hasImageURL = solution.get("hasImageURL").toString().split(";");
+                    obj.put("hasImageURL", hasImageURL);
+                } else {
+                    obj.put("hasImageURL", new String[]{"Unknown"});
                 }
 
                 list.add(obj);

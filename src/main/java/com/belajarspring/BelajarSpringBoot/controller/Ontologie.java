@@ -23,7 +23,7 @@ public class Ontologie {
     @RequestMapping(value = "/ontologies",method = RequestMethod.GET)
     public   List<JSONObject> getontologies() {
         List<JSONObject> list=new ArrayList();
-        String fileName = "Tanaman Obat.owl";
+        String fileName = "Medicinal Plant Ontology.owl";
         try {
             File file = new File(fileName);
             FileReader reader = new FileReader(file);
@@ -50,7 +50,7 @@ public class Ontologie {
     @RequestMapping(value = "/classesList",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
     public   List<JSONObject> getClasses() {
         List<JSONObject> list=new ArrayList();
-        String fileName = "Tanaman Obat.owl";
+        String fileName = "Medicinal Plant Ontology.owl";
         try {
             File file = new File(fileName);
             FileReader reader = new FileReader(file);
@@ -76,7 +76,7 @@ public class Ontologie {
     @RequestMapping(value = "/Individus",method = RequestMethod.GET)
     public   List<JSONObject> getIndividus() {
         List<JSONObject> list=new ArrayList();
-        String fileName = "Tanaman Obat.owl";
+        String fileName = "Medicinal Plant Ontology.owl";
         try {
             File file = new File(fileName);
             FileReader reader = new FileReader(file);
@@ -120,7 +120,7 @@ public class Ontologie {
         return result;
 
     }
-    
+
     @RequestMapping(value = "/medicinal/byId/{key}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public List<JSONObject> getMedicinalById(@PathVariable String key){
         List<JSONObject> list=new ArrayList();
@@ -131,5 +131,14 @@ public class Ontologie {
         return result;
     }
 
-}
+    @RequestMapping(value = "/medicinal/id/genus=", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<JSONObject> getGenus(@RequestParam String genus){
+        List<JSONObject> list=new ArrayList();
+        System.out.println(genus);
 
+        model = new ontologyModel();
+        List<JSONObject> result = model.detailById(genus);
+        return result;
+    }
+
+}
