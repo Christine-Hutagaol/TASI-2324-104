@@ -1,164 +1,261 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Detail Medicinal Plant</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/starter-template/">
+    <title>Toba Medicinal Plant</title>
+
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet" media="screen"/>
+    <link th:href="@{css/bootstrap.css}" rel="stylesheet" media="screen"/>
+
+    <!-- Favicons -->
+    <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#563d7c">
+
+    <!-- Custom styles -->
     <style>
-        .container {
-            margin-top: 0;
-            text-align: left;
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
             background-color: #F5FFF4;
         }
-        .medicinal-content {
-            padding: 20px;
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F5FFF4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+        /* New style for overlay */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity as needed */
+        }
+
+        /* Styles for cards */
+        .card {
             border: 1px solid #ccc;
             border-radius: 10px;
-            margin-bottom: 20px;
-            text-align: left;
-            background-color: white;
-        }
-        .medicinal-content table {
-            width: 100%;
-            margin-bottom: 20px;
-            text-align: left;
-            border-collapse: collapse;
-        }
-        .medicinal-content table td, .medicinal-content table th {
-            padding: 8px;
-            border: 1px solid #ddd;
-        }
-        .medicinal-content table th {
-            background-color: #f2f2f2;
-        }
-        .top-section {
-            background-color: #2CA046;
-            color: white;
             padding: 20px;
+            margin-bottom: 20px;
+            background-color: white;
+            transition: transform 0.2s; /* Animation */
+            text-decoration: none; /* Remove underline from links */
+            color: inherit; /* Inherit color from parent */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+        }
+
+        .card-header {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .card-body {
+            margin-top: 10px;
+        }
+
+        /* Additional styles for shadow */
+        .white-bg {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+        }
+
+        .medicinal-content {
+            width: 100%; /* Set width to 100% */
+            margin: 0 auto; /* Center the table */
+            padding: 20px; /* Add padding to make the container wider */
+        }
+
+        table {
+            width: auto; /* Make the table width auto to adjust to content */
+            border-collapse: collapse; /* Menyatukan batas sel untuk garis yang konsisten */
+            border: 1px solid #000;
+        }
+
+        /* New style for attribute background */
+        .attribute-background {
+            background-color: #D0F0C0; /* Light yellow background color */
+            border: 1px solid #000; /* Tambahkan garis tepi pada sel */
+            padding: 8px; /* Tambahkan jarak antara teks dan batas sel */
+        }
+
+        .main-heading {
             text-align: center;
+            font-size: 2rem;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: bold;
         }
-        .side-by-side {
-            display: flex;
-            justify-content: space-between;
-        }
-        .side-by-side .medicinal-content {
-            width: calc(75% - 10px);
-        }
-        .side-by-side .medicinal-content:nth-child(2) {
-            width: calc(25% - 10px);
-        }
-        @media (max-width: 767.98px) {
-            .side-by-side .medicinal-content {
-                width: 100%;
-                margin-right: 0;
-            }
+
+        .attribute-background {
+            background-color: #D0F0C0;
+            border: 1px solid #000; /* Tambahkan garis tepi pada sel */
+            padding: 8px; /* Tambahkan jarak antara teks dan batas sel */
         }
     </style>
 </head>
 <body>
-<main role="main" class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="top-section">
-                <h2>Detail Medicinal Plant</h2>
-            </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="/medicinal">
+            <img th:src="@{/res/player/Tanaman.png}" alt="Toba Medicinal Plant" width="80" height="30" class="d-inline-block align-top">
+            Toba Medicinal Plant
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <!-- Form pencarian -->
+            <form class="form-inline my-2 my-lg-0 ml-auto" action="/medicinal/id/" method="GET">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="keyword">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
-    </div>
-    <div class="row justify-content-center side-by-side">
-        <div class="col-md-6 medicinal-content">
-            <h2>Name</h2>
-            <table class="table table-bordered" rules="all">
-                <tbody id="detail-medicinal"></tbody>
-            </table>
-        </div>
-        <div class="col-md-3 medicinal-content">
-            <h2>Image</h2>
-            <table class="table table-bordered" rules="all">
-                <tbody id="image"></tbody>
-            </table>
-        </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="medicinal-content">
-                <h2>Another Information</h2>
-                <table class="table" rules="all" border="1">
-                    <tbody id="another"></tbody>
+    </nav>
+    
+    <!-- Main heading -->
+    <h1 class="main-heading">Detail Medicinal Plant</h1>
+
+    <main role="main" class="container-fluid"> <!-- Changed to container-fluid for full width -->
+        <div class="row justify-content-center side-by-side" style="margin-bottom: 40px;">
+            <div class="col-md-6 medicinal-content white-bg"> <!-- Add white-bg class -->
+                <h2>Name</h2>
+                <table class="table table-bordered" rules="all">
+                    <tbody id="detail-medicinal"></tbody>
+                    <colgroup> <!-- Tambahkan elemen colgroup untuk menentukan lebar kolom -->
+                        <col style="width: 20%;"> <!-- Tentukan lebar kolom secara proporsional -->
+                        <col style="width: 80%;">
+                    </colgroup>
                 </table>
             </div>
-        </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="medicinal-content">
-                <h2>Taxonomy</h2>
-                <table class="table" rules="all" border="1">
-                    <tbody id="taxonomy"></tbody>
-                </table>
+            <div class="col-md-3 medicinal-content white-bg"> <!-- Add white-bg class -->
+                <h2>Image</h2>
+                <div id="image-container">
+                    <!-- Image will be appended here -->
+                </div>
+            </div>
+        </div>       
+        <div class="row justify-content-center" style="margin-bottom: 40px;">
+            <div class="col-md-10">
+                <div class="medicinal-content white-bg"> <!-- Add white-bg class -->
+                    <h2>Another Information</h2>
+                    <table class="table table-bordered" rules="all" border="1" style="table-layout: fixed;"> <!-- Add style="table-layout: fixed;" -->
+                        <colgroup> <!-- Tambahkan elemen colgroup untuk menentukan lebar kolom -->
+                            <col style="width: 20%;"> <!-- Tentukan lebar kolom secara proporsional -->
+                            <col style="width: 80%;">
+                        </colgroup>
+                        <tbody id="another"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>    
+        
+        <div class="row justify-content-center" style="margin-bottom: 40px;">
+            <div class="col-md-10">
+                <div class="medicinal-content white-bg"> <!-- Add white-bg class -->
+                    <h2>Taxonomy</h2>
+                    <table class="table table-bordered" rules="all" border="1" style="table-layout: fixed;"> <!-- Add style="table-layout: fixed;" -->
+                        <colgroup> <!-- Tambahkan elemen colgroup untuk menentukan lebar kolom -->
+                            <col style="width: 20%;"> <!-- Tentukan lebar kolom secara proporsional -->
+                            <col style="width: 80%;">
+                        </colgroup>
+                        <tbody id="taxonomy"></tbody>
+                    </table>
+                </div>
             </div>
         </div>
-    </div>
-</main>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script>
-    jQuery(document).ready(function () {
-        getProducts();
-
-        function getProducts() {
-            var full_url = document.URL;
-            var url_array = full_url.split('/');
-            var last_segment = url_array[url_array.length - 1];
-
-            jQuery.ajax({
-                type: "GET",
-                url: "http://localhost:8080/medicinal/byId/" + last_segment,
-                success: function (response) {
-                    if (Array.isArray(response) && response.length) {
-                        const data = response[0]; // Assuming response contains only one item
-
-                        jQuery("#detail-medicinal").append(
-                            "<tr><th>Name</th><td>" + data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</td></tr>" +
-                            "<tr><th>English Name</th><td>" + data.hasEnglishName + "</td></tr>" +
-                            "<tr><th>Local Name</th><td>" + data.hasLocalName + "</td></tr>"
-                        );
-
-                        jQuery("#another").append(
-                            "<tr><th>Disease</th><td><a href='/medicinal/id/disease=" + encodeURIComponent(data.treatDisease.substring(data.treatDisease.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.treatDisease.substring(data.treatDisease.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
-                            "<tr><th>Part</th><td><a href='/medicinal/id/part=" + encodeURIComponent(data.utilizingParts.substring(data.utilizingParts.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.utilizingParts.substring(data.utilizingParts.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
-                            "<tr><th>Processing Method</th><td><a href='/medicinal/id/managedBy=" + encodeURIComponent(data.managedBy.substring(data.managedBy.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.managedBy.substring(data.managedBy.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
-                            "<tr><th>Active Compounds</th><td><a href='/medicinal/id/containsActiveCompounds=" + encodeURIComponent(data.containsActiveCompounds.substring(data.containsActiveCompounds.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.containsActiveCompounds.substring(data.containsActiveCompounds.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
-                            "<tr><th>Used By Means</th><td><a href='/medicinal/id/usedByMeansOf=" + encodeURIComponent(data.usedByMeansOf.substring(data.usedByMeansOf.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.usedByMeansOf.substring(data.usedByMeansOf.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
-                            "<tr><th>Benefit</th><td>" + data.hasBenefits + "</td></tr>" +
-                            "<tr><th>Side Effect</th><td>" + data.hasSideEffect + "</td></tr>" +
-                            "<tr><th>ImageURL</th><td>" + data.hasImageURL + "</td></tr>"
-                        );
-
-                        jQuery("#taxonomy").append(
-                            "<tr><th>Class</th><td><a href='/medicinal/id/hasClass=" + encodeURIComponent(data.hasClass.substring(data.hasClass.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.hasClass.substring(data.hasClass.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
-                            "<tr><th>Division</th><td><a href='/medicinal/id/hasDivisions=" + encodeURIComponent(data.hasDivisions.substring(data.hasDivisions.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.hasDivisions.substring(data.hasDivisions.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
-                            "<tr><th>Family</th><td><a href='/medicinal/id/hasFamily=" + encodeURIComponent(data.hasFamily.substring(data.hasFamily.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.hasFamily.substring(data.hasFamily.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
-                            "<tr><th>Genus</th><td><a href='/medicinal/id/hasGenus=" + encodeURIComponent(data.hasGenus.substring(data.hasGenus.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.hasGenus.substring(data.hasGenus.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
-                            "<tr><th>Order</th><td><a href='/medicinal/id/hasOrder=" + encodeURIComponent(data.hasOrder.substring(data.hasOrder.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.hasOrder.substring(data.hasOrder.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>" +
-                            "<tr><th>Species</th><td><a href='/medicinal/id/hasSpecies=" + encodeURIComponent(data.hasSpecies.substring(data.hasSpecies.lastIndexOf('#') + 1).replace(/_/g , ' ')) + "'>" + data.hasSpecies.substring(data.hasSpecies.lastIndexOf('#') + 1).replace(/_/g , ' ') + "</a></td></tr>"
-                        );
-
-                        jQuery("#image").append(
-                            "<tr><td><img src='" + data.hasImageURL + "' alt='" + data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf('#') + 1).replace(/_/g , ' ') + "' style='max-width: 100%;'></td></tr>"
-                        );
-                    } else {
-                        console.error("Response format is incorrect or empty.");
+        
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            getProducts();
+            function getProducts() {
+                var full_url = document.URL;
+                var url_array = full_url.split('/');
+                var last_segment = url_array[url_array.length - 1];
+            
+                jQuery.ajax({
+                    type: "GET",
+                    url: "http://localhost:8080/medicinal/byId/" + last_segment,
+                    success: function (response) {
+                        if (Array.isArray(response) && response.length) {
+                            const data = response[0]; // Assuming response contains only one item
+            
+                            jQuery("#detail-medicinal").append(
+                                "<tr><th class='attribute-background'>Indonesian Name</th><td>" + data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf('#') + 1).replace(/_/g, ' ') + "</td></tr>" +
+                                "<tr><th class='attribute-background'>English Name</th><td>" + data.hasEnglishName + "</td></tr>" +
+                                "<tr><th class='attribute-background'>Local Name</th><td>" + data.hasLocalName + "</td></tr>"
+                            );
+            
+                            jQuery("#another").append(
+                                "<tr><th class='attribute-background'>Disease</th><td><a href='/disease.html?disease=" + encodeURIComponent(data.treatDisease.substring(data.treatDisease.lastIndexOf('#') + 1).replace(/_/g, ' ')) + "'>" + data.treatDisease.substring(data.treatDisease.lastIndexOf('#') + 1).replace(/_/g, ' ') + "</a></td></tr>" +
+                                "<tr><th class='attribute-background'>Part</th><td><a href='/part.html?part=" + encodeURIComponent(data.utilizingParts.substring(data.utilizingParts.lastIndexOf('#') + 1).replace(/_/g, ' ')) + "'>" + data.utilizingParts.substring(data.utilizingParts.lastIndexOf('#') + 1).replace(/_/g, ' ') + "</a></td></tr>" +
+                                "<tr><th class='attribute-background'>Processing Method</th><td><a href='/method.html?method=" + encodeURIComponent(data.managedBy.substring(data.managedBy.lastIndexOf('#') + 1).replace(/_/g, ' ')) + "'>" + data.managedBy.substring(data.managedBy.lastIndexOf('#') + 1).replace(/_/g, ' ') + "</a></td></tr>" +
+                                "<tr><th class='attribute-background'>Active Compounds</th><td><a href='/compounds.html?compounds=" + encodeURIComponent(data.containsActiveCompounds.substring(data.containsActiveCompounds.lastIndexOf('#') + 1).replace(/_/g, ' ')) + "'>" + data.containsActiveCompounds.substring(data.containsActiveCompounds.lastIndexOf('#') + 1).replace(/_/g, ' ') + "</a></td></tr>" +
+                                "<tr><th class='attribute-background'>Used By Means Of</th><td><a href='/use.html?use=" + encodeURIComponent(data.usedByMeansOf.substring(data.usedByMeansOf.lastIndexOf('#') + 1).replace(/_/g, ' ')) + "'>" + data.usedByMeansOf.substring(data.usedByMeansOf.lastIndexOf('#') + 1).replace(/_/g, ' ') + "</a></td></tr>" +
+                                "<tr><th class='attribute-background'>Benefit</th><td>" + data.hasBenefits + "</td></tr>" +
+                                "<tr><th class='attribute-background'>Side Effect</th><td>" + data.hasSideEffect + "</td></tr>" 
+                            );
+          
+                            jQuery("#taxonomy").append(
+                                "<tr><th class='attribute-background'>Class</th><td><a href='/class.html?class=" + encodeURIComponent(data.hasClass.substring(data.hasClass.lastIndexOf('#') + 1).replace(/_/g, ' ')) + "'>" + data.hasClass.substring(data.hasClass.lastIndexOf('#') + 1).replace(/_/g, ' ') + "</a></td></tr>" +
+                                "<tr><th class='attribute-background'>Division</th><td><a href='/division.html?division=" + encodeURIComponent(data.hasDivisions.substring(data.hasDivisions.lastIndexOf('#') + 1).replace(/_/g, ' ')) + "'>" + data.hasDivisions.substring(data.hasDivisions.lastIndexOf('#') + 1).replace(/_/g, ' ') + "</a></td></tr>" +
+                                "<tr><th class='attribute-background'>Family</th><td><a href='/family.html?family=" + encodeURIComponent(data.hasFamily.substring(data.hasFamily.lastIndexOf('#') + 1).replace(/_/g, ' ')) + "'>" + data.hasFamily.substring(data.hasFamily.lastIndexOf('#') + 1).replace(/_/g, ' ') + "</a></td></tr>" +
+                                "<tr><th class='attribute-background'>Genus</th><td><a href='/genus.html?genus=" + encodeURIComponent(data.hasGenus.substring(data.hasGenus.lastIndexOf('#') + 1).replace(/_/g, ' ')) + "'>" + data.hasGenus.substring(data.hasGenus.lastIndexOf('#') + 1).replace(/_/g, ' ') + "</a></td></tr>" +
+                                "<tr><th class='attribute-background'>Order</th><td><a href='/order.html?order=" + encodeURIComponent(data.hasOrder.substring(data.hasOrder.lastIndexOf('#') + 1).replace(/_/g, ' ')) + "'>" + data.hasOrder.substring(data.hasOrder.lastIndexOf('#') + 1).replace(/_/g, ' ') + "</a></td></tr>" +
+                                "<tr><th class='attribute-background'>Species</th><td><a href='/species.html?species=" + encodeURIComponent(data.hasSpecies.substring(data.hasSpecies.lastIndexOf('#') + 1).replace(/_/g, ' ')) + "'>" + data.hasSpecies.substring(data.hasSpecies.lastIndexOf('#') + 1).replace(/_/g, ' ') + "</a></td></tr>"
+                            );
+          
+                            // Append the image
+                            jQuery("#image-container").append(
+                                "<img src='" + data.hasImageURL + "' alt='" + data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf('#') + 1).replace(/_/g, ' ') + "' style='max-width: 100%;'>"
+                            );
+                        } else {
+                            console.error("Response format is incorrect or empty.");
+                        }
                     }
-                }
-            });
-        }
-    });
-</script>
+                });
+            }
+        });
+    </script>
+    <!-- Copyright section -->
+<footer class="text-center mt-4">
+    <p>Copyright © TASI-2324-104. All Rights Reserved.</p>
+</footer>
 </body>
 </html>

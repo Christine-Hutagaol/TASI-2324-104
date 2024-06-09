@@ -1,15 +1,13 @@
 <!doctype html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="Temukan berbagai tanaman obat khas Toba yang bermanfaat untuk kesehatan dan penyembuhan alami.">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>
-        Toba Medicinal Plant
-    </title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/starter-template/">
+    <title>Toba Medicinal Plant</title>
 
     <!-- Bootstrap core CSS -->
     <link th:href="@{css/bootstrap.css}" rel="stylesheet" media="screen"/>
@@ -18,6 +16,7 @@
     <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#563d7c">
 
+    <!-- Custom styles -->
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -30,133 +29,242 @@
             height: auto; /* Maintain aspect ratio */
         }
 
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F5FFF4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
         }
+
         /* New style for overlay */
         .overlay {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity as needed */
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            visibility: hidden;
+        }
+
+        .overlay.visible {
+            visibility: visible;
+        }
+
+        .overlay-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* Styles for cards */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: white;
+            transition: transform 0.2s; /* Animation */
+            text-decoration: none; /* Remove underline from links */
+            color: inherit; /* Inherit color from parent */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+        }
+
+        .card-header {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .card-body {
+            margin-top: 10px;
         }
     </style>
     <!-- Custom styles for this template -->
     <link th:href="@{css/starter-template.css}" rel="stylesheet" media="screen"/>
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">
-            <img src="Tanaman.png" alt="Toba Medicinal Plant" width="30" height="30" class="d-inline-block align-top">
+        <a class="navbar-brand" href="/medicinal">
+            <img th:src="@{/res/player/Tanaman.png}" alt="Toba Medicinal Plant" width="80" height="30" class="d-inline-block align-top">
             Toba Medicinal Plant
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         </div>
     </nav>
 
-<main role="main" class="container">
+    <main role="main" class="container">
+        <div class="starter-template">
+        </div>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <input class="form-control mr-sm-2" type="text" placeholder="Enter the name of the medicinal plant" id="inputan" onkeypress="return searchKeyPress(event);">
+                <br>
+                <button onclick="getProducts()" class="btn btn-primary" value="Cari">Search</button>
+            </div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-12">
+                <br>
+                <br>
+            </div>
+            <div class="col-sm-12">
+                <center><h4>List of Medicinal Plants</h4></center>
+                <br>
+                <div id="product-list" class="row">
+                    <!-- Cards will be appended here -->
+                </div>
+            </div>
+            <hr color="black" th:height="200px">
+        </div>
+    </main>
 
-    <div class="starter-template">
+    <!-- Overlay for error messages -->
+    <div id="error-overlay" class="overlay">
+        <div class="overlay-content" id="error-message">
+            <!-- Error message will be inserted here -->
+        </div>
     </div>
-    <div class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4">
-            <input class="form-control mr-sm-2" type="text" placeholder="Enter the name of the medicinal plant" id="inputan" onkeypress="return searchKeyPress(event);">
-            <br>
-            <button onclick="getProducts()" class="btn btn-primary" value="Cari">Search</button>
-        </div>
-        <div class="col-sm-4"></div>
-        <div class="col-sm-12">
-            <br>
-            <br>
-        </div>
-        <div class="col-sm-12">
-            <center><h4>List Medicinal Plants</h4></center>
-            <br>
-            <table class='table '>
-                <thead>
-                <tr>
-                    <th>Nomor</th>
-                    <th>English Name</th>
-                    <th>Name</th>
-                    <th>Treat Disease</th>
-                </tr>
-                </thead>
-                <tbody id="product-list">
-                </tbody>
-            </table>
-        </div>
-        <hr color="black" th:height="200px">
-    </div>
-</main>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript">
-    // Fungsi untuk menyorot kata kunci dalam teks
-    function highlightKeyword(text, keyword) {
-        var highlightedText = text.replace(new RegExp('('+keyword+')', 'gi'), '<span style="background-color: yellow">$1</span>');
-        return highlightedText;
-    }
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        // Function to highlight keyword in text
+        function highlightKeyword(text, keyword) {
+            var keywords = keyword.split(' ');
+            keywords.forEach(function(kw) {
+                var regex = new RegExp('('+kw+')', 'gi');
+                text = text.replace(regex, '<span style="background-color: yellow">$1</span>');
+            });
+            return text;
+        }
 
-    // Fungsi untuk mendapatkan produk
-    function getProducts() {
-        var inp = document.getElementById('inputan').value;
-        $.ajax({
-            type: "GET",
-            url: "http://localhost:8080/query/" + inp,
-            success: function (response) {
-                var i = 1;
-                var found = false;
-                $("#product-list").empty();
-                response.forEach(function (data) {
+        // Function to get products
+// Function to get products
+function getProducts() {
+    var inp = document.getElementById('inputan').value.trim();
+    var encodedInp = encodeURIComponent(inp);
+    $.ajax({
+        type: "GET",
+        url: "http://localhost:8080/query/" + encodedInp,
+        success: function (response) {
+            var found = false;
+            var processedPlants = {}; // Object to track processed plants
+            $("#product-list").empty();
+            response.forEach(function (data) {
+                var englishName = data.hasEnglishName.toLowerCase();
+                var medicinalPlant = data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf('#') + 1).replace(/_/g , ' ').toLowerCase();
+                var localName = data.hasLocalName.substring(data.hasLocalName.lastIndexOf('#') + 1).replace(/_/g , ' ').toLowerCase();
+                
+                var treatDisease = '';
+                // Check if treatDisease is an array
+                if (Array.isArray(data.treatDisease)) {
+                    // If it's an array, join the values into a single string
+                    treatDisease = data.treatDisease.map(function(disease) {
+                        return disease.substring(disease.lastIndexOf('#') + 1).replace(/_/g , ' ').toLowerCase();
+                    }).join(', ');
+                } else {
+                    // If it's not an array, treat it as a single value
+                    treatDisease = data.treatDisease.substring(data.treatDisease.lastIndexOf('#') + 1).replace(/_/g , ' ').toLowerCase();
+                }
+
+                var searchTerm = inp.toLowerCase();
+                var fullMatch = searchTerm.split(' ').every(function(term) {
+                    return englishName.includes(term) || medicinalPlant.includes(term) || localName.includes(term) || treatDisease.includes(term);
+                });
+
+                if (fullMatch && !processedPlants[data.id]) {
                     found = true;
-                    // Menyorot kata kunci dalam teks
+                    // Highlight keyword in text
                     var highlightedEnglishName = highlightKeyword(data.hasEnglishName, inp);
                     var highlightedMedicinalPlant = highlightKeyword(data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf('#') + 1).replace(/_/g , ' '), inp);
-                    var highlightedTreatDisease = highlightKeyword(data.treatDisease.substring(data.treatDisease.lastIndexOf('#') + 1).replace(/_/g , ' '), inp);
+                    var highlightedLocalName = highlightKeyword(data.hasLocalName.substring(data.hasLocalName.lastIndexOf('#') + 1).replace(/_/g , ' '), inp);
+                    var highlightedTreatDisease = highlightKeyword(treatDisease, inp);
+
+                    // Append card with link
                     $("#product-list").append(
-                        "<tr>" +
-                        "<td>" + i + "</td>" +
-                        "<td><a href='/medicinal/id/" + data.id + "'>" + highlightedEnglishName + "</a></td>" +
-                        "<td>" + highlightedMedicinalPlant + "</td>" +
-                        "<td>" + highlightedTreatDisease + "</td>"
+                        "<div class='col-md-4'>" +
+                        "<a href='/medicinal/id/" + data.id + "' class='card'>" +
+                        "<div class='card-header'>" + highlightedEnglishName + "</div>" +
+                        "<div class='card-body'>" +
+                        "<p><strong>Indonesian Name:</strong> " + highlightedMedicinalPlant + "</p>" +
+                        "<p><strong>Local Name:</strong> " + highlightedLocalName + "</p>" +
+                        "<p><strong>Treat Disease:</strong> " + highlightedTreatDisease + "</p>" +
+                        "</div>" +
+                        "</a>" +
+                        "</div>"
                     );
-                    i++;
 
-                });
-                if (!found) {
-                    alert("Plants not available");
+                    processedPlants[data.id] = true; // Mark plant as processed
                 }
+            });
+            if (!found) {
+                showError("Tanaman tidak tersedia");
             }
-        });
-    }
-
-    // Fungsi untuk menangani key press event
-    function searchKeyPress(e) {
-        // Mendapatkan key code dari event
-        var key = e.keyCode || e.which;
-        // Jika key yang ditekan adalah Enter (kode 13)
-        if (key === 13) {
-            // Panggil fungsi getProducts()
-            getProducts();
-            // Mengembalikan false untuk mencegah default action dari tombol Enter
-            return false;
+        },
+        error: function(xhr, status, error) {
+            showError("Gagal memuat sumber daya: " + xhr.status + " (" + error + ")");
         }
-        // Mengembalikan true jika key yang ditekan bukan Enter
-        return true;
-    }
-</script>
+    });
+}
 
 
-<script th:src="@{css/bootstrap.js}"></script>
+        // Function to show error message in the center of the screen
+        function showError(message) {
+            var errorOverlay = document.getElementById('error-overlay');
+            var errorMessage = document.getElementById('error-message');
+            errorMessage.innerText = message;
+            errorOverlay.classList.add('visible');
+            setTimeout(function() {
+                errorOverlay.classList.remove('visible');
+            }, 3000); // Remove after 3 seconds
+        }
+
+        // Function to handle key press event
+        function searchKeyPress(e) {
+            // Get key code from the event
+            var key = e.keyCode || e.which;
+            // If the pressed key is Enter (code 13)
+            if (key === 13) {
+                // Call the getProducts() function
+                getProducts();
+                // Return false to prevent the default action of the Enter key
+                return false;
+            }
+            // Return true if the pressed key is not Enter
+            return true;
+        }
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script th:src="@{css/bootstrap.js}"></script>
+
+    <!-- Copyright section -->
+    <footer class="text-center mt-4">
+        <p>Copyright © 2024 TASI-2324-104. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

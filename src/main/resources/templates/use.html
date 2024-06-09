@@ -81,7 +81,7 @@
 </nav>
 <main role="main" class="container">
     <div class="starter-template">
-        <h1>Medicinal Plants in Genus: <span id="genusName"></span></h1>
+        <h1>Medicinal Plants for Used By Means Of: <span id="useName"></span></h1>
         <div class="table-responsive">
             <table class='table table-bordered'>
                 <thead class="thead-light">
@@ -101,19 +101,22 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script th:src="@{/js/bootstrap.js}"></script>
 <script>
-    // Function to get products by genus
-    function getProductsByGenus(genusName) {
+    // Function to get products by use
+    function getProductsByUse(useName) {
         $.ajax({
             type: "GET",
-            url: "http://localhost:8080/query/genus/" + encodeURIComponent(genusName),
+            url: "http://localhost:8080/query/use/" + encodeURIComponent(useName),
             success: function(response) {
                 var i = 1;
-                var addedPlants = {}; // Object to track added plants
+                var uniquePlants = {}; // Object to track unique plants
                 $("#product-list").empty();
                 response.forEach(function(data) {
-                    var name = data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf("#") + 1);
-                    if (!addedPlants[name]) { // Check if the plant name is not already added
-                        addedPlants[name] = true; // Mark this plant as added
+                    // Check if the plant is already in the uniquePlants object
+                    if (!uniquePlants[data.id]) {
+                        // Add the plant to the uniquePlants object
+                        uniquePlants[data.id] = true;
+                        // Display data in table rows
+                        var name = data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf("#") + 1);
                         $("#product-list").append(
                             "<tr>" +
                             "<td>" + i + "</td>" +
@@ -132,13 +135,13 @@
         });
     }
 
-    // Get genus name from URL and load products
+    // Get use name from URL and load products
     $(document).ready(function() {
         var urlParams = new URLSearchParams(window.location.search);
-        var genusName = urlParams.get('genus');
-        if (genusName) {
-            $("#genusName").text(genusName);
-            getProductsByGenus(genusName);
+        var useName = urlParams.get('use');
+        if (useName) {
+            $("#useName").text(useName);
+            getProductsByUse(useName);
         }
     });
 </script>

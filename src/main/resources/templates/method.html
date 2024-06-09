@@ -81,7 +81,7 @@
 </nav>
 <main role="main" class="container">
     <div class="starter-template">
-        <h1>Medicinal Plants in Genus: <span id="genusName"></span></h1>
+        <h1>Medicinal Plants for Processing Method: <span id="methodName"></span></h1>
         <div class="table-responsive">
             <table class='table table-bordered'>
                 <thead class="thead-light">
@@ -101,11 +101,11 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script th:src="@{/js/bootstrap.js}"></script>
 <script>
-    // Function to get products by genus
-    function getProductsByGenus(genusName) {
+    // Function to get products by method
+    function getProductsByMethod(methodName) {
         $.ajax({
             type: "GET",
-            url: "http://localhost:8080/query/genus/" + encodeURIComponent(genusName),
+            url: "http://localhost:8080/query/method/" + encodeURIComponent(methodName),
             success: function(response) {
                 var i = 1;
                 var addedPlants = {}; // Object to track added plants
@@ -132,15 +132,19 @@
         });
     }
 
-    // Get genus name from URL and load products
-    $(document).ready(function() {
-        var urlParams = new URLSearchParams(window.location.search);
-        var genusName = urlParams.get('genus');
-        if (genusName) {
-            $("#genusName").text(genusName);
-            getProductsByGenus(genusName);
-        }
-    });
+// Get method name from URL and load products
+$(document).ready(function() {
+    var urlParams = new URLSearchParams(window.location.search);
+    var methodName = urlParams.get('method');
+    if (methodName) {
+        methodName = decodeURIComponent(methodName); // Gunakan decodeURIComponent
+        $("#methodName").text(methodName);
+        getProductsByMethod(methodName);
+    }
+    
+});
+
+
 </script>
         <!-- Bootstrap JS -->
         <script th:src="@{css/bootstrap.js}"></script>
