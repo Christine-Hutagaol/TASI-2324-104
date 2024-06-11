@@ -1520,6 +1520,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Averrhoa_carambola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Averrhoa_carambola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Avicularin -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Avicularin">
@@ -1777,6 +1785,41 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Beaten">
         <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ProcessingMethod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Belimbing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Belimbing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Alkaloids"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Carotene"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Flavonoids"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Gallotannin"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Phenol"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Phenolic"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Saponins"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Tannins"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Terpenoids"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Vitamin_C"/>
+        <DataTanamanObat:hasClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliopsida"/>
+        <DataTanamanObat:hasDivisions rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliophyta"/>
+        <DataTanamanObat:hasFamily rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Oxalidaceae"/>
+        <DataTanamanObat:hasGenus rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Averrhoa"/>
+        <DataTanamanObat:hasKingdom rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae"/>
+        <DataTanamanObat:hasOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Geraniales"/>
+        <DataTanamanObat:hasSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Averrhoa_carambola"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eaten_Directly"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Hypertension"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eaten"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Fruit"/>
+        <DataTanamanObat:hasBenefits>Treat Cataracts, Treat Insomnia, Warming the body after childbirth</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasEnglishName>Star Fruit</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasId>MD095</DataTanamanObat:hasId>
+        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPL7DZL2CXIYD9erS61g3rj8_fV885rx_DCg&amp;s</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasLocalName>Balimbing</DataTanamanObat:hasLocalName>
+        <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
     
 
@@ -2402,6 +2445,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Carotenoid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Carotenoid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ActiveCompound"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Caryophyllales -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Caryophyllales">
@@ -2482,6 +2533,33 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Catharanthus_roseus">
         <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species"/>
         <DataTanamanObat:isAPlantSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Tapak_Dara"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Cengkeh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Cengkeh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Flavonoids"/>
+        <DataTanamanObat:hasClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliopsida"/>
+        <DataTanamanObat:hasDivisions rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliophyta"/>
+        <DataTanamanObat:hasFamily rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Myrtaceae"/>
+        <DataTanamanObat:hasGenus rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Syzygium"/>
+        <DataTanamanObat:hasKingdom rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae"/>
+        <DataTanamanObat:hasOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Myrtales"/>
+        <DataTanamanObat:hasSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Syzygium_aromaticum"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Mixed_With_Oil"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Headache"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Hives"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Smeared"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Seeds"/>
+        <DataTanamanObat:hasBenefits>Treating Cough, Treating headache, Treating beerudan, Treating chills after labor, Overcome Diarrhea</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasEnglishName>Clove</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasId>MD100</DataTanamanObat:hasId>
+        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToroAQJs9sACD0VR1d_HfU7mqC5A-C9gNgaw&amp;s</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasLocalName>Lauang</DataTanamanObat:hasLocalName>
+        <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
     
 
@@ -2689,6 +2767,14 @@
     <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Citrus_hystrix_DC. -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Citrus_hystrix_DC.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Citrus_limon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Citrus_limon">
         <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species"/>
     </owl:NamedIndividual>
     
@@ -3405,6 +3491,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Dirty_genital_area_disease -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Dirty_genital_area_disease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Diseases"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Dissolved_with_hot_water -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Dissolved_with_hot_water">
@@ -3657,22 +3751,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Enau -->
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Engulfed -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Enau">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
-        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Saponin_Flavonoid_Polyphenol"/>
-        <DataTanamanObat:hasClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Liliopsida"/>
-        <DataTanamanObat:hasDivisions rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliophyta"/>
-        <DataTanamanObat:hasKingdom rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae"/>
-        <DataTanamanObat:hasOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Arecales"/>
-        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Drunk"/>
-        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Roots_boiled"/>
-        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Cancer"/>
-        <DataTanamanObat:hasBenefits>Treat Rheumatism</DataTanamanObat:hasBenefits>
-        <DataTanamanObat:hasEnglishName>Sugar palm</DataTanamanObat:hasEnglishName>
-        <DataTanamanObat:hasLocalName>Bagot</DataTanamanObat:hasLocalName>
-        <DataTanamanObat:hasSideEffect>Cause dizziness</DataTanamanObat:hasSideEffect>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Engulfed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#HowToUse"/>
     </owl:NamedIndividual>
     
 
@@ -3725,10 +3807,44 @@
     
 
 
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eucalyptus_urrophylla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eucalyptus_urrophylla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eugenol -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eugenol">
         <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ActiveCompound"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eukaliptus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eukaliptus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#-"/>
+        <DataTanamanObat:hasClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliopsida"/>
+        <DataTanamanObat:hasDivisions rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliophyta"/>
+        <DataTanamanObat:hasFamily rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Myrtaceae"/>
+        <DataTanamanObat:hasGenus rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eucalyptus"/>
+        <DataTanamanObat:hasKingdom rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae"/>
+        <DataTanamanObat:hasOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Myrtales"/>
+        <DataTanamanObat:hasSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eucalyptus_urrophylla"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Boiled"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Chills"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Bathed"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaves"/>
+        <DataTanamanObat:hasBenefits>Treats Menopause, Warms the body</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasEnglishName>Eucalyptus</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasId>MD099</DataTanamanObat:hasId>
+        <DataTanamanObat:hasImageURL>https://lh3.googleusercontent.com/LTewf1RkgXvyVs18ENYIvh-qYF9v1S-5gPMg4Hg_rbRk8K-t09s4dxHOUs0nQuVRwL9gx8S43hjTNRAgRAhBaqMbMsaObCZhzcfB=w1366-h768-rj</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasLocalName>Eucalyptus</DataTanamanObat:hasLocalName>
+        <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
     
 
@@ -4071,6 +4187,14 @@
     <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#GalloTanin -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#GalloTanin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ActiveCompound"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Gallotannin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Gallotannin">
         <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ActiveCompound"/>
     </owl:NamedIndividual>
     
@@ -4826,6 +4950,57 @@
     
 
 
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Jambu_Biji -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Jambu_Biji">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Ascorbic_Acid"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Avicularin"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Caffeic_Acid"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Catechins"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Chlorogenic_Acid"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Epicatechin"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Epigallocatechin_Gallate"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Flavonoids"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Gallic_Acid"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Guaijaverin"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Hyperin"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Kaempferol"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Myricetin"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Naringenin"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Phytochemical"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Quercetin"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Rutin"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Triterpenic_Acid"/>
+        <DataTanamanObat:hasClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliopsida"/>
+        <DataTanamanObat:hasDivisions rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliophyta"/>
+        <DataTanamanObat:hasFamily rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Myrtaceae"/>
+        <DataTanamanObat:hasGenus rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Psidium"/>
+        <DataTanamanObat:hasKingdom rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae"/>
+        <DataTanamanObat:hasOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Myrtales"/>
+        <DataTanamanObat:hasSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Psidium_guajava"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eaten_Directly"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Smoked"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Abdominal_Pain"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#DHF"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Dengue"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Diarrhea"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Gastric_Pain_Medication"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eaten"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Engulfed"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Fruit"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaf_shoots"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Young_leaf"/>
+        <DataTanamanObat:hasBenefits>Treating hypertension, Caring for the skin, Overcoming watery semen, Treating toothache, Nurturing the fetus, Maintaining body stamina, Nourishes the fetus, Helps maintain body stamina, Gives a sweet taste</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasEnglishName>Guava</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasId>MD096</DataTanamanObat:hasId>
+        <DataTanamanObat:hasImageURL>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw_IuWXWmEK1N1zgE48Fr57N3S5hYPRQ_nGcfGGXqFE9U54eUNGcjObRJq-qw4Dw1HJfEwKf_8U_RAuRMdgVXRqYyKVPP4xmvq1LIW8bmRqEjvm3pHZe6yRJO1LFPuANnO2ihoe5g49XAe4HPQMWw2AcXI4CnMJq0_rZ0NONoWt2L4cp8VuGc93zkAFw/s520/ugaoo-plants-guava-tree-amrud-psidium-guajava-sardar-l49-grown-through-seeds-plant-16968910831756_520x520.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasLocalName>Attajau</DataTanamanObat:hasLocalName>
+        <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Jarak -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Jarak">
@@ -5115,6 +5290,36 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Kalanchoe_blossfeldiana">
         <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species"/>
         <DataTanamanObat:isAPlantSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Cocor_bebek"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Kantong_Semar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Kantong_Semar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#-"/>
+        <DataTanamanObat:hasClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliopsida"/>
+        <DataTanamanObat:hasDivisions rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliophyta"/>
+        <DataTanamanObat:hasFamily rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Nepenthales"/>
+        <DataTanamanObat:hasGenus rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Nepenthes"/>
+        <DataTanamanObat:hasKingdom rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae"/>
+        <DataTanamanObat:hasOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Nepenthales"/>
+        <DataTanamanObat:hasSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Nephentes_alata"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Placed_on_teeth"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eye_Pain"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Sensitive_Skin"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Toothache"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Applied_To_Teeth"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Dripped_Into_The_Eyes"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Rinsed_Into_The_Skin"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Sap"/>
+        <DataTanamanObat:hasBenefits>Helps relieve stroke symptoms</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasEnglishName>Pitcher Plants</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasId>MD097</DataTanamanObat:hasId>
+        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIpcX2xl-jIy2L22w14w-bsZdHAG5R9jBLw&amp;s</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasLocalName>Tahul-tahul</DataTanamanObat:hasLocalName>
+        <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
     
 
@@ -5534,6 +5739,32 @@
     
 
 
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Kemunting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Kemunting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#-"/>
+        <DataTanamanObat:hasClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliopsida"/>
+        <DataTanamanObat:hasDivisions rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliophyta"/>
+        <DataTanamanObat:hasFamily rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Melastomataceae"/>
+        <DataTanamanObat:hasGenus rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Ochthocharis"/>
+        <DataTanamanObat:hasKingdom rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae"/>
+        <DataTanamanObat:hasOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Myrtales"/>
+        <DataTanamanObat:hasSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Ochthocharis_bornensis"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eaten_Directly"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Gastric_Pain_Medication"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eaten"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Fruit"/>
+        <DataTanamanObat:hasBenefits>Stomach pain medicine</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasEnglishName>Rose myrtle</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasId>MD098</DataTanamanObat:hasId>
+        <DataTanamanObat:hasImageURL>https://tobaria.com/wp-content/uploads/2023/11/harimon.jpeg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasLocalName>Harimonting</DataTanamanObat:hasLocalName>
+        <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Kencur -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Kencur">
@@ -5879,6 +6110,45 @@
     
 
 
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Lada_Hitam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Lada_Hitam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Aliphatic_Components"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Alkaloids"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Aromatic"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Cloloform_Extract"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Flavonoids"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Piperine"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Rerpenes"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Terpenoids"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Triterpenes"/>
+        <DataTanamanObat:hasClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliopsida"/>
+        <DataTanamanObat:hasDivisions rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliophyta"/>
+        <DataTanamanObat:hasFamily rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Piperaceae"/>
+        <DataTanamanObat:hasGenus rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Piper"/>
+        <DataTanamanObat:hasKingdom rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae"/>
+        <DataTanamanObat:hasOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Piperales"/>
+        <DataTanamanObat:hasSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Piper_nigrum"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Chewed"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Chills_After_Labour"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Cough"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Headache"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Hives"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Hypertension"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Smeared"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Sprayed"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Seeds"/>
+        <DataTanamanObat:hasBenefits>Treating Hernia, Treating Vaginal Discharge, New childbirth wound</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasEnglishName>Black pepper</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasId>MD094</DataTanamanObat:hasId>
+        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB-uCT2CL9YsXRACpKQPYoYJfXLLWNacaWTA&amp;s</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasLocalName>Lada Birong</DataTanamanObat:hasLocalName>
+        <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Lamiaceae -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Lamiaceae">
@@ -6117,6 +6387,32 @@
         <DataTanamanObat:hasId>MD045</DataTanamanObat:hasId>
         <DataTanamanObat:hasImageURL>https://www.socfindoconservation.co.id/asset/plant/414-3-vitex-trifolia-l.jpg</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Legundi</DataTanamanObat:hasLocalName>
+        <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Lemon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Lemon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#-"/>
+        <DataTanamanObat:hasClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliopsida"/>
+        <DataTanamanObat:hasDivisions rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliophyta"/>
+        <DataTanamanObat:hasFamily rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Rutaceae"/>
+        <DataTanamanObat:hasGenus rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Citrus"/>
+        <DataTanamanObat:hasKingdom rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae"/>
+        <DataTanamanObat:hasOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Sapindales"/>
+        <DataTanamanObat:hasSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Citrus_limon"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Boiled"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Squeezed"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Cough"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Fruit"/>
+        <DataTanamanObat:hasBenefits>Treating Cough</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasEnglishName>Lemon</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasId>MD091</DataTanamanObat:hasId>
+        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg1pbomLklchlleEH7pT6RszFS0TTO9MnP1A&amp;s</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasLocalName>Unte</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
     
@@ -7176,10 +7472,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Nepenthales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Nepenthales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Order"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Nepenthes -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Nepenthes">
         <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Genus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Nephentes_alata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Nephentes_alata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species"/>
     </owl:NamedIndividual>
     
 
@@ -7195,6 +7507,14 @@
     <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#New_Postpartum_Wound -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#New_Postpartum_Wound">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Diseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#New_childbirth_wound -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#New_childbirth_wound">
         <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Diseases"/>
     </owl:NamedIndividual>
     
@@ -7298,6 +7618,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Ochthocharis">
         <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Genus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Ochthocharis_bornensis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Ochthocharis_bornensis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species"/>
     </owl:NamedIndividual>
     
 
@@ -7661,6 +7989,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Phytochemical">
         <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ActiveCompound"/>
         <DataTanamanObat:containedByPlants rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Singkong"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Naringenin"/>
     </owl:NamedIndividual>
     
 
@@ -7712,6 +8041,14 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Piper">
         <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Genus"/>
         <DataTanamanObat:isAPlantOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Merica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Piper_nigrum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Piper_nigrum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species"/>
     </owl:NamedIndividual>
     
 
@@ -7987,6 +8324,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Psidium">
         <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Genus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Psidium_guajava -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Psidium_guajava">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species"/>
     </owl:NamedIndividual>
     
 
@@ -8982,6 +9327,32 @@
     
 
 
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Sijungkot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Sijungkot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#-"/>
+        <DataTanamanObat:hasClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliopsida"/>
+        <DataTanamanObat:hasDivisions rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliophyta"/>
+        <DataTanamanObat:hasFamily rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Asteraceae"/>
+        <DataTanamanObat:hasGenus rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Lactuca"/>
+        <DataTanamanObat:hasKingdom rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae"/>
+        <DataTanamanObat:hasOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Asterales"/>
+        <DataTanamanObat:hasSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Lactuca_indica"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Boiled"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Insomnia"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Drink"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaves"/>
+        <DataTanamanObat:hasBenefits>Treat wasp / bee stings</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasEnglishName>Indian lettuce</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasId>MD092</DataTanamanObat:hasId>
+        <DataTanamanObat:hasImageURL>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Akinonogeshi.JPG/220px-Akinonogeshi.JPG</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasLocalName>Sijungkot</DataTanamanObat:hasLocalName>
+        <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Silexicarpin -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Silexicarpin">
@@ -9036,6 +9407,53 @@ as a dysentery medicine</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasLocalName>Gadong antirha</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Toxic to the body, 
 Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanObat:hasSideEffect>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Sirih -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Sirih">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Flavonoids"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Triterpenes"/>
+        <DataTanamanObat:hasClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliopsida"/>
+        <DataTanamanObat:hasDivisions rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliophyta"/>
+        <DataTanamanObat:hasFamily rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Piperaceae"/>
+        <DataTanamanObat:hasGenus rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Piper"/>
+        <DataTanamanObat:hasKingdom rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae"/>
+        <DataTanamanObat:hasOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Piperales"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Boiled"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Heated_until_wilted"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Mashed"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Soaked_in_water"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Squeezed"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Aches"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Cough"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eye_Pain"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Itching"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Otalgia"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Pains"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Sprains"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Stroke_Symptoms"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Applied_To_The_Chest"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Drink"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Edible"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Rinsed"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Rinsed_into_Eyes"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Sprayed"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taped"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaf"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaves"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Seeds"/>
+        <DataTanamanObat:hasBenefits>Healing newborn wounds, Treating back pain, Overcoming difficulty urinating</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasEnglishName>Betel leaf</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasId>MD093</DataTanamanObat:hasId>
+        <DataTanamanObat:hasImageURL>https://t3.ftcdn.net/jpg/04/09/44/04/360_F_409440490_7OzamYcvvgF0Tz7vrAb6eEUquTpnCDC9.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasLocalName>Burangir</DataTanamanObat:hasLocalName>
+        <DataTanamanObat:hasLocalName>Demban</DataTanamanObat:hasLocalName>
+        <DataTanamanObat:hasLocalName>Napuran</DataTanamanObat:hasLocalName>
+        <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
     
 
@@ -9548,6 +9966,14 @@ Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanO
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Syzygium">
         <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Genus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Syzygium_aromaticum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Syzygium_aromaticum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species"/>
     </owl:NamedIndividual>
     
 

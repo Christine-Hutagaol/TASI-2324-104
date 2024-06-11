@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <!-- Meta tags -->
@@ -25,8 +25,8 @@
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
-            width: 100%; /* Set width to fill the container */
-            height: auto; /* Maintain aspect ratio */
+            width: 100%;
+            height: auto;
         }
 
         body {
@@ -48,7 +48,6 @@
             }
         }
 
-        /* New style for overlay */
         .overlay {
             position: fixed;
             top: 0;
@@ -74,20 +73,19 @@
             text-align: center;
         }
 
-        /* Styles for cards */
         .card {
             border: 1px solid #ccc;
             border-radius: 10px;
             padding: 20px;
             margin-bottom: 20px;
             background-color: white;
-            transition: transform 0.2s; /* Animation */
-            text-decoration: none; /* Remove underline from links */
-            color: inherit; /* Inherit color from parent */
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: inherit;
         }
 
         .card:hover {
-            transform: scale(1.05); /* Zoom effect on hover */
+            transform: scale(1.05);
         }
 
         .card-header {
@@ -98,9 +96,66 @@
         .card-body {
             margin-top: 10px;
         }
+
+        .welcome-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+            color: white;
+        }
+
+        .welcome-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .welcome-text {
+            max-width: 600px;
+        }
+
+        .welcome-text h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: black; /* Menambahkan warna hitam */
+        }
+
+        .welcome-text p {
+            font-size: 1.2em;
+            color: black; /* Menambahkan warna hitam */
+        }
+
+        .search-section {
+            margin-top: 30px;
+            text-align: center;
+            margin-bottom: 30px; /* Tambahkan margin bawah agar terlihat jelas */
+        }
+
+        /* Tambahkan kelas untuk animasi slide */
+        @keyframes slideDown {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* Atur tampilan list dan animasi slide */
+        #product-list {
+            animation: slideDown 0.5s ease-out;
+        }
+
+        .row.search-section {
+            margin-top: 30px;
+            text-align: center;
+            margin-bottom: 30px; /* Tambahkan margin bawah agar terlihat jelas */
+        }
     </style>
-    <!-- Custom styles for this template -->
-    <link th:href="@{css/starter-template.css}" rel="stylesheet" media="screen"/>
 </head>
 <body>
     <!-- Navigation -->
@@ -118,28 +173,26 @@
     </nav>
 
     <main role="main" class="container">
-        <div class="starter-template">
+        <div class="welcome-section">
+            <img src="/res/player/logo.png" alt="Toba Medicinal Plant"> <!-- Ganti dengan path gambar Anda -->
+            <div class="welcome-text">
+                <h1>Welcome to Toba Medicinal Plant</h1>
+                <p>Discover various medicinal plants from Toba that are beneficial for health and natural healing.</p>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4">
-                <input class="form-control mr-sm-2" type="text" placeholder="Enter the name of the medicinal plant" id="inputan" onkeypress="return searchKeyPress(event);">
-                <br>
-                <button onclick="getProducts()" class="btn btn-primary" value="Cari">Search</button>
-            </div>
-            <div class="col-sm-4"></div>
-            <div class="col-sm-12">
-                <br>
-                <br>
-            </div>
-            <div class="col-sm-12">
-                <center><h4>List of Medicinal Plants</h4></center>
-                <br>
-                <div id="product-list" class="row">
-                    <!-- Cards will be appended here -->
+        <div class="row search-section">
+            <div class="col-sm-8 offset-sm-2">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Enter the name of the medicinal plant" id="inputan" onkeypress="return searchKeyPress(event);">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" onclick="getProducts()">Search</button>
+                    </div>
                 </div>
             </div>
-            <hr color="black" th:height="200px">
+        </div>
+        <!-- List tanaman -->
+        <div id="product-list" class="row mt-3">
+            <!-- Cards akan ditambahkan di sini -->
         </div>
     </main>
 
@@ -150,7 +203,7 @@
         </div>
     </div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script        src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript">
         // Function to highlight keyword in text
         function highlightKeyword(text, keyword) {
@@ -163,76 +216,66 @@
         }
 
         // Function to get products
-// Function to get products
-function getProducts() {
-    var inp = document.getElementById('inputan').value.trim();
-    var encodedInp = encodeURIComponent(inp);
-    $.ajax({
-        type: "GET",
-        url: "http://localhost:8080/query/" + encodedInp,
-        success: function (response) {
-            var found = false;
-            var processedPlants = {}; // Object to track processed plants
-            $("#product-list").empty();
-            response.forEach(function (data) {
-                var englishName = data.hasEnglishName.toLowerCase();
-                var medicinalPlant = data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf('#') + 1).replace(/_/g , ' ').toLowerCase();
-                var localName = data.hasLocalName.substring(data.hasLocalName.lastIndexOf('#') + 1).replace(/_/g , ' ').toLowerCase();
-                
-                var treatDisease = '';
-                // Check if treatDisease is an array
-                if (Array.isArray(data.treatDisease)) {
-                    // If it's an array, join the values into a single string
-                    treatDisease = data.treatDisease.map(function(disease) {
-                        return disease.substring(disease.lastIndexOf('#') + 1).replace(/_/g , ' ').toLowerCase();
-                    }).join(', ');
-                } else {
-                    // If it's not an array, treat it as a single value
-                    treatDisease = data.treatDisease.substring(data.treatDisease.lastIndexOf('#') + 1).replace(/_/g , ' ').toLowerCase();
-                }
+        function getProducts() {
+            var inp = document.getElementById('inputan').value.trim();
+            var encodedInp = encodeURIComponent(inp);
+            $.ajax({
+                type: "GET",
+                url: "http://localhost:8080/query/" + encodedInp,
+                success: function (response) {
+                    var found = false;
+                    var processedPlants = {};
+                    $("#product-list").empty();
+                    response.forEach(function (data) {
+                        var englishName = data.hasEnglishName.toLowerCase();
+                        var medicinalPlant = data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf('#') + 1).replace(/_/g , ' ').toLowerCase();
+                        var localName = data.hasLocalName.substring(data.hasLocalName.lastIndexOf('#') + 1).replace(/_/g , ' ').toLowerCase();
+                        
+                        var treatDisease = '';
+                        if (Array.isArray(data.treatDisease)) {
+                            treatDisease = data.treatDisease.map(function(disease) {
+                                return disease.substring(disease.lastIndexOf('#') + 1).replace(/_/g , ' ').toLowerCase();
+                            }).join(', ');
+                        } else {
+                            treatDisease = data.treatDisease.substring(data.treatDisease.lastIndexOf('#') + 1).replace(/_/g , ' ').toLowerCase();
+                        }
 
-                var searchTerm = inp.toLowerCase();
-                var fullMatch = searchTerm.split(' ').every(function(term) {
-                    return englishName.includes(term) || medicinalPlant.includes(term) || localName.includes(term) || treatDisease.includes(term);
-                });
+                        var searchTerm = inp.toLowerCase();
+                        var fullMatch = searchTerm.split(' ').every(function(term) {
+                            return englishName.includes(term) || medicinalPlant.includes(term) || localName.includes(term) || treatDisease.includes(term);
+                        });
 
-                if (fullMatch && !processedPlants[data.id]) {
-                    found = true;
-                    // Highlight keyword in text
-                    var highlightedEnglishName = highlightKeyword(data.hasEnglishName, inp);
-                    var highlightedMedicinalPlant = highlightKeyword(data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf('#') + 1).replace(/_/g , ' '), inp);
-                    var highlightedLocalName = highlightKeyword(data.hasLocalName.substring(data.hasLocalName.lastIndexOf('#') + 1).replace(/_/g , ' '), inp);
-                    var highlightedTreatDisease = highlightKeyword(treatDisease, inp);
+                        if (fullMatch && !processedPlants[data.id]) {
+                            found = true;
+                            var highlightedEnglishName = highlightKeyword(data.hasEnglishName, inp);
+                            var highlightedMedicinalPlant = highlightKeyword(data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf('#') + 1).replace(/_/g , ' '), inp);
+                            var highlightedLocalName = highlightKeyword(data.hasLocalName.substring(data.hasLocalName.lastIndexOf('#') + 1).replace(/_/g , ' '), inp);
+                            var highlightedTreatDisease = highlightKeyword(treatDisease, inp);
 
-                    // Append card with link
-                    $("#product-list").append(
-                        "<div class='col-md-4'>" +
-                        "<a href='/medicinal/id/" + data.id + "' class='card'>" +
-                        "<div class='card-header'>" + highlightedEnglishName + "</div>" +
-                        "<div class='card-body'>" +
-                        "<p><strong>Indonesian Name:</strong> " + highlightedMedicinalPlant + "</p>" +
-                        "<p><strong>Local Name:</strong> " + highlightedLocalName + "</p>" +
-                        "<p><strong>Treat Disease:</strong> " + highlightedTreatDisease + "</p>" +
-                        "</div>" +
-                        "</a>" +
-                        "</div>"
-                    );
+                            $("#product-list").append(
+                                "<div class='col-md-4'>" +
+                                "<a href='/medicinal/id/" + data.id + "' class='card'>" +
+                                "<div class='card-header'>" + highlightedEnglishName + "</div>" +
+                                "<div class='card-body'>" +
+                                "<p><strong>Indonesian Name:</strong> " + highlightedMedicinalPlant + "</p>" +
+                                "<p><strong>Local Name:</strong> " + highlightedLocalName + "</p>" +
+                                "<p><strong>Treat Disease:</strong> " + highlightedTreatDisease + "</p>" +
+                                "</div>" +
+                                "</a>" +
+                                "</div>"
+                            );
 
-                    processedPlants[data.id] = true; // Mark plant as processed
-                }
+                            processedPlants[data.id] = true;
+                        }
+                    });
+                    if (!found) {
+                        showError("Plants not available");
+                    }
+                },
             });
-            if (!found) {
-                showError("Tanaman tidak tersedia");
-            }
-        },
-        error: function(xhr, status, error) {
-            showError("Gagal memuat sumber daya: " + xhr.status + " (" + error + ")");
         }
-    });
-}
 
-
-        // Function to show error message in the center of the screen
+        // Function to show error message
         function showError(message) {
             var errorOverlay = document.getElementById('error-overlay');
             var errorMessage = document.getElementById('error-message');
@@ -240,21 +283,16 @@ function getProducts() {
             errorOverlay.classList.add('visible');
             setTimeout(function() {
                 errorOverlay.classList.remove('visible');
-            }, 3000); // Remove after 3 seconds
+            }, 3000);
         }
 
         // Function to handle key press event
         function searchKeyPress(e) {
-            // Get key code from the event
             var key = e.keyCode || e.which;
-            // If the pressed key is Enter (code 13)
             if (key === 13) {
-                // Call the getProducts() function
                 getProducts();
-                // Return false to prevent the default action of the Enter key
                 return false;
             }
-            // Return true if the pressed key is not Enter
             return true;
         }
     </script>
