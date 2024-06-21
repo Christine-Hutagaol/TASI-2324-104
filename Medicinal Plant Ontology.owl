@@ -880,9 +880,13 @@
         <DataTanamanObat:hasKingdom rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae"/>
         <DataTanamanObat:hasOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Rutales"/>
         <DataTanamanObat:hasSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Zanthoxylum_acanthopodium_DC"/>
-        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Mixed_as_cooking_ingredients,_dried,_boiled"/>
-        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Postpartum_body_shivering,_cough"/>
-        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#eaten,_smeared_on_the_body"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Boiled"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Dried"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Mixed_as_cooking_ingredients"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Cough"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Postpartum_body_shivering"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eaten"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Smeared_on_the_Body"/>
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Fruit"/>
         <DataTanamanObat:hasBenefits>Treat Cough</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Sichuan Pepper</DataTanamanObat:hasEnglishName>
@@ -991,7 +995,7 @@
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Seeds"/>
         <DataTanamanObat:hasBenefits>Increases appetite</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Litsea</DataTanamanObat:hasEnglishName>
-        <DataTanamanObat:hasId>MD58</DataTanamanObat:hasId>
+        <DataTanamanObat:hasId>MD058</DataTanamanObat:hasId>
         <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfaaySqW91kZxGz-miEXbBdf0OU0w0OZq2Cw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Antarasa</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
@@ -1941,8 +1945,8 @@
         <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Stomach_Acid"/>
         <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Consumed_in_Odd_Quantities"/>
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaves"/>
+        <DataTanamanObat:hasBenefits>Heartleaf madeira vine</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasBenefits>Treating stomach acid</DataTanamanObat:hasBenefits>
-        <DataTanamanObat:hasEnglishName>heartleaf madeira vine</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD007</DataTanamanObat:hasId>
         <DataTanamanObat:hasImageURL>https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Madeira_vine_%283372772764%29.jpg/330px-Madeira_vine_%283372772764%29.jpg</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Binahung</DataTanamanObat:hasLocalName>
@@ -3325,7 +3329,7 @@
         <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Bathed"/>
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Sap"/>
         <DataTanamanObat:hasBenefits>Treating fever</DataTanamanObat:hasBenefits>
-        <DataTanamanObat:hasEnglishName>tree cotton</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasEnglishName>Tree cotton</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD056</DataTanamanObat:hasId>
         <DataTanamanObat:hasImageURL>https://t4.ftcdn.net/jpg/04/91/01/43/360_F_491014343_ek6fwbuZpWfpsbHZyt48kCvB3pUJbZv6.jpg</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Bulung ni hapas</DataTanamanObat:hasLocalName>
@@ -4886,7 +4890,6 @@
         <DataTanamanObat:hasOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Zingiberales"/>
         <DataTanamanObat:hasSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Zingiber_officinale"/>
         <DataTanamanObat:hasSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Zingiber_officinale_Roscoe"/>
-        <DataTanamanObat:hasSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Zingiber_officinale_var._amarum"/>
         <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Boiled"/>
         <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Braised"/>
         <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Chewed_directly_slowly"/>
@@ -4943,7 +4946,7 @@
         <DataTanamanObat:hasBenefits>Treating postpartum chills, Treating bruises, Treating headaches, Treating coughs, Treating hives</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Red ginger</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD089</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://semburat.com/wp-content/uploads/2020/10/jahe-merah.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL>https://th.bing.com/th/id/R.7c9c0365a72e6da05a3a0dcc8d749a84?rik=v4SdnUz70y3Bxg&amp;riu=http%3a%2f%2f1.bp.blogspot.com%2f-KIwgBTo_9qo%2fU7gY1_3I93I%2fAAAAAAAAAFs%2fjyTvNIs5MsE%2fs1600%2fjahe%2bmerah.jpg&amp;ehk=TRZjlctzGoQqZnCRllajQY1BBqNsQC8QuJGK4IXNLCg%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Pege rara</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -5234,11 +5237,11 @@
         <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Thin_sperm"/>
         <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eaten"/>
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Fruit"/>
-        <DataTanamanObat:hasBenefits>treating thin sperm</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasBenefits>Treating thin sperm</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Peanut</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD053</DataTanamanObat:hasId>
         <DataTanamanObat:hasImageURL>https://umsu.ac.id/health/wp-content/uploads/2023/09/kacang-tanah-scaled.jpg</DataTanamanObat:hasImageURL>
-        <DataTanamanObat:hasLocalName>kasang tano</DataTanamanObat:hasLocalName>
+        <DataTanamanObat:hasLocalName>Kasang tano</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Increases blood uric acid levels</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
     
@@ -5720,12 +5723,12 @@
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Fruit"/>
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaf_sap"/>
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Seeds"/>
+        <DataTanamanObat:hasBenefits>As Antioxidant/Antibacterial</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasBenefits>Hair care</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasBenefits>Prevent cholesterol</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasBenefits>Treating Wounds</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasBenefits>Treating fever</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasBenefits>Treating hives</DataTanamanObat:hasBenefits>
-        <DataTanamanObat:hasBenefits>as Antioxidant/Antibacterial</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Candlenut</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD041</DataTanamanObat:hasId>
         <DataTanamanObat:hasImageURL>https://res.cloudinary.com/dk0z4ums3/image/upload/v1671590469/attached_image/kemiri-ketahui-kandungan-dan-manfaatnya-untuk-kesehatan.jpg</DataTanamanObat:hasImageURL>
@@ -5873,7 +5876,7 @@
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Flowers"/>
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaves"/>
         <DataTanamanObat:hasBenefits>Treating back pain</DataTanamanObat:hasBenefits>
-        <DataTanamanObat:hasBenefits>treating difficulty urinating</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasBenefits>Treating difficulty urinating</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Java tea</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD047</DataTanamanObat:hasId>
         <DataTanamanObat:hasImageURL>https://www.socfindoconservation.co.id/asset/plant/227-1-orthosiphon-aristatus-blume-miq.jpg</DataTanamanObat:hasImageURL>
@@ -5980,7 +5983,7 @@
         <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Drink_or_apply_to_the_skin"/>
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Rhizome"/>
         <DataTanamanObat:hasBenefits>Letting the wind out, Caring for the skin</DataTanamanObat:hasBenefits>
-        <DataTanamanObat:hasEnglishName>turmeric burle</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasEnglishName>Turmeric burle</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD016</DataTanamanObat:hasId>
         <DataTanamanObat:hasImageURL>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl2BgPiQimF69m7SU-fz5DlVhRENS70UkZ1HPJuABvM8NW0q33g7QrA9FP97cZb2vXl1-F1izT_fSkJK-VtUW6E0Vr4iWiWiCUMB5K-cg7FQLJoaQRqzKFkED9gZ_flt1venfzjD8L4Qdm/s1600/Bangle+%2528Zingiber+purpureum+Roxb%2529.jpg</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Hunik burle</DataTanamanObat:hasLocalName>
@@ -7159,6 +7162,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Mixed_as_cooking_ingredients -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Mixed_as_cooking_ingredients">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ProcessingMethod"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Mixed_with_bath_water -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Mixed_with_bath_water">
@@ -7303,6 +7314,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Musa_acuminata_Linn. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Musa_acuminata_Linn.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Musa_acuminata_x_balbisiana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Musa_acuminata_x_balbisiana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Musaceae -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Musaceae">
@@ -7331,6 +7358,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Myristica">
         <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Genus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Myristica_fragrans -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Myristica_fragrans">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species"/>
     </owl:NamedIndividual>
     
 
@@ -7386,7 +7421,7 @@
         <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taken_by_Mouth"/>
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Fruit"/>
         <DataTanamanObat:hasBenefits>Treat Cholesterol, Treat Hypertension, help Diet</DataTanamanObat:hasBenefits>
-        <DataTanamanObat:hasEnglishName>pineapple</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasEnglishName>Pineapple</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD019</DataTanamanObat:hasId>
         <DataTanamanObat:hasImageURL>https://img2.beritasatu.com/cache/beritasatu/480x310-3/09122012125531.jpg</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Honas</DataTanamanObat:hasLocalName>
@@ -7822,6 +7857,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Pala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Pala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Miristin"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Safrole"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Saponins"/>
+        <DataTanamanObat:hasClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliopsida"/>
+        <DataTanamanObat:hasDivisions rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliophyta"/>
+        <DataTanamanObat:hasFamily rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Myristicaceae"/>
+        <DataTanamanObat:hasGenus rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Myristica"/>
+        <DataTanamanObat:hasKingdom rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae"/>
+        <DataTanamanObat:hasOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliales"/>
+        <DataTanamanObat:hasSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Myristica_fragrans"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Vaporized_for_oukup/sauna_or_Chewed"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Wind_Settles"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Pasted"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaves"/>
+        <DataTanamanObat:hasBenefits>Treating colds</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasEnglishName>Nutmeg</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasId>MD101</DataTanamanObat:hasId>
+        <DataTanamanObat:hasImageURL>https://image1ws.indotrading.com/s3/productimages/webp/co218562/p932681/w425-h425/b5e1382c-837b-4a58-bcc1-eed780da526e.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasLocalName>Pala</DataTanamanObat:hasLocalName>
+        <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Panu -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Panu">
@@ -8113,6 +8176,98 @@
         <DataTanamanObat:hasId>MD023</DataTanamanObat:hasId>
         <DataTanamanObat:hasImageURL>https://cdn.idntimes.com/content-images/community/2023/05/whatsapp-image-2023-05-14-at-000145-2156d57505b8dae02fda653ffd669442-d18288322f8ff6785a773c3b26adcd66_600x400.jpeg</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Pirdot</DataTanamanObat:hasLocalName>
+        <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Pisang_Ambon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Pisang_Ambon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Alkaloids"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Alkanoids"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Flavonoids"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Phenol"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Saponins"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Tannins"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Terpenoids"/>
+        <DataTanamanObat:hasClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Liliopsida"/>
+        <DataTanamanObat:hasDivisions rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Zingiberales"/>
+        <DataTanamanObat:hasFamily rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Musaceae"/>
+        <DataTanamanObat:hasGenus rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Musa"/>
+        <DataTanamanObat:hasKingdom rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae"/>
+        <DataTanamanObat:hasOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Zingiberales"/>
+        <DataTanamanObat:hasSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Musa_paradisiaca_var._sapientum_(L.)_Kunt."/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Chewed"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Constipation"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eaten"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Fruit"/>
+        <DataTanamanObat:hasBenefits>Treating constipation, Treating hives, Treating wounds, Prevent bone and tooth loss, As a dysentery medicine, Treating worms</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasEnglishName>Cavendish banana</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasId>MD104</DataTanamanObat:hasId>
+        <DataTanamanObat:hasImageURL>https://hargabuah.com/file/pisang-ambon.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasLocalName>Pisang Ambon</DataTanamanObat:hasLocalName>
+        <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Pisang_Barangan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Pisang_Barangan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#-"/>
+        <DataTanamanObat:hasClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Liliopsida"/>
+        <DataTanamanObat:hasDivisions rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliophyta"/>
+        <DataTanamanObat:hasFamily rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Musaceae"/>
+        <DataTanamanObat:hasGenus rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Musa"/>
+        <DataTanamanObat:hasKingdom rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae"/>
+        <DataTanamanObat:hasOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Zingiberales"/>
+        <DataTanamanObat:hasSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Musa_acuminata_Linn."/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eaten_Directly"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Cancer_Cells"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eaten"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Fruit"/>
+        <DataTanamanObat:hasBenefits>Prevents cancer cells, Prevent cancer, regulate blood pressure, treat diarrhea, Treat intestinal problems, Lose weight, Constipation, and Cabbage</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasEnglishName>Plantain</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasId>MD102</DataTanamanObat:hasId>
+        <DataTanamanObat:hasImageURL>https://www.shutterstock.com/image-photo/musa-acuminata-linn-pisang-barangan-260nw-2436511161.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasLocalName>Pisang Barangan</DataTanamanObat:hasLocalName>
+        <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Pisang_Kepok -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Pisang_Kepok">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Alkanoids"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Flavonoids"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Phenol"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Tannins"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Terpenoids"/>
+        <DataTanamanObat:hasClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Liliopsida"/>
+        <DataTanamanObat:hasDivisions rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliophyta"/>
+        <DataTanamanObat:hasFamily rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Musaceae"/>
+        <DataTanamanObat:hasGenus rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Musa"/>
+        <DataTanamanObat:hasKingdom rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae"/>
+        <DataTanamanObat:hasOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Zingiberales"/>
+        <DataTanamanObat:hasSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Musa_acuminata_x_balbisiana"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Heated"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Saponins"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Sprains"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Smeared"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Bud"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Fruit"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Roots"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Stem"/>
+        <DataTanamanObat:hasBenefits>Treating Sprains</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasEnglishName>Cooking banana</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasId>MD103</DataTanamanObat:hasId>
+        <DataTanamanObat:hasImageURL>https://www.researchgate.net/publication/340714835/figure/fig1/AS:881339804962819@1587139192352/Gambar-1-Pisang-kepok-kuning-Musa-acuminata-x-Musa-balbisiana-ABB-a-Buah-pisang.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasLocalName>Pisang Kepok</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
     
@@ -8527,7 +8682,7 @@
         <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eaten"/>
         <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eaten_Directly"/>
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Fruit"/>
-        <DataTanamanObat:hasBenefits>as a cough medicine, Nurture the fetus, Treats eyes, treats ulcers, As a medicine for shortness of breath</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasBenefits>As a cough medicine, Nurture the fetus, Treats eyes, treats ulcers, As a medicine for shortness of breath</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Balanced</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD072</DataTanamanObat:hasId>
         <DataTanamanObat:hasImageURL>https://manfaat.co.id/wp-content/uploads/2015/12/buah-rimbang.jpg</DataTanamanObat:hasImageURL>
@@ -8969,7 +9124,7 @@
         <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Kidney_Disease"/>
         <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#drink"/>
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaves"/>
-        <DataTanamanObat:hasBenefits>as kidney medicine, Increase stamina</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasBenefits>As kidney medicine, Increase stamina</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>indian lettuce</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD026</DataTanamanObat:hasId>
         <DataTanamanObat:hasImageURL>https://techieoldfox.wordpress.com/wp-content/uploads/2013/09/828cb-imag2007.jpg</DataTanamanObat:hasImageURL>
@@ -8996,7 +9151,7 @@
         <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#drink"/>
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaves;Stem"/>
         <DataTanamanObat:hasBenefits>Treating Cholesterol</DataTanamanObat:hasBenefits>
-        <DataTanamanObat:hasEnglishName>false pakchoi</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasEnglishName>False pakchoi</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD027</DataTanamanObat:hasId>
         <DataTanamanObat:hasImageURL>https://www.shutterstock.com/shutterstock/photos/2319738377/display_1500/stock-photo-mustard-greens-or-brassica-chinensis-var-parachinensis-or-choy-sum-planted-in-the-yard-2319738377.jpg</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Marata Sabi</DataTanamanObat:hasLocalName>
@@ -9103,7 +9258,7 @@
         <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Drink"/>
         <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Eaten"/>
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaves"/>
-        <DataTanamanObat:hasBenefits>Mengobati darah tinggi</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasBenefits>Treats high blood pressure</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Celery</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD028</DataTanamanObat:hasId>
         <DataTanamanObat:hasImageURL>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Celery_%282905891576%29.jpg/250px-Celery_%282905891576%29.jpg</DataTanamanObat:hasImageURL>
@@ -9398,9 +9553,7 @@
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Bulbs"/>
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaves"/>
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Tubers"/>
-        <DataTanamanObat:hasBenefits>Iron enhancer,
-prevents bone and tooth loss,
-as a dysentery medicine</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasBenefits>Iron enhancer, Prevents bone and tooth loss, As a dysentery medicine&quot;</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Cassava</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD036</DataTanamanObat:hasId>
         <DataTanamanObat:hasImageURL>https://distan.bulelengkab.go.id/public/uploads/konten/budidaya-tanaman-singkong-41.jpeg</DataTanamanObat:hasImageURL>
@@ -9474,12 +9627,12 @@ Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanO
         <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Asthma"/>
         <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#drink"/>
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaves"/>
-        <DataTanamanObat:hasBenefits>Meredakan asma</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasBenefits>Relieves asthma</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Soursop</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD029</DataTanamanObat:hasId>
         <DataTanamanObat:hasImageURL>https://cdn.antaranews.com/cache/1200x800/2017/10/20171020ilustrasi_daun_dan_buah_sirsak.jpg</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Durian Bolanda</DataTanamanObat:hasLocalName>
-        <DataTanamanObat:hasSideEffect>Menyebabkan tekanan dara menurun drastis, memperberat kerja organ ginjal dan hati</DataTanamanObat:hasSideEffect>
+        <DataTanamanObat:hasSideEffect>Causes the blood pressure to drop dramatically, Making the kidneys and liver work harder</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
     
 
@@ -10034,12 +10187,12 @@ Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanO
         <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Stung_by_Wasps"/>
         <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#applying_its_sap"/>
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Sap"/>
-        <DataTanamanObat:hasBenefits>Mengobati sengatan tawon/lebah</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasBenefits>Treat wasp/bee stings</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Taro</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD030</DataTanamanObat:hasId>
         <DataTanamanObat:hasImageURL>https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/03/13064547/Kenali-Kandungan-Nutrisi-dan-7-Manfaat-Talas-untuk-Kesehatan-Tubuh.jpg</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Suhat</DataTanamanObat:hasLocalName>
-        <DataTanamanObat:hasSideEffect>Menimulkan rasa gatal, Menyebabkan penyerapan kalsium terganggu</DataTanamanObat:hasSideEffect>
+        <DataTanamanObat:hasSideEffect>Causes itching, Causes calcium absorption to be impaired</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
     
 
@@ -10089,12 +10242,12 @@ Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanO
         <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Cancer"/>
         <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#drink"/>
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaves;Stem"/>
-        <DataTanamanObat:hasBenefits>Membunuh sel kanker</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasBenefits>Kills cancer cells</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Madagascar Periwinkle</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD031</DataTanamanObat:hasId>
         <DataTanamanObat:hasImageURL>https://d2seqvvyy3b8p2.cloudfront.net/b27a2dd750dfcb7b17b16eccb1d40f36.jpg</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Lapak Boruboru</DataTanamanObat:hasLocalName>
-        <DataTanamanObat:hasSideEffect>Menurunkan jumlah sel darah putih</DataTanamanObat:hasSideEffect>
+        <DataTanamanObat:hasSideEffect>Lower the white blood cell count</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
     
 
@@ -10773,6 +10926,14 @@ Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanO
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Whole_plant_parts">
         <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#PlantParts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Wind_Settles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Wind_Settles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Diseases"/>
     </owl:NamedIndividual>
     
 
@@ -11500,6 +11661,14 @@ Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanO
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Mixed_as_cooking_ingredients,_dried,_boiled">
         <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ProcessingMethod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Musa_paradisiaca_var._sapientum_(L.)_Kunt. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Musa_paradisiaca_var._sapientum_(L.)_Kunt.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species"/>
     </owl:NamedIndividual>
     
 

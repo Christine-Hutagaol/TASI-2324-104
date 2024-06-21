@@ -42,6 +42,7 @@ public class ontologyModel {
                 regexBuilder.append("regex(str(?hasBenefits), '").append(keyword).append("', 'i') || ");
                 regexBuilder.append("regex(str(?hasEnglishName), '").append(keyword).append("', 'i') || ");
                 regexBuilder.append("regex(str(?hasLocalName), '").append(keyword).append("', 'i') || ");
+                regexBuilder.append("regex(str(?hasClass), '").append(keyword).append("', 'i') || ");
             }
             // Hapus karakter terakhir (||) dari ekspresi regex
             String regex = regexBuilder.substring(0, regexBuilder.length() - 4);
@@ -52,12 +53,14 @@ public class ontologyModel {
                     "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
                     "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
                     "PREFIX d: <http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#>\n" +
-                    "SELECT ?medicinalPlant ?treatDisease ?id ?hasBenefits ?hasEnglishName ?hasLocalName\n" +
+                    "SELECT ?medicinalPlant ?treatDisease ?id ?hasBenefits ?hasEnglishName ?hasLocalName ?hasImageURL ?hasClass\n" +
                     "WHERE { ?medicinalPlant d:hasId ?id;\n" +
                     "                 d:treatDisease ?treatDisease;\n" +
                     "                 d:hasBenefits ?hasBenefits;\n" +
                     "                 d:hasEnglishName ?hasEnglishName;\n" +
-                    "                 d:hasLocalName ?hasLocalName.\n" +
+                    "                 d:hasLocalName ?hasLocalName;\n" +
+                    "                 d:hasClass ?hasClass.\n" +
+                    "                 OPTIONAL { ?medicinalPlant d:hasImageURL ?hasImageURL }\n" +
                     "    FILTER(" + regex + ")\n" +
                     "}\n" +
                     "ORDER BY ASC(?treatDisease)";
@@ -79,6 +82,8 @@ public class ontologyModel {
                     obj.put("hasEnglishName", getStringValue(solution, "hasEnglishName"));
                     obj.put("hasLocalName", getStringValue(solution, "hasLocalName"));
                     obj.put("id", getStringValue(solution, "id"));
+                    obj.put("hasImageURL", getStringValue(solution, "hasImageURL"));
+                    obj.put("hasClass", getStringValue(solution, "hasClass"));
                     list.add(obj);
                 }
             }
@@ -613,7 +618,6 @@ public class ontologyModel {
         return list;
     }
     
-
     public List<JSONObject> searchByMethodName(String methodName) {
         List<JSONObject> list = new ArrayList<>();
         try {
@@ -785,7 +789,6 @@ public class ontologyModel {
         return list;
     }
     
-
     private String getStringValue(QuerySolution solution, String variable) {
         RDFNode node = solution.get(variable);
         return node != null ? node.toString() : "Unknown";
@@ -802,6 +805,5 @@ public class ontologyModel {
         // Menyorot kata kunci dalam teks
         return text.replaceAll("(?i)(" + keyword + ")", "<span style='background-color: yellow'>$1</span>");
     }
-    
     
 }

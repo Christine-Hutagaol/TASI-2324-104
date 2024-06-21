@@ -18,121 +18,87 @@
 
     <!-- Custom styles -->
     <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
+        /* Font family */
         body {
-            margin: 0;
-            padding: 0;
-            background-color: #F5FFF4;
+            font-family: Arial, sans-serif;
         }
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #F5FFF4;
+        /* Navigation bar */
+        .navbar {
+            background-color: #333;
+            padding: 1rem;
             display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        main {
-            flex: 1;
-        }
-        /* New style for overlay */
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity as needed */
+            justify-content: space-between;
+            align-items: center;
         }
 
-        /* Styles for cards */
-        .card {
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-            background-color: white;
-            transition: transform 0.2s; /* Animation */
-            text-decoration: none; /* Remove underline from links */
-            color: inherit; /* Inherit color from parent */
-        }
-
-        .card:hover {
-            transform: scale(1.05); /* Zoom effect on hover */
-        }
-
-        .card-header {
+        .navbar-brand {
+            font-size: 1.5rem;
             font-weight: bold;
-            font-size: 1.2em;
+            color: #fff;
         }
 
-        .card-body {
-            margin-top: 10px;
+        .navbar-toggler {
+            border: none;
+            padding: 0;
+            font-size: 1.5rem;
+            cursor: pointer;
         }
 
-        /* Additional styles for shadow */
-        .white-bg {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
-        }
-
-        .medicinal-content {
-            width: 100%; /* Set width to 100% */
-            margin: 0 auto; /* Center the table */
-            padding: 20px; /* Add padding to make the container wider */
-        }
-
-        table {
-            width: auto; /* Make the table width auto to adjust to content */
-            border-collapse: collapse; /* Menyatukan batas sel untuk garis yang konsisten */
-            border: 1px solid #000;
-        }
-
-        /* New style for attribute background */
-        .attribute-background {
-            background-color: #D0F0C0; /* Light yellow background color */
-            border: 1px solid #000; /* Tambahkan garis tepi pada sel */
-            padding: 8px; /* Tambahkan jarak antara teks dan batas sel */
+        /* Main content area */
+        .container-fluid {
+            padding: 2rem;
+            /* Remove max-width to make it full width */
         }
 
         .main-heading {
-            text-align: center;
             font-size: 2rem;
-            margin-top: 20px;
-            margin-bottom: 20px;
             font-weight: bold;
+            margin-bottom: 1rem;
         }
 
-        .attribute-background {
-            background-color: #D0F0C0;
-            border: 1px solid #000; /* Tambahkan garis tepi pada sel */
-            padding: 8px; /* Tambahkan jarak antara teks dan batas sel */
+        /* Table design */
+        .table {
+            border-collapse: collapse;
+            width: 100%;
         }
-        /* Custom CSS to shift the table to the right */
-        .shift-right {
-            margin-left: 130px;
-            margin-right: 0;
-        }
-        
-        
 
-        
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #f0f0f0;
+        }
+
+        /* Wikipedia and Wikidata extract sections */
+        #wikipedia-extract, #wikidata-extract {
+            padding: 1rem;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        /* Image container */
+        #image-container {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        #image-container img {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container-fluid {
+                padding: 1rem;
+            }
+        }
         
     </style>
 </head>
@@ -147,77 +113,60 @@
                 aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <!-- Form pencarian -->
-            <form class="form-inline my-2 my-lg-0 ml-auto" action="/medicinal/id/" method="GET">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="keyword">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
     </nav>
-    
-    <!-- Main heading -->
-    <h1 class="main-heading">Detail Medicinal Plant</h1>
 
-    <main role="main" class="container-fluid"> <!-- Changed to container-fluid for full width -->
-        <div class="row justify-content-center side-by-side" style="margin-bottom: 40px;">
-            <div class="col-md-5 medicinal-content white-bg shift-right">
-                <h2>Name</h2>
-                <table class="table table-bordered" rules="all">
-                    <tbody id="detail-medicinal"></tbody>
-                    <colgroup>
-                        <col style="width: 20%;">
-                        <col style="width: 100%;">
-                    </colgroup>
-                </table>
-            </div>            
-            <div class="col-md-4 medicinal-content white-bg"> <!-- Add white-bg class -->
+    <!-- Main content area -->
+    <main role="main" class="container-fluid">
+        <h1 class="main-heading">Detail Medicinal Plant</h1>
+
+        <div class="row justify-content-center">
+            <div class="col-md-4">
                 <div id="image-container">
                     <!-- Image will be appended here -->
                 </div>
+                <h2 id="plant-name"></h2>
+                <p id="plant-description"></p>
             </div>
-        </div>       
-        <div class="row justify-content-center" style="margin-bottom: 40px;">
-            <div class="col-md-10">
-                <div class="medicinal-content white-bg"> <!-- Add white-bg class -->
-                    <h2>Another Information</h2>
-                    <table class="table table-bordered" rules="all" border="1" style="table-layout: fixed;"> <!-- Add style="table-layout: fixed;" -->
-                        <colgroup> <!-- Tambahkan elemen colgroup untuk menentukan lebar kolom -->
-                            <col style="width: 20%;"> <!-- Tentukan lebar kolom secara proporsional -->
-                            <col style="width: 80%;">
-                        </colgroup>
-                        <tbody id="another"></tbody>
-                    </table>
-                </div>
-            </div>
-        </div>    
-        
-        <div class="row justify-content-center" style="margin-bottom: 40px;">
-            <div class="col-md-10">
-                <div class="medicinal-content white-bg"> <!-- Add white-bg class -->
-                    <h2>Taxonomy</h2>
-                    <table class="table table-bordered" rules="all" border="1" style="table-layout: fixed;"> <!-- Add style="table-layout: fixed;" -->
-                        <colgroup> <!-- Tambahkan elemen colgroup untuk menentukan lebar kolom -->
-                            <col style="width: 20%;"> <!-- Tentukan lebar kolom secara proporsional -->
-                            <col style="width: 80%;">
-                        </colgroup>
-                        <tbody id="taxonomy"></tbody>
-                    </table>
-                </div>
+            <div class="col-md-5">
+                <h2>Details</h2>
+                <table class="table table-bordered">
+                    <tbody id="detail-medicinal"></tbody>
+                </table>
+                <!-- Wikipedia and Wikidata Extract -->
+                <div id="wikipedia-extract"></div>
+                <div id="wikidata-extract"></div>
             </div>
         </div>
-        
+
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <h2>Another Information</h2>
+                <table class="table table-bordered">
+                    <tbody id="another"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <h2>Taxonomy</h2>
+                <table class="table table-bordered">
+                    <tbody id="taxonomy"></tbody>
+                </table>
+            </div>
+        </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script>
         jQuery(document).ready(function () {
             getProducts();
+        
             function getProducts() {
                 var full_url = document.URL;
                 var url_array = full_url.split('/');
                 var last_segment = url_array[url_array.length - 1];
-            
+        
                 jQuery.ajax({
                     type: "GET",
                     url: "http://localhost:8080/medicinal/byId/" + last_segment,
@@ -242,7 +191,7 @@
                                 hasSpecies: new Set(),
                                 hasImageURL: ""
                             };
-                            
+        
                             response.forEach((data, index) => {
                                 if (index === 0) {
                                     combinedData.medicinalPlant = data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf('#') + 1).replace(/_/g, ' ');
@@ -264,48 +213,173 @@
                                 combinedData.hasOrder.add(data.hasOrder.substring(data.hasOrder.lastIndexOf('#') + 1).replace(/_/g, ' '));
                                 combinedData.hasSpecies.add(data.hasSpecies.substring(data.hasSpecies.lastIndexOf('#') + 1).replace(/_/g, ' '));
                             });
-                            
+        
+                            // Append data to detail-medicinal table
                             jQuery("#detail-medicinal").append(
                                 "<tr><th class='attribute-background'>Medicinal Plant</th><td>" + combinedData.medicinalPlant + "</td></tr>" +
                                 "<tr><th class='attribute-background'>English Name</th><td>" + combinedData.hasEnglishName + "</td></tr>" +
                                 "<tr><th class='attribute-background'>Local Name</th><td>" + combinedData.hasLocalName + "</td></tr>"
                             );
-
+        
+                            // Append data to another information table
                             jQuery("#another").append(
-                                "<tr><th class='attribute-background'>Disease</th><td>" + Array.from(combinedData.treatDisease).map(disease => "<a href='/disease.html?disease=" +disease + "'>" + disease + "</a>").join(', ') + "</td></tr>" +
-                                "<tr><th class='attribute-background'>Part</th><td>" + Array.from(combinedData.utilizingParts).map(part => "<a href='/part.html?part=" + part + "'>" + part + "</a>").join(', ') + "</td></tr>" +
-                                "<tr><th class='attribute-background'>Processing Method</th><td>" + Array.from(combinedData.managedBy).map(method => "<a href='/method.html?method=" + method + "'>" + method + "</a>").join(', ') + "</td></tr>" +
-                                "<tr><th class='attribute-background'>Active Compounds</th><td>" + Array.from(combinedData.containsActiveCompounds).map(compounds => "<a href='/compounds.html?compounds=" + compounds + "'>" + compounds + "</a>").join(', ') + "</td></tr>" +
-                                "<tr><th class='attribute-background'>Used By Means Of</th><td>" + Array.from(combinedData.usedByMeansOf).map(use => "<a href='/use.html?use=" + use + "'>" + use + "</a>").join(', ') + "</td></tr>" +
+                                "<tr><th class='attribute-background'>Disease</th><td>" + Array.from(combinedData.treatDisease).map(disease => "<a href='/disease.html?disease=" + encodeURIComponent(disease) + "'>" + disease + "</a>").join(', ') + "</td></tr>" +
+                                "<tr><th class='attribute-background'>Part</th><td>" + Array.from(combinedData.utilizingParts).map(part => "<a href='/part.html?part=" + encodeURIComponent(part) + "'>" + part + "</a>").join(', ') + "</td></tr>" +
+                                "<tr><th class='attribute-background'>Processing Method</th><td>" + Array.from(combinedData.managedBy).map(method => "<a href='/method.html?method=" + encodeURIComponent(method) + "'>" + method + "</a>").join(', ') + "</td></tr>" +
+                                "<tr><th class='attribute-background'>Active Compounds</th><td>" + Array.from(combinedData.containsActiveCompounds).map(compound => compound === '-' ? compound : "<a href='/compounds.html?compounds=" + encodeURIComponent(compound) + "'>" + compound + "</a>").join(', ') + "</td></tr>" +
+                                "<tr><th class='attribute-background'>Used By Means Of</th><td>" + Array.from(combinedData.usedByMeansOf).map(use => "<a href='/use.html?use=" + encodeURIComponent(use) + "'>" + use + "</a>").join(', ') + "</td></tr>" +
                                 "<tr><th class='attribute-background'>Benefit</th><td>" + combinedData.hasBenefits + "</td></tr>" +
                                 "<tr><th class='attribute-background'>Side Effect</th><td>" + combinedData.hasSideEffect + "</td></tr>"
                             );
-
+        
+                            // Append data to taxonomy table
                             jQuery("#taxonomy").append(
-                                "<tr><th class='attribute-background'>Class</th><td><a href='/class.html?class=" + Array.from(combinedData.hasClass).join(',') + "'>" + Array.from(combinedData.hasClass).join(', ') + "</a></td></tr>" +
-                                "<tr><th class='attribute-background'>Division</th><td><a href='/division.html?division=" + Array.from(combinedData.hasDivisions).join(', ') + "'>" + Array.from(combinedData.hasDivisions).join(', ') + "</a></td></tr>" +
-                                "<tr><th class='attribute-background'>Family</th><td><a href='/family.html?family=" + Array.from(combinedData.hasFamily).join(', ') + "'>" + Array.from(combinedData.hasFamily).join(', ') + "</a></td></tr>" +
-                                "<tr><th class='attribute-background'>Genus</th><td><a href='/genus.html?genus=" + Array.from(combinedData.hasGenus).join(', ') + "'>" + Array.from(combinedData.hasGenus).join(', ') + "</a></td></tr>" +
-                                "<tr><th class='attribute-background'>Order</th><td><a href='/order.html?order=" + Array.from(combinedData.hasOrder).join(', ') + "'>" + Array.from(combinedData.hasOrder).join(', ') + "</a></td></tr>" +
-                                "<tr><th class='attribute-background'>Species</th><td><a href='/species.html?species=" + Array.from(combinedData.hasSpecies).join(', ') + "'>" + Array.from(combinedData.hasSpecies).join(', ') + "</a></td></tr>" 
+                                "<tr><th class='attribute-background'>Class</th><td><a href='/class.html?class=" + Array.from(combinedData.hasClass).map(cls => encodeURIComponent(cls)).join(',') + "'>" + Array.from(combinedData.hasClass).join(', ') + "</a></td></tr>" +
+                                "<tr><th class='attribute-background'>Division</th><td><a href='/division.html?division=" + Array.from(combinedData.hasDivisions).map(div => encodeURIComponent(div)).join(',') + "'>" + Array.from(combinedData.hasDivisions).join(', ') + "</a></td></tr>" +
+                                "<tr><th class='attribute-background'>Family</th><td><a href='/family.html?family=" + Array.from(combinedData.hasFamily).map(fam => encodeURIComponent(fam)).join(',') + "'>" + Array.from(combinedData.hasFamily).join(', ') + "</a></td></tr>" +
+                                "<tr><th class='attribute-background'>Genus</th><td><a href='/genus.html?genus=" + Array.from(combinedData.hasGenus).map(gen => encodeURIComponent(gen)).join(',') + "'>" + Array.from(combinedData.hasGenus).join(', ') + "</a></td></tr>" +
+                                "<tr><th class='attribute-background'>Order</th><td><a href='/order.html?order=" + Array.from(combinedData.hasOrder).map(ord => encodeURIComponent(ord)).join(',') + "'>" + Array.from(combinedData.hasOrder).join(', ') + "</a></td></tr>" +
+                                "<tr><th class='attribute-background'>Species</th><td><a href='/species.html?species=" + Array.from(combinedData.hasSpecies).map(spec => encodeURIComponent(spec)).join(',') + "'>" + Array.from(combinedData.hasSpecies).join(', ') + "</a></td></tr>"
                             );
-                            
-
-                            // Append the image
-                            jQuery("#image-container").append(
-                                "<img src='" + combinedData.hasImageURL + "' alt='" + combinedData.medicinalPlant + "' style='max-width: 100%;'>"
-                            );
+        
+                            // Append image to image-container
+                            if (combinedData.hasImageURL) {
+                                jQuery("#image-container").append(
+                                    "<img src='" + combinedData.hasImageURL + "' alt='" + combinedData.medicinalPlant + "'>"
+                                );
+                            }
+        
+                            // Get Wikipedia extract
+                            getWikipediaResults(combinedData.medicinalPlant, Array.from(combinedData.hasSpecies));
+        
+                            // Get Wikidata extract
+                            getWikidataResults(combinedData.medicinalPlant);
+                        }
+                    }
+                });
+            }
+        
+            function getWikipediaResults(medicinalPlant, speciesArray) {
+                const wikipediaURL = "https://en.wikipedia.org/api/rest_v1/page/summary/";
+                const fallbackURL = wikipediaURL + encodeURIComponent(speciesArray[0]);  // Use the first species name as fallback
+            
+                // AJAX request to get the summary from Wikipedia based on medicinal plant name
+                jQuery.ajax({
+                    url: wikipediaURL + encodeURIComponent(medicinalPlant),
+                    method: "GET",
+                    success: function (response) {
+                        if (response.extract) {
+                            // Display Wikipedia extract if available
+                            jQuery("#wikipedia-extract").html("<p>" + response.extract + "</p>");
+                            // Fetch related articles
+                            getRelatedWikipediaArticles(medicinalPlant);
                         } else {
-                            console.error("Response format is incorrect or empty.");
+                            // If no extract for medicinal plant name, try with species name
+                            fallbackToSpecies();
                         }
                     },
-                    error: function (error) {
-                        console.error("Error fetching data:", error);
+                    error: function () {
+                        // If there is an error, try with species name
+                        fallbackToSpecies();
+                    }
+                });
+            
+                function fallbackToSpecies() {
+                    // AJAX request to get the summary from Wikipedia based on species name
+                    jQuery.ajax({
+                        url: fallbackURL,
+                        method: "GET",
+                        success: function (fallbackResponse) {
+                            if (fallbackResponse.extract) {
+                                // Display Wikipedia extract for species if available
+                                jQuery("#wikipedia-extract").html("<p>" + fallbackResponse.extract + "</p>");
+                                // Fetch related articles
+                                getRelatedWikipediaArticles(speciesArray[0]);
+                            } else {
+                                // If no extract for species name, display no information message
+                                displayNoInformationMessage();
+                            }
+                        },
+                        error: function () {
+                            // If there is an error with species name, display no information message
+                            displayNoInformationMessage();
+                        }
+                    });
+                }
+            
+                function displayNoInformationMessage() {
+                    // Display message that no information was found
+                    jQuery("#wikipedia-extract").html("<p>No information found for this plant.</p>");
+                }
+            }
+            
+            function getRelatedWikipediaArticles(medicinalPlantName) {
+                // URL for Wikipedia search API
+                var searchUrl = "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=" + encodeURIComponent(medicinalPlantName);
+            
+                // AJAX request to fetch related articles
+                jQuery.ajax({
+                    type: "GET",
+                    url: searchUrl,
+                    contentType: "application/json; charset=utf-8",
+                    async: false,
+                    dataType: "jsonp",
+                    success: function (data, textStatus, jqXHR) {
+                        var searchResults = data.query.search;
+                        if (searchResults && searchResults.length > 0) {
+                            // Append related articles to #wikipedia-extract div
+                            jQuery("#wikipedia-extract").append("<h5>Related Articles:</h>");
+                            searchResults.forEach(function (result) {
+                                if (/plant|herb|species|flora|botany|disease|taxonomy/.test(result.snippet.toLowerCase())) {
+                                    jQuery("#wikipedia-extract").append(
+                                        "<p><a href='https://en.wikipedia.org/wiki/" + encodeURIComponent(result.title.replace(/ /g, '_')) + "'>" + result.title + "</a></p>"
+                                    );
+                                }
+                            });
+                        } else {
+                            console.error("No related articles found in Wikipedia search API response.");
+                        }
+                    },
+                    error: function (errorMessage) {
+                        console.error("Error fetching related Wikipedia articles:", errorMessage);
+                    }
+                });
+            }
+            
+          function getWikidataResults(medicinalPlantName) {
+                // URL for Wikidata API
+                var wikidataUrl = "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=" + encodeURIComponent(medicinalPlantName) + "&language=en&format=json";
+    
+                // AJAX request to fetch data from Wikidata
+                jQuery.ajax({
+                    type: "GET",
+                    url: wikidataUrl,
+                    contentType: "application/json; charset=utf-8",
+                    async: false,
+                    dataType: "jsonp",
+                    success: function (data, textStatus, jqXHR) {
+                        if (data.search && data.search.length > 0) {
+                            var result = data.search[0];
+                            var description = result.description ? result.description : "No description available.";
+                            var wikidataUrl = "https://www.wikidata.org/wiki/" + result.id;
+    
+                            // Append Wikidata extract to #wikidata-extract div
+                            jQuery("#wikidata-extract").append(
+                                "<p><strong>Wikidata Entry:</strong> <a href='" + wikidataUrl + "'>" + result.label + "</a></p>" +
+                                "<p><strong>Description:</strong> " + description + "</p>"
+                            );
+                        } else {
+                            console.error("No results found in Wikidata API response.");
+                        }
+                    },
+                    error: function (errorMessage) {
+                        console.error("Error fetching Wikidata data:", errorMessage);
                     }
                 });
             }
         });
-    </script>
+        </script>    
+
     <!-- Copyright section -->
     <footer class="text-center mt-4">
         <p>Copyright © TASI-2324-104. All Rights Reserved.</p>

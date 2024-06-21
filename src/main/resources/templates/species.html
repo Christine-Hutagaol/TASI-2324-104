@@ -1,137 +1,193 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
     <title>Toba Medicinal Plant</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/starter-template/">
+
     <!-- Bootstrap core CSS -->
-    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" media="screen"/>
+    <link th:href="@{css/bootstrap.css}" rel="stylesheet" media="screen"/>
+
     <!-- Favicons -->
     <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#563d7c">
+
+    <!-- Custom styles -->
     <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            width: 100%; /* Set width to fill the container */
-            height: auto; /* Maintain aspect ratio */
-        }
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
+        /* Font family */
         body {
-            margin: 0;
-            padding: 0;
-            background-color: #F5FFF4;
+            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
+            min-height: 100vh; /* Ensure full height of viewport */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            position: relative; /* Positioning context for footer */
         }
-        main {
-            flex: 1;
+
+        /* Navigation bar */
+        .navbar {
+            background-color: #333;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        /* New style for overlay */
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .navbar-toggler {
+            border: none;
+            padding: 0;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Table styles */
+        .table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .table th,
+        .table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #f8f9fa;
+        }
+
+        /* Additional styles */
+        .starter-template {
+            flex: 1; /* Take remaining vertical space */
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
         .overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity as needed */
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Footer styles */
+        footer {
+            padding: 1rem;
+            background-color: #f8f9fa; /* Light background */
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+
+        /* Set main container to fill remaining space */
+        main {
+            flex: 1;
         }
     </style>
     <!-- Custom styles for this template -->
     <link th:href="@{/css/starter-template.css}" rel="stylesheet" media="screen"/>
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="/medicinal">
-        <img th:src="@{/res/player/Tanaman.png}" alt="Toba Medicinal Plant" width="80" height="30" class="d-inline-block align-top">
-        Toba Medicinal Plant
-    </a>  
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    </div>
-</nav>
-<main role="main" class="container">
-    <div class="starter-template">
-        <h1>Medicinal Plants in Species: <span id="speciesName"></span></h1>
-        <table class='table'>
-            <thead>
-            <tr>
-                <th>Nomor</th>
-                <th>Name</th>
-            </tr>
-            </thead>
-            <tbody id="product-list">
-            </tbody>
-        </table>
-    </div>
-</main>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script th:src="@{/css/bootstrap.js}"></script>
-<script>
-    // Function to get products by species
-    function getProductsBySpecies(speciesName) {
-        var uniquePlants = {}; // Object to track unique plants
-        $.ajax({
-            type: "GET",
-            url: "http://localhost:8080/query/species/" + speciesName,
-            success: function(response) {
-                var i = 1;
-                $("#product-list").empty();
-                response.forEach(function(data) {
-                    // Check if the plant is already in the uniquePlants object
-                    if (!uniquePlants[data.id]) {
-                        // Add the plant to the uniquePlants object
-                        uniquePlants[data.id] = true;
-                        // Display data in table rows
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="/medicinal">
+            <img th:src="@{/res/player/Tanaman.png}" alt="Toba Medicinal Plant" width="80" height="30" class="d-inline-block align-top">
+            Toba Medicinal Plant
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        </div>
+    </nav>
+    <main role="main" class="container">
+        <div class="starter-template">
+            <h1>Medicinal Plants in Species: <span id="speciesName"></span></h1>
+            <div class="table-responsive">
+                <table class='table table-bordered'>
+                    <thead class="thead-light">
+                    <tr>
+                        <th scope="col" class="small-col">Nomor</th>
+                        <th scope="col">Indonesian Name</th>
+                        <th scope="col">English Name</th>
+                        <th scope="col">Local Name</th>
+                    </tr>
+                    </thead>
+                    <tbody id="product-list">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Copyright section -->
+    <footer class="text-center mt-4">
+        <p>Copyright © TASI-2324-104. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script th:src="@{/js/bootstrap.js}"></script>
+    <script>
+        // Function to get products by species
+        function getProductsBySpecies(speciesName) {
+            $.ajax({
+                type: "GET",
+                url: "http://localhost:8080/query/species/" + speciesName + "?species=" + speciesName,
+                success: function(response) {
+                    var i = 1;
+                    var addedPlants = {}; // Object to track added plants
+                    $("#product-list").empty();
+                    response.forEach(function(data) {
                         var name = data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf("#") + 1);
-                        $("#product-list").append(
-                            "<tr>" +
-                            "<td>" + i + "</td>" +
-                            "<td><a href='/medicinal/id/" + data.id + "'>" + name + "</a></td>" +
-                            "</tr>"
-                        );
-                        i++;
-                    }
-                });
-            },
-            error: function(xhr, status, error) {
-                console.error(xhr.responseText);
+                        if (!addedPlants[name]) { // Check if the plant name is not already added
+                            addedPlants[name] = true; // Mark this plant as added
+                            $("#product-list").append(
+                                "<tr>" +
+                                "<td>" + i + "</td>" +
+                                "<td><a href='/medicinal/id/" + data.id + "'>" + name + "</a></td>" +
+                                "<td><a href='/medicinal/id/" + data.id + "'>" + data.hasEnglishName + "</a></td>" +
+                                "<td><a href='/medicinal/id/" + data.id + "'>" + data.hasLocalName + "</a></td>" +                        
+                                "</tr>"
+                            );
+                            i++;
+                        }
+                    });
+                },
+                error: function(xhr, status, error) {
+                    console.error(xhr.responseText);
+                }
+            });
+        }
+
+        // Get species name from URL and load products
+        $(document).ready(function() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var speciesName = urlParams.get('species');
+            if (speciesName) {
+                $("#speciesName").text(speciesName);
+                getProductsBySpecies(speciesName);
             }
         });
-    }
-
-    // Get species name from URL and load products
-    $(document).ready(function() {
-        var urlParams = new URLSearchParams(window.location.search);
-        var speciesName = urlParams.get('species');
-        if (speciesName) {
-            $("#speciesName").text(speciesName);
-            getProductsBySpecies(speciesName);
-        }
-    });
-</script>
-        <!-- Bootstrap JS -->
-        <script th:src="@{css/bootstrap.js}"></script>
-
-        <!-- Copyright section -->
-        <footer class="text-center mt-4">
-            <p>Copyright © TASI-2324-104. All Rights Reserved.</p>
-        </footer>
+    </script>
 </body>
 </html>

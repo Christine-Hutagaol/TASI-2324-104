@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en-US">
 <head>
     <!-- Meta tags -->
     <meta charset="utf-8">
@@ -10,29 +10,16 @@
     <title>Toba Medicinal Plant</title>
 
     <!-- Bootstrap core CSS -->
-    <link th:href="@{css/bootstrap.css}" rel="stylesheet" media="screen"/>
-
-    <!-- Favicons -->
-    <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#563d7c">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- Custom styles -->
     <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            width: 100%;
-            height: auto;
-        }
-
+        /* Global styles */
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #F5FFF4;
+            background-color: #FFFFFF;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -40,14 +27,128 @@
 
         main {
             flex: 1;
+            padding: 20px;
         }
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
+        /* Navigation bar */
+        .navbar {
+            background-color: #333;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Welcome section */
+        .welcome-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+            color: #000000;
+            background-color: #FFFFFF;
+        }
+
+        .welcome-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .welcome-text {
+            max-width: 600px;
+        }
+
+        .welcome-text h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #000; /* Ubah warna teks menjadi hitam */
+        }
+
+        .welcome-text p {
+            font-size: 18px;
+            color: #000; /* Ubah warna teks menjadi hitam */
+        }
+
+        /* Search section */
+        .search-section {
+            margin-top: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .input-group-append {
+            width: 20%;
+        }
+
+        /* Product list */
+        #product-list {
+            margin-top: 30px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-header {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .card-body {
+            margin-top: 10px;
+        }
+
+        /* Wikipedia list */
+        #wikipedia-list {
+            margin-top: 30px;
+        }
+
+        .list-unstyled {
+            padding: 0;
+            list-style: none;
+        }
+
+        .media {
+            margin-bottom: 20px;
+        }
+
+        .media img {
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .media-body {
+            font-size: 18px;
+        }
+
+        /* Overlay */
         .overlay {
             position: fixed;
             top: 0;
@@ -67,93 +168,24 @@
         }
 
         .overlay-content {
-            background-color: white;
+            background-color: #fff;
             padding: 20px;
             border-radius: 5px;
             text-align: center;
         }
 
-        .card {
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-            background-color: white;
-            transition: transform 0.2s;
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-        }
-
-        .card-header {
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-
-        .card-body {
-            margin-top: 10px;
-        }
-
-        .welcome-section {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 50px 20px;
-            border-radius: 10px;
-            margin-top: 50px;
-            color: white;
-        }
-
-        .welcome-section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-right: 20px;
-        }
-
-        .welcome-text {
-            max-width: 600px;
-        }
-
-        .welcome-text h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: black; /* Menambahkan warna hitam */
-        }
-
-        .welcome-text p {
-            font-size: 1.2em;
-            color: black; /* Menambahkan warna hitam */
-        }
-
-        .search-section {
-            margin-top: 30px;
-            text-align: center;
-            margin-bottom: 30px; /* Tambahkan margin bawah agar terlihat jelas */
-        }
-
-        /* Tambahkan kelas untuk animasi slide */
+        /* Animations */
         @keyframes slideDown {
             0% {
                 transform: translateY(-100%);
             }
-            100% {
+            100%{
                 transform: translateY(0);
             }
         }
 
-        /* Atur tampilan list dan animasi slide */
-        #product-list {
+        #product-list, #wikipedia-list {
             animation: slideDown 0.5s ease-out;
-        }
-
-        .row.search-section {
-            margin-top: 30px;
-            text-align: center;
-            margin-bottom: 30px; /* Tambahkan margin bawah agar terlihat jelas */
         }
     </style>
 </head>
@@ -161,7 +193,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="/medicinal">
-            <img th:src="@{/res/player/Tanaman.png}" alt="Toba Medicinal Plant" width="80" height="30" class="d-inline-block align-top">
+            <img src="/res/player/Tanaman.png" alt="Toba Medicinal Plant" width="80" height="30" class="d-inline-block align-top">
             Toba Medicinal Plant
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
@@ -194,6 +226,12 @@
         <div id="product-list" class="row mt-3">
             <!-- Cards akan ditambahkan di sini -->
         </div>
+        <!-- List Wikipedia -->
+        <div id="wikipedia-list" class="row mt-3">
+            <ul class="list-unstyled w-100">
+                <!-- Wikipedia results will be appended here -->
+            </ul>
+        </div>
     </main>
 
     <!-- Overlay for error messages -->
@@ -203,16 +241,25 @@
         </div>
     </div>
 
-    <script        src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
     <script type="text/javascript">
         // Function to highlight keyword in text
         function highlightKeyword(text, keyword) {
             var keywords = keyword.split(' ');
             keywords.forEach(function(kw) {
-                var regex = new RegExp('('+kw+')', 'gi');
+                var regex = new RegExp('(' + escapeRegExp(kw) + ')', 'gi');
                 text = text.replace(regex, '<span style="background-color: yellow">$1</span>');
             });
             return text;
+        }
+
+        // Function to escape regular expression special characters
+        function escapeRegExp(str) {
+            return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
         }
 
         // Function to get products
@@ -230,7 +277,8 @@
                         var englishName = data.hasEnglishName.toLowerCase();
                         var medicinalPlant = data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf('#') + 1).replace(/_/g , ' ').toLowerCase();
                         var localName = data.hasLocalName.substring(data.hasLocalName.lastIndexOf('#') + 1).replace(/_/g , ' ').toLowerCase();
-                        
+                        var hasClass = data.hasClass.toLowerCase();
+
                         var treatDisease = '';
                         if (Array.isArray(data.treatDisease)) {
                             treatDisease = data.treatDisease.map(function(disease) {
@@ -242,7 +290,7 @@
 
                         var searchTerm = inp.toLowerCase();
                         var fullMatch = searchTerm.split(' ').every(function(term) {
-                            return englishName.includes(term) || medicinalPlant.includes(term) || localName.includes(term) || treatDisease.includes(term);
+                            return englishName.includes(term) || medicinalPlant.includes(term) || localName.includes(term) || treatDisease.includes(term) || hasClass.includes(term);
                         });
 
                         if (fullMatch && !processedPlants[data.id]) {
@@ -251,10 +299,14 @@
                             var highlightedMedicinalPlant = highlightKeyword(data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf('#') + 1).replace(/_/g , ' '), inp);
                             var highlightedLocalName = highlightKeyword(data.hasLocalName.substring(data.hasLocalName.lastIndexOf('#') + 1).replace(/_/g , ' '), inp);
                             var highlightedTreatDisease = highlightKeyword(treatDisease, inp);
+                            var highlightedClass = highlightKeyword(data.hasClass, inp);
+
+                            var imageUrl = data.hasImageURL || '/res/default-image.jpg'; // Jika tidak ada URL gambar, gunakan gambar default
 
                             $("#product-list").append(
                                 "<div class='col-md-4'>" +
                                 "<a href='/medicinal/id/" + data.id + "' class='card'>" +
+                                "<img src='" + imageUrl + "' alt='" + highlightedEnglishName + "' class='bd-placeholder-img'>" +
                                 "<div class='card-header'>" + highlightedEnglishName + "</div>" +
                                 "<div class='card-body'>" +
                                 "<p><strong>Indonesian Name:</strong> " + highlightedMedicinalPlant + "</p>" +
@@ -270,8 +322,72 @@
                     });
                     if (!found) {
                         showError("Plants not available");
+                    } else {
+                        getWikipediaResults(inp);
                     }
                 },
+                error: function () {
+                    showError("Failed to fetch plant data");
+                }
+            });
+        }
+
+        // Function to get Wikipedia results with images
+        function getWikipediaResults(query) {
+            var encodedQuery = encodeURIComponent(query);
+            var foodKeywords = ["food", "cuisine", "recipe", "dish", "meal", "ingredient"];
+            $.ajax({
+                type: "GET",
+                url: "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=" + encodedQuery + "&format=json&origin=*",
+                success: function (response) {
+                    $("#wikipedia-list ul").empty();
+                    response.query.search.forEach(function (result) {
+                        var title = result.title.toLowerCase();
+                        var snippet = result.snippet.toLowerCase();
+                        var pageUrl = "https://en.wikipedia.org/wiki/" + encodeURIComponent(result.title);
+
+                        var isFoodRelated = foodKeywords.some(function(keyword) {
+                            return title.includes(keyword) || snippet.includes(keyword);
+                        });
+
+                        if (!isFoodRelated) {
+                            // Request to get image
+                            $.ajax({
+                                type: "GET",
+                                url: "https://en.wikipedia.org/w/api.php?action=query&titles=" + encodeURIComponent(result.title) + "&prop=pageimages&format=json&pithumbsize=100&origin=*",
+                                success: function (imageResponse) {
+                                    var pages = imageResponse.query.pages;
+                                    var imageUrl = '';
+                                    for (var pageId in pages) {
+                                        if (pages[pageId].thumbnail) {
+                                            imageUrl = pages[pageId].thumbnail.source;
+                                        }
+                                    }
+
+                                    // Highlight keyword in snippet
+                                    var highlightedSnippet = highlightKeyword(result.snippet, query);
+
+                                    // Append result with image
+                                    $("#wikipedia-list ul").append(
+                                        "<li class='media my-4'>" +
+                                        (imageUrl ? "<img class='mr-3' src='" + imageUrl + "' alt='Image' width='100'>" : "") +
+                                        "<div class='media-body'>" +
+                                        "<h5 class='mt-0 mb-1'><a href='" + pageUrl + "'>" + highlightKeyword(result.title, query) + "</a></h5>" +
+                                        highlightedSnippet + "..." +
+                                        "</div>" +
+                                        "</li>"
+                                    );
+                                },
+                                error: function () {
+                                    showError("Failed to fetch image for " + result.title);
+                                }
+                            });
+                        }
+                    });
+                },
+                error: function () {
+                    showError("Failed to fetch Wikipedia results");
+                }
             });
         }
 
@@ -296,13 +412,5 @@
             return true;
         }
     </script>
-
-    <!-- Bootstrap JS -->
-    <script th:src="@{css/bootstrap.js}"></script>
-
-    <!-- Copyright section -->
-    <footer class="text-center mt-4">
-        <p>Copyright © 2024 TASI-2324-104. All Rights Reserved.</p>
-    </footer>
 </body>
 </html>
