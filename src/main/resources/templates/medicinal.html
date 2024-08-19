@@ -4,7 +4,7 @@
     <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Temukan berbagai tanaman obat khas Toba yang bermanfaat untuk kesehatan dan penyembuhan alami.">
+    <meta name="description" content="Discover various medicinal plants from Toba that are beneficial for health and natural healing.">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
     <title>Toba Medicinal Plant</title>
@@ -187,6 +187,42 @@
         #product-list, #wikipedia-list {
             animation: slideDown 0.5s ease-out;
         }
+
+        /* Overlay loading */
+        #loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            visibility: hidden;
+        }
+
+        #loading-overlay.visible {
+            visibility: visible;
+        }
+
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        /* Footer styles */
+        footer {
+            padding: 1rem;
+            background-color: #f8f9fa; /* Light background */
+            text-align: center;
+            margin-top: auto; /* Push to bottom */
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+
     </style>
 </head>
 <body>
@@ -234,6 +270,15 @@
         </div>
     </main>
 
+    <!-- Loading-->
+    <div id="loading-overlay" class="overlay">
+        <div class="overlay-content">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+    
     <!-- Overlay for error messages -->
     <div id="error-overlay" class="overlay">
         <div class="overlay-content" id="error-message">
@@ -262,80 +307,146 @@
             return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
         }
 
-        // Function to get products
         function getProducts() {
             var inp = document.getElementById('inputan').value.trim();
             var encodedInp = encodeURIComponent(inp);
+        
+            // Tampilkan overlay loading sebelum permintaan AJAX dimulai
+            $('#loading-overlay').addClass('visible');
+        
             $.ajax({
                 type: "GET",
                 url: "http://localhost:8080/query/" + encodedInp,
                 success: function (response) {
+                    // Sembunyikan overlay loading setelah mendapatkan respons
+                    $('#loading-overlay').removeClass('visible');
+        
                     var found = false;
                     var processedPlants = {};
-                    $("#product-list").empty();
+        
                     response.forEach(function (data) {
-                        var englishName = data.hasEnglishName.toLowerCase();
-                        var medicinalPlant = data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf('#') + 1).replace(/_/g , ' ').toLowerCase();
-                        var localName = data.hasLocalName.substring(data.hasLocalName.lastIndexOf('#') + 1).replace(/_/g , ' ').toLowerCase();
-                        var hasClass = data.hasClass.toLowerCase();
-
-                        var treatDisease = '';
-                        if (Array.isArray(data.treatDisease)) {
-                            treatDisease = data.treatDisease.map(function(disease) {
-                                return disease.substring(disease.lastIndexOf('#') + 1).replace(/_/g , ' ').toLowerCase();
-                            }).join(', ');
-                        } else {
-                            treatDisease = data.treatDisease.substring(data.treatDisease.lastIndexOf('#') + 1).replace(/_/g , ' ').toLowerCase();
+                        found = true;
+        
+                        // Memproses setiap nilai atribut untuk disimpan di dalam objek processedPlants
+                        var plantKey = data.hasEnglishName;
+                        if (!processedPlants.hasOwnProperty(plantKey)) {
+                            processedPlants[plantKey] = {
+                                medicinalPlant: new Set(),
+                                hasLocalName: new Set(),
+                                hasClass: new Set(),
+                                managedBy: new Set(),
+                                utilizingParts: new Set(),
+                                containsActiveCompounds: new Set(),
+                                usedByMeansOf: new Set(),
+                                hasSideEffect: new Set(),
+                                hasDivisions: new Set(),
+                                hasFamily: new Set(),
+                                hasGenus: new Set(),
+                                hasKingdom: new Set(),
+                                hasOrder: new Set(),
+                                hasSpecies: new Set(),
+                                treatDisease: new Set(),
+                                hasImageURL: data.hasImageURL,
+                                id: data.id
+                            };
                         }
-
-                        var searchTerm = inp.toLowerCase();
-                        var fullMatch = searchTerm.split(' ').every(function(term) {
-                            return englishName.includes(term) || medicinalPlant.includes(term) || localName.includes(term) || treatDisease.includes(term) || hasClass.includes(term);
-                        });
-
-                        if (fullMatch && !processedPlants[data.id]) {
-                            found = true;
-                            var highlightedEnglishName = highlightKeyword(data.hasEnglishName, inp);
-                            var highlightedMedicinalPlant = highlightKeyword(data.medicinalPlant.substring(data.medicinalPlant.lastIndexOf('#') + 1).replace(/_/g , ' '), inp);
-                            var highlightedLocalName = highlightKeyword(data.hasLocalName.substring(data.hasLocalName.lastIndexOf('#') + 1).replace(/_/g , ' '), inp);
-                            var highlightedTreatDisease = highlightKeyword(treatDisease, inp);
-                            var highlightedClass = highlightKeyword(data.hasClass, inp);
-
-                            var imageUrl = data.hasImageURL || '/res/default-image.jpg'; // Jika tidak ada URL gambar, gunakan gambar default
-
-                            $("#product-list").append(
-                                "<div class='col-md-4'>" +
-                                "<a href='/medicinal/id/" + data.id + "' class='card'>" +
-                                "<img src='" + imageUrl + "' alt='" + highlightedEnglishName + "' class='bd-placeholder-img'>" +
-                                "<div class='card-header'>" + highlightedEnglishName + "</div>" +
-                                "<div class='card-body'>" +
-                                "<p><strong>Indonesian Name:</strong> " + highlightedMedicinalPlant + "</p>" +
-                                "<p><strong>Local Name:</strong> " + highlightedLocalName + "</p>" +
-                                "<p><strong>Treat Disease:</strong> " + highlightedTreatDisease + "</p>" +
-                                "</div>" +
-                                "</a>" +
-                                "</div>"
-                            );
-
-                            processedPlants[data.id] = true;
+        
+                        // Memasukkan nilai ke dalam Set yang sesuai di dalam objek processedPlants
+                        function addToSetIfValid(set, value) {
+                            if (value && value.includes('#')) {
+                                set.add(value.substring(value.lastIndexOf('#') + 1).replace(/_/g, ' ').toLowerCase());
+                            }
                         }
+        
+                        addToSetIfValid(processedPlants[plantKey].medicinalPlant, data.medicinalPlant);
+                        addToSetIfValid(processedPlants[plantKey].hasLocalName, data.hasLocalName);
+                        addToSetIfValid(processedPlants[plantKey].hasClass, data.hasClass);
+                        addToSetIfValid(processedPlants[plantKey].managedBy, data.managedBy);
+                        addToSetIfValid(processedPlants[plantKey].utilizingParts, data.utilizingParts);
+                        addToSetIfValid(processedPlants[plantKey].containsActiveCompounds, data.containsActiveCompounds);
+                        addToSetIfValid(processedPlants[plantKey].usedByMeansOf, data.usedByMeansOf);
+                        addToSetIfValid(processedPlants[plantKey].hasSideEffect, data.hasSideEffect);
+                        addToSetIfValid(processedPlants[plantKey].hasDivisions, data.hasDivisions);
+                        addToSetIfValid(processedPlants[plantKey].hasFamily, data.hasFamily);
+                        addToSetIfValid(processedPlants[plantKey].hasGenus, data.hasGenus);
+                        addToSetIfValid(processedPlants[plantKey].hasKingdom, data.hasKingdom);
+                        addToSetIfValid(processedPlants[plantKey].hasOrder, data.hasOrder);
+                        addToSetIfValid(processedPlants[plantKey].hasSpecies, data.hasSpecies);
+                        addToSetIfValid(processedPlants[plantKey].treatDisease, data.treatDisease);
                     });
+        
+                    // Buat konten kartu dari nilai-nilai yang sudah diproses untuk setiap tanaman yang cocok
+                    var cardContent = '';
+                    Object.keys(processedPlants).forEach(function (plantKey) {
+                        var plant = processedPlants[plantKey];
+        
+                        cardContent += '<div class="col-md-4">';
+                        cardContent += '<a href="/medicinal/id/' + plant.id + '" class="card">';
+                        cardContent += '<div class="position-relative">';
+                        if (plant.hasImageURL) {
+                            cardContent += '<img src="' + plant.hasImageURL + '" class="card-img-top" alt="' + plantKey + '">';
+                        }
+                        cardContent += '<div class="card-title-overlap">';
+                        cardContent += '<h5 class="card-title" style="color: #00000; background-color: #e2e2e2; font-weight: bold; padding: 15px; border-radius: 5px;">' + highlightKeyword(plantKey, inp) + '</h5>';
+                        cardContent += '</div>'; // End of card-title-overlap
+                        cardContent += '</div>'; // End of position-relative
+                        cardContent += '<div class="card-body">';
+                        cardContent += '<ul class="list-unstyled">';
+                        cardContent += '<li><strong>English Name:</strong> ' + highlightKeyword(plantKey, inp) + '</li>';
+                        cardContent += '<li><strong>Indonesian Name:</strong> ' + highlightKeyword(Array.from(plant.medicinalPlant).join(', '), inp) + '</li>';
+                        cardContent += '<li><strong>Local Name:</strong> ' + highlightKeyword(Array.from(plant.hasLocalName).join(', '), inp) + '</li>';
+                        cardContent += '<li><strong>Class:</strong> ' + highlightKeyword(Array.from(plant.hasClass).join(', '), inp) + '</li>';
+                        cardContent += '<li><strong>Processing Method:</strong> ' + highlightKeyword(Array.from(plant.managedBy).join(', '), inp) + '</li>';
+                        cardContent += '<li><strong>Part:</strong> ' + highlightKeyword(Array.from(plant.utilizingParts).join(', '), inp) + '</li>';
+                        cardContent += '<li><strong>Active Compounds:</strong> ' + highlightKeyword(Array.from(plant.containsActiveCompounds).join(', '), inp) + '</li>';
+                        cardContent += '<li><strong>Used By Means Of:</strong> ' + highlightKeyword(Array.from(plant.usedByMeansOf).join(', '), inp) + '</li>';
+                        cardContent += '<li><strong>Side Effect:</strong> ' + highlightKeyword(Array.from(plant.hasSideEffect).join(', '), inp) + '</li>';
+                        cardContent += '<li><strong>Division:</strong> ' + highlightKeyword(Array.from(plant.hasDivisions).join(', '), inp) + '</li>';
+                        cardContent += '<li><strong>Family:</strong> ' + highlightKeyword(Array.from(plant.hasFamily).join(', '), inp) + '</li>';
+                        cardContent += '<li><strong>Genus:</strong> ' + highlightKeyword(Array.from(plant.hasGenus).join(', '), inp) + '</li>';
+                        cardContent += '<li><strong>Kingdom:</strong> ' + highlightKeyword(Array.from(plant.hasKingdom).join(', '), inp) + '</li>';
+                        cardContent += '<li><strong>Order:</strong> ' + highlightKeyword(Array.from(plant.hasOrder).join(', '), inp) + '</li>';
+                        cardContent += '<li><strong>Species:</strong> ' + highlightKeyword(Array.from(plant.hasSpecies).join(', '), inp) + '</li>';
+                        cardContent += '<li><strong>Treat Disease:</strong> ' + highlightKeyword(Array.from(plant.treatDisease).join(', '), inp) + '</li>';
+                        cardContent += '</ul>';
+                        cardContent += '</div></div>';
+                        cardContent += '</a></div>';
+                    });
+        
+                    // Menambahkan konten kartu ke dalam elemen product-list
+                    $("#product-list").empty().append(cardContent);
+        
+                    // Jika tidak ada tanaman yang ditemukan, tampilkan pesan error
                     if (!found) {
-                        showError("Plants not available");
+                        showError("No plants found with the given search criteria.");
                     } else {
                         getWikipediaResults(inp);
                     }
                 },
                 error: function () {
-                    showError("Failed to fetch plant data");
+                    // Sembunyikan overlay loading jika terjadi kesalahan
+                    $('#loading-overlay').removeClass('visible');
+                    showError("Failed to fetch plant data. Please try again later.");
                 }
             });
         }
+        
 
-        // Function to get Wikipedia results with images
+// Fungsi untuk menyorot kata kunci dalam teks
+function highlightKeyword(text, keyword) {
+    var pattern = new RegExp(keyword, "gi");
+    return text.replace(pattern, function(match) {
+        return '<span style="background-color: yellow;">' + match + '</span>';
+    });
+}
+
+
+
+
+        // Function to get Wikipedia results with images and related topics
         function getWikipediaResults(query) {
             var encodedQuery = encodeURIComponent(query);
-            var foodKeywords = ["food", "cuisine", "recipe", "dish", "meal", "ingredient"];
+            var plantKeywords = ["plant", "tanaman", "tumbuhan", "medicinal", "flora", "botany", "species", "disease", "taxonomy"]; // Keywords to filter out non-plant related Wikipedia results
             $.ajax({
                 type: "GET",
                 url: "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=" + encodedQuery + "&format=json&origin=*",
@@ -346,11 +457,11 @@
                         var snippet = result.snippet.toLowerCase();
                         var pageUrl = "https://en.wikipedia.org/wiki/" + encodeURIComponent(result.title);
 
-                        var isFoodRelated = foodKeywords.some(function(keyword) {
+                        var isPlantRelated = plantKeywords.some(function(keyword) {
                             return title.includes(keyword) || snippet.includes(keyword);
                         });
 
-                        if (!isFoodRelated) {
+                        if (isPlantRelated) {
                             // Request to get image
                             $.ajax({
                                 type: "GET",
@@ -412,5 +523,13 @@
             return true;
         }
     </script>
+
+        <!-- Bootstrap JS -->
+        <script th:src="@{css/bootstrap.js}"></script>
+
+        <!-- Copyright section -->
+        <footer>
+            <p>Copyright © 2024 TASI-2324-104. All Rights Reserved.</p>
+        </footer>
 </body>
 </html>

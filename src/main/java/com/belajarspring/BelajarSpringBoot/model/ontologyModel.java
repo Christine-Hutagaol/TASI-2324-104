@@ -43,28 +43,51 @@ public class ontologyModel {
                 regexBuilder.append("regex(str(?hasEnglishName), '").append(keyword).append("', 'i') || ");
                 regexBuilder.append("regex(str(?hasLocalName), '").append(keyword).append("', 'i') || ");
                 regexBuilder.append("regex(str(?hasClass), '").append(keyword).append("', 'i') || ");
+                regexBuilder.append("regex(str(?managedBy), '").append(keyword).append("', 'i') || ");
+                regexBuilder.append("regex(str(?utilizingParts), '").append(keyword).append("', 'i') || ");
+                regexBuilder.append("regex(str(?containsActiveCompounds), '").append(keyword).append("', 'i') || ");
+                regexBuilder.append("regex(str(?usedByMeansOf), '").append(keyword).append("', 'i') || ");
+                regexBuilder.append("regex(str(?hasSideEffect), '").append(keyword).append("', 'i') || ");
+                regexBuilder.append("regex(str(?hasDivisions), '").append(keyword).append("', 'i') || ");
+                regexBuilder.append("regex(str(?hasFamily), '").append(keyword).append("', 'i') || ");
+                regexBuilder.append("regex(str(?hasGenus), '").append(keyword).append("', 'i') || ");
+                regexBuilder.append("regex(str(?hasKingdom), '").append(keyword).append("', 'i') || ");
+                regexBuilder.append("regex(str(?hasOrder), '").append(keyword).append("', 'i') || ");
+                regexBuilder.append("regex(str(?hasSpecies), '").append(keyword).append("', 'i') || ");
             }
             // Hapus karakter terakhir (||) dari ekspresi regex
             String regex = regexBuilder.substring(0, regexBuilder.length() - 4);
     
             String sparql = "PREFIX http: <http://www.w3.org/2011/http#>\n" +
-                    "PREFIX dd: <http://example.org/dummydata/>\n" +
-                    "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
-                    "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
-                    "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
-                    "PREFIX d: <http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#>\n" +
-                    "SELECT ?medicinalPlant ?treatDisease ?id ?hasBenefits ?hasEnglishName ?hasLocalName ?hasImageURL ?hasClass\n" +
-                    "WHERE { ?medicinalPlant d:hasId ?id;\n" +
-                    "                 d:treatDisease ?treatDisease;\n" +
-                    "                 d:hasBenefits ?hasBenefits;\n" +
-                    "                 d:hasEnglishName ?hasEnglishName;\n" +
-                    "                 d:hasLocalName ?hasLocalName;\n" +
-                    "                 d:hasClass ?hasClass.\n" +
-                    "                 OPTIONAL { ?medicinalPlant d:hasImageURL ?hasImageURL }\n" +
-                    "    FILTER(" + regex + ")\n" +
-                    "}\n" +
-                    "ORDER BY ASC(?treatDisease)";
-    
+            "PREFIX dd: <http://example.org/dummydata/>\n" +
+            "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+            "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
+            "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
+            "PREFIX d: <http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#>\n" +
+            "SELECT ?medicinalPlant ?treatDisease ?id ?hasBenefits ?hasEnglishName ?hasLocalName ?hasImageURL ?hasClass ?managedBy ?utilizingParts ?containsActiveCompounds ?usedByMeansOf ?hasSideEffect ?hasDivisions ?hasFamily ?hasGenus ?hasKingdom ?hasOrder ?hasSpecies\n" +
+            "WHERE {\n" +
+            "    ?medicinalPlant d:hasId ?id;\n" +
+            "                     d:treatDisease ?treatDisease;\n" +
+            "                     d:hasBenefits ?hasBenefits;\n" +
+            "                     d:hasEnglishName ?hasEnglishName;\n" +
+            "                     d:hasLocalName ?hasLocalName;\n" +
+            "                     d:hasClass ?hasClass;\n" +
+            "                     d:managedBy ?managedBy;\n" +
+            "                     d:utilizingParts ?utilizingParts;\n" +
+            "                     d:containsActiveCompounds ?containsActiveCompounds;\n" +
+            "                     d:usedByMeansOf ?usedByMeansOf;\n" +
+            "                     d:hasSideEffect ?hasSideEffect;\n" +
+            "                     d:hasDivisions ?hasDivisions;\n" +
+            "                     d:hasFamily ?hasFamily;\n" +
+            "                     d:hasGenus ?hasGenus;\n" +
+            "                     d:hasKingdom ?hasKingdom;\n" +
+            "                     d:hasOrder ?hasOrder;\n" +
+            "                     d:hasSpecies ?hasSpecies.\n" +
+            "    OPTIONAL { ?medicinalPlant d:hasImageURL ?hasImageURL }\n" +
+            "    FILTER(" + regex + ")\n" +
+            "}\n" +
+            "ORDER BY ASC(?treatDisease)";
+
             System.out.println("Executing SPARQL query: \n" + sparql);
     
             Query query = QueryFactory.create(sparql);
@@ -84,6 +107,17 @@ public class ontologyModel {
                     obj.put("id", getStringValue(solution, "id"));
                     obj.put("hasImageURL", getStringValue(solution, "hasImageURL"));
                     obj.put("hasClass", getStringValue(solution, "hasClass"));
+                    obj.put("managedBy", getStringValue(solution, "managedBy"));
+                    obj.put("utilizingParts", getStringValue(solution, "utilizingParts"));
+                    obj.put("containsActiveCompounds", getStringValue(solution, "containsActiveCompounds"));
+                    obj.put("usedByMeansOf", getStringValue(solution, "usedByMeansOf"));
+                    obj.put("hasSideEffect", getStringValue(solution, "hasSideEffect"));
+                    obj.put("hasDivisions", getStringValue(solution, "hasDivisions"));
+                    obj.put("hasFamily", getStringValue(solution, "hasFamily"));
+                    obj.put("hasGenus", getStringValue(solution, "hasGenus"));
+                    obj.put("hasKingdom", getStringValue(solution, "hasKingdom"));
+                    obj.put("hasOrder", getStringValue(solution, "hasOrder"));
+                    obj.put("hasSpecies", getStringValue(solution, "hasSpecies"));
                     list.add(obj);
                 }
             }

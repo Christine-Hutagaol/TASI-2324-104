@@ -28,7 +28,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#utilizingParts"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#PlantParts"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ProcessingMethod"/>
     </owl:ObjectProperty>
     
 
@@ -268,7 +268,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#utilizingParts">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ProcessingMethod"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#PlantParts"/>
     </owl:ObjectProperty>
     
@@ -706,7 +706,7 @@
         <DataTanamanObat:hasBenefits>As a back pain remedy</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Cogon grass</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD050</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://jamupedia.com/wp-content/uploads/2020/05/Slide-post_alang.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGe0CDJz-lOeMi2ghNWHQLg2PgtFKuKlW7iA&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Ilalang/rih</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -891,7 +891,7 @@
         <DataTanamanObat:hasBenefits>Treat Cough</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Sichuan Pepper</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD001</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8hi3kXi1103Cdbx-WaOpWG-foT2r4oKXEnBneAmemJw3tECNF</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8hi3kXi1103Cdbx-WaOpWG-foT2r4oKXEnBneAmemJw3tECNF</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Andaliman</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -996,7 +996,7 @@
         <DataTanamanObat:hasBenefits>Increases appetite</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Litsea</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD058</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfaaySqW91kZxGz-miEXbBdf0OU0w0OZq2Cw&amp;s</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfaaySqW91kZxGz-miEXbBdf0OU0w0OZq2Cw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Antarasa</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -1048,7 +1048,7 @@
         <DataTanamanObat:hasBenefits>Treats malaise</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Acalypha indica</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD002</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://garden-tags-live.s3-accelerate.amazonaws.com/yannick_1439913758.jpeg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrfF01Qi3GyKytsoo_Jla7z3jTM0BZdqE24g&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Anting-anting</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes itching and redness all over the body</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -1398,7 +1398,7 @@
         <DataTanamanObat:hasBenefits>as a cooking ingredient to warm the body</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Tamarind</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD003</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://www.greeners.co/wp-content/uploads/2020/11/Asam-Gelugur-Tamanan-Berkhasiat-Khas-Melayu-2-min.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQTCm6YMw1z86NZ6tz6hgnFgdbVBoJ6dKYSA&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Asom galuhur</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes nausea</DataTanamanObat:hasSideEffect>
         <DataTanamanObat:hasSideEffect>Gastrointestinal discomfor</DataTanamanObat:hasSideEffect>
@@ -1580,7 +1580,7 @@
         <DataTanamanObat:hasBenefits>Relieves stomach pain / colds</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Bamboo</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD084</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://nurserynisarga.in/wp-content/uploads/2023/04/gg.webp</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5A8cyhF_5Py4a5Ou7aTm08MJbPp6o9VfbUg&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Bulu</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -1641,7 +1641,7 @@
         <DataTanamanObat:hasBenefits>Treat wounds</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Maile-hohono</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD004</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZamMC7GDI3y3-4lUBcpJO9Xq2MroPEO197D2_GJY2BL2GkwglE6ky-kKSgmzmipCQuVnnHawYxbGpgM9VF9IYM4fcveXW08n5ig05diE8Czl4udB7EDN1UYXssXi0XgHlwaqLfwwk5O8/s640/jatiluhuronline-daun-babadotan-sebagai-pestisida.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkJ68LpZ0SCVKHTqrPInwmYGH8ILZuJJFrRA&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Bebandotan</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Interferes with liver function (triggers liver disease and liver cancer)</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -1675,7 +1675,7 @@
         <DataTanamanObat:hasBenefits>Treating new labor wounds</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Country borage</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD046</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://portal.pemkomedan.go.id/images/news/img-20230117-wa0041-copy-576x384_1673955791.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXRXz5YALhT6JUE0hP34dv1RckGEiGBYTcdg&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Bangun-bangun</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -1739,7 +1739,7 @@
         <DataTanamanObat:hasBenefits>Relieve headaches</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Shallots</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD005</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://2.bp.blogspot.com/-MbmWBa1mjy8/WCxwmoXsh6I/AAAAAAAABKM/pGNqX1ofzwQuvZD2iN8s3RXWGJo646BNwCLcB/s1600/bawang%2Bmerah%2B501365.JPG</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6PNCmKWq7dSIPc7kGeFAZXTI9IIORnhHLwQ&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Baoang Rara</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes bad breath</DataTanamanObat:hasSideEffect>
         <DataTanamanObat:hasSideEffect>Causes nausea</DataTanamanObat:hasSideEffect>
@@ -1776,7 +1776,7 @@
         <DataTanamanObat:hasBenefits>Treats fever</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Garlic</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD006</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://awsimages.detik.net.id/community/media/visual/2023/06/26/harga-bawang-merah-putih-stabil-jelang-idul-adha-4_169.jpeg?w=1200</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKaTYnEE2UMfGPKO4frKHLhIRXQOUIQR0xlA&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Baoang Bontar</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes bad breath</DataTanamanObat:hasSideEffect>
         <DataTanamanObat:hasSideEffect>Causes skin irritation</DataTanamanObat:hasSideEffect>
@@ -1821,7 +1821,7 @@
         <DataTanamanObat:hasBenefits>Treat Cataracts, Treat Insomnia, Warming the body after childbirth</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Star Fruit</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD095</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPL7DZL2CXIYD9erS61g3rj8_fV885rx_DCg&amp;s</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPL7DZL2CXIYD9erS61g3rj8_fV885rx_DCg&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Balimbing</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -1858,7 +1858,7 @@
         <DataTanamanObat:hasBenefits>Lower Blood Pressure</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Parasitic mistletoe</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD052</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://radarutara.disway.id/upload/b477d8704a1a5d42df1c1352d5b3895e.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW6ZpcEoeekZVqkO1JpQ2lc7tbOvJB5N-EFw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Sarindan kopi</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -1885,7 +1885,7 @@
         <DataTanamanObat:hasBenefits>Treating hypertension</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Yam bean</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD044</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/587/2024/03/05/bengkuang-1897948169.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn4-lre0Zz1QfL2wxJDFO_kcqY84u5VRMQuw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Bangkuwang</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Flatulence, allergies</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -1913,7 +1913,7 @@
         <DataTanamanObat:hasBenefits>Stomach pain medicine</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Rice</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD082</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://asset.kompas.com/crops/k8ftJ5isFvQttCw2mR40u5lVzc4=/0x0:1000x667/750x500/data/photo/2024/02/23/65d89598cff5b.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIwd-ll1mGxaGQqJ9UbZm3biOunuq5YNZkrw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Boras</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -1948,7 +1948,7 @@
         <DataTanamanObat:hasBenefits>Heartleaf madeira vine</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasBenefits>Treating stomach acid</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasId>MD007</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Madeira_vine_%283372772764%29.jpg/330px-Madeira_vine_%283372772764%29.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8XzlzkWYtsgef66r6z2oXYyu3d-KFrnmnhA&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Binahung</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes allergies</DataTanamanObat:hasSideEffect>
         <DataTanamanObat:hasSideEffect>Causes nausea vomiting</DataTanamanObat:hasSideEffect>
@@ -2231,7 +2231,7 @@
         <DataTanamanObat:hasBenefits>Cleaning the eyes or treating eye pain or eye infections</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Kitolod flower</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD008</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiphFYiYnTXfWxlWMeN2UtXtpKjub2Pxm_yy13v4WF0b3ihGZt5vtBHoP_TEnqs28ZR3HvJbVr1eiArrBk3aqty1wD3RHkNhFHg8zCh_xywFL0Wn8fdAcPqfoloaDiYsY5bU4vKbLq80PKj86DAnsR_e4f0hk02orLs-QN9f4J5V896YkY5rJUvXdVK/s640/KITOLOT.JPEG</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2MUZPhJYn-xMP3gI0Whc2SFKqmIUx1t5kXA&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Bunga kitolot</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes blindness</DataTanamanObat:hasSideEffect>
         <DataTanamanObat:hasSideEffect>Causes dry eyes</DataTanamanObat:hasSideEffect>
@@ -2282,7 +2282,7 @@
         <DataTanamanObat:hasBenefits>Treating fever</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Chilli pepper</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD074</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://pasaiaceh.com/wp-content/uploads/2018/09/cabe-merah.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVJZeREAReU1AG_twHjtHTcsNc9Ymm-vGH7Q&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Sabe</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -2561,7 +2561,7 @@
         <DataTanamanObat:hasBenefits>Treating Cough, Treating headache, Treating beerudan, Treating chills after labor, Overcome Diarrhea</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Clove</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD100</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToroAQJs9sACD0VR1d_HfU7mqC5A-C9gNgaw&amp;s</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToroAQJs9sACD0VR1d_HfU7mqC5A-C9gNgaw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Lauang</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -2727,7 +2727,7 @@
         <DataTanamanObat:hasBenefits>As an asthma medicine, Treating Fever, Treating chickenpox, Treating scabies, As an antidote to poison</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Cutleaf groundcherry</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD073</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzdJLdSlpYX3eDd1ucc4Uj7QB493KS8hPQ1707rZCtZyeyq_fKiWKGQS18RB3tZt0GP0SY9dr5wC4KUJ0LwUiUaBv_CMCsXrOogYLs5pbMY3zz9hQyvHm6izwAisezJLuGlubROHS0xd8Y/s640/ciplukan.png</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK0z3SgcgrMIpb2nywLz3aMxy4nllJ4nxEpg&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Pultak-pultak</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -2860,7 +2860,7 @@
         <DataTanamanObat:hasBenefits>Treat Fever</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Tom thumb</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD060</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://static.promediateknologi.id/crop/0x0:999x658/0x0/webp/photo/p2/72/2023/12/02/crop-tanaman-hias-cocor-bebek-dan-fungsi-fungsi-kesehatannya-casa-indonesia-49-20201011122445bcrw1t-64bde9b64addee22b516d232-537345217.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuRnHGAvrE2e0uoDH5bJucd8W75Bu0naVvKQ&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Hapal-hapal</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Agitation while taking it</DataTanamanObat:hasSideEffect>
         <DataTanamanObat:hasSideEffect>Discomfort such as fatigue</DataTanamanObat:hasSideEffect>
@@ -3331,7 +3331,7 @@
         <DataTanamanObat:hasBenefits>Treating fever</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Tree cotton</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD056</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://t4.ftcdn.net/jpg/04/91/01/43/360_F_491014343_ek6fwbuZpWfpsbHZyt48kCvB3pUJbZv6.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW0QIq3yJecJ2FrDDOWuvhU8Xywtgj4Dta3Q&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Bulung ni hapas</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -3846,7 +3846,7 @@
         <DataTanamanObat:hasBenefits>Treats Menopause, Warms the body</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Eucalyptus</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD099</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://lh3.googleusercontent.com/LTewf1RkgXvyVs18ENYIvh-qYF9v1S-5gPMg4Hg_rbRk8K-t09s4dxHOUs0nQuVRwL9gx8S43hjTNRAgRAhBaqMbMsaObCZhzcfB=w1366-h768-rj</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW0QIq3yJecJ2FrDDOWuvhU8Xywtgj4Dta3Q&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Eucalyptus</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -4165,7 +4165,7 @@
         <DataTanamanObat:hasBenefits>Treating Shortness of Breath, Increase Stamina</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Vitis gracilis</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD069</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTCONSXzocWIK8KshoedpYxXEtpjRFMU9haGWlMQOkGZ6Md3YXDEnInJ_vZWcdeRwEdKY&amp;usqp=CAU</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTCONSXzocWIK8KshoedpYxXEtpjRFMU9haGWlMQOkGZ6Md3YXDEnInJ_vZWcdeRwEdKY&amp;usqp=CAU</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Gagatan Harimau</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -4239,7 +4239,7 @@
         <DataTanamanObat:hasBenefits>Treat Stroke, as a Cancer Medicine, Lower blood pressure, as a medicine for back pain, Treating Fever, Diarrhea Remedy, Treat nausea, Prevent cancer</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Gambier</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD063</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://foto.kontan.co.id/KFlGIzlWIwT2GqDSwTBKpa-N_fE=/smart/filters:format(webp)/2023/03/17/1556658846p.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRtnT2iP815T_gwaXBDuLkvJgBXDnQ77cvuw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Gambir</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -4265,7 +4265,7 @@
         <DataTanamanObat:hasBenefits>Relieves stomach pain, Cures colds</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Gendarussa</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD009</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://www.socfindoconservation.co.id/asset/plant/187-1-justicia-gendarussa.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-SSaH5EKPJaf4goJeW0BQgBVvzSdEhfuirg&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Sipilit</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes nausea to pusign (poisoning)</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -4484,7 +4484,7 @@
         <DataTanamanObat:hasBenefits>Treat Malaise</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Halosi</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD010</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://www.nparks.gov.sg/-/media/ffw/migrated/round2/flora/3312/a6690e0565e4474993abed25190e6da9.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVmsWHVhndcCGjndSWvsB-UAxJBiRiKtJ-ww&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Halosi</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -4688,7 +4688,7 @@
         <DataTanamanObat:hasBenefits>Treat mouth ulcers, Prevents fever, and Treats itching</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Rue</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD077</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://www.socfindoconservation.co.id/asset/plant/350-3-ruta-angustifolia.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjQSSkXqNSfWq6cz2llmQaAOKJrsep-QBSqA&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Inggu</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -4867,7 +4867,7 @@
         <DataTanamanObat:hasBenefits>Stomach pain medicine</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Corn</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD081</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR947lbngub5xS2VpcGoKfebtkXA3sskz3j-g&amp;s</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR947lbngub5xS2VpcGoKfebtkXA3sskz3j-g&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Jauk</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -4916,7 +4916,7 @@
         <DataTanamanObat:hasBenefits>Improves memory, Lowers blood sugar, Treat Fever, Treating sprains, Prevent cancer cells, Removing wind</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Ginger</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD068</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/06/27083019/Ketahui-Ini-Perbedaan-Jahe-Merah-dan-Jahe-Biasa.jpg.webp</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwdy3rxf8bBaxK0jnl8tqEjsLQL3XUfMDLBA&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Pege</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes nausea, diarrhea, heartburn and bloating</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -4946,7 +4946,7 @@
         <DataTanamanObat:hasBenefits>Treating postpartum chills, Treating bruises, Treating headaches, Treating coughs, Treating hives</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Red ginger</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD089</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://th.bing.com/th/id/R.7c9c0365a72e6da05a3a0dcc8d749a84?rik=v4SdnUz70y3Bxg&amp;riu=http%3a%2f%2f1.bp.blogspot.com%2f-KIwgBTo_9qo%2fU7gY1_3I93I%2fAAAAAAAAAFs%2fjyTvNIs5MsE%2fs1600%2fjahe%2bmerah.jpg&amp;ehk=TRZjlctzGoQqZnCRllajQY1BBqNsQC8QuJGK4IXNLCg%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR45OHs1dlFmBXSXfhbeWZisjMXwd_rCfMmUQ&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Pege rara</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -4997,7 +4997,7 @@
         <DataTanamanObat:hasBenefits>Treating hypertension, Caring for the skin, Overcoming watery semen, Treating toothache, Nurturing the fetus, Maintaining body stamina, Nourishes the fetus, Helps maintain body stamina, Gives a sweet taste</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Guava</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD096</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw_IuWXWmEK1N1zgE48Fr57N3S5hYPRQ_nGcfGGXqFE9U54eUNGcjObRJq-qw4Dw1HJfEwKf_8U_RAuRMdgVXRqYyKVPP4xmvq1LIW8bmRqEjvm3pHZe6yRJO1LFPuANnO2ihoe5g49XAe4HPQMWw2AcXI4CnMJq0_rZ0NONoWt2L4cp8VuGc93zkAFw/s520/ugaoo-plants-guava-tree-amrud-psidium-guajava-sardar-l49-grown-through-seeds-plant-16968910831756_520x520.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmHi4MPyZ-NuhaW-vGGnakSTqskXt9VV5YzQ&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Attajau</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -5051,7 +5051,7 @@
         <DataTanamanObat:hasBenefits>Treats fever</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Castor bean</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD040</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://apps.lucidcentral.org/plants_se_nsw/images/entities/ricinus_communis/ricinus_communis_calif_iharley.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST-DXGWWxaOwrEL8JZsLiD6kDUvpA69RKeWA&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Jarak</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes digestive system disorders</DataTanamanObat:hasSideEffect>
         <DataTanamanObat:hasSideEffect>Causes nausea</DataTanamanObat:hasSideEffect>
@@ -5106,7 +5106,7 @@
         <DataTanamanObat:hasBenefits>Overcoming flatulence</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Sweet flag</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD011</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://www.socfindoconservation.co.id/asset/plant/184-1-acorus-calamus.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYFKK-M98qirB-IzOSMxwAp8_qaGL0-Sd_WA&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Jerango</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes allergic reactions and skin reactions</DataTanamanObat:hasSideEffect>
         <DataTanamanObat:hasSideEffect>Causes xerostomia (dryness of the mouth)</DataTanamanObat:hasSideEffect>
@@ -5135,7 +5135,7 @@
         <DataTanamanObat:hasBenefits>Treating Cough, Treating tonsils, Toothache medicine, As a remedy for stomach pain</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Lime</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD090</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://asset.kompas.com/crops/u2DCLntRtHObpozvOK5P6Ta61-w=/100x67:900x601/750x500/data/photo/2023/08/15/64db835240e5a.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrZKbjt4bkosKIYba1j1aFvmAEozj2avrUfg&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Unte Asom</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes nausea, Vomiting, Dizziness and Headache</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -5179,7 +5179,7 @@
         <DataTanamanObat:hasBenefits>Fertilizes hair, Treat Malaise</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Caffir lime</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD78</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://umsu.ac.id/health/wp-content/uploads/2024/04/bentuk-keriput-ini-manfaat-jeruk-purut-untuk-kesehatan.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQSlQV_cNXf8fMdNdD919zCiWdbD3crMlVFw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Utte pangir</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -5240,7 +5240,7 @@
         <DataTanamanObat:hasBenefits>Treating thin sperm</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Peanut</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD053</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://umsu.ac.id/health/wp-content/uploads/2023/09/kacang-tanah-scaled.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhGagZR1gY7hryQwyQJ-BocsM27afXXWyDqg&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Kasang tano</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Increases blood uric acid levels</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -5320,7 +5320,7 @@
         <DataTanamanObat:hasBenefits>Helps relieve stroke symptoms</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Pitcher Plants</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD097</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIpcX2xl-jIy2L22w14w-bsZdHAG5R9jBLw&amp;s</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUSVXgR023XdCslMgrmShPvasksWn2RP3G6A&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Tahul-tahul</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -5351,7 +5351,7 @@
         <DataTanamanObat:hasBenefits>Cure menstrual pain</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Cotton abroma</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD054</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://bs.plantnet.org/image/m/bd7879d7ffec1bcbf604313a0d91c2529f73cc23</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc497S-AdmhlVn38cQ2LtgUI1rxr7y0fPrnQ&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Purba Jolma</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -5388,7 +5388,7 @@
         <DataTanamanObat:hasBenefits>Relieves stomach pain</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Borneo champor</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD038</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://pertanian.uma.ac.id/wp-content/uploads/2022/09/Manfaat-Tanaman-Kapur-yang-Tidak-Populer-Tapi-Jadi-Incaran.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOaWUsyKavncKQBgPJ9TUIe_x2iEWL2fwx-Q&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Apur singkel</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -5425,7 +5425,7 @@
         <DataTanamanObat:hasBenefits>Relieves cough</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Indonesian cinnamon</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD061</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://awsimages.detik.net.id/community/media/visual/2021/08/17/manfaat-racikan-air-kayu-manis-bisa-menjaga-imunitas-3_169.jpeg?w=650</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://awsimages.detik.net.id/community/media/visual/2021/08/17/manfaat-racikan-air-kayu-manis-bisa-menjaga-imunitas-3_169.jpeg?w=650</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Holim</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -5459,7 +5459,7 @@
         <DataTanamanObat:hasBenefits>Cough medicine, Cooking ingredients and Refreshing medicine</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Porcelain rose</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD065</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://asset.kompas.com/crops/J8Zn1mjzOTYdCBf-ifi-Y9m3Icw=/0x1:968x647/750x500/data/photo/2023/10/14/652a843f3ee95.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBmmG4FaNCuZoI9ZpZXffyQmwprZHFFd8cBg&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Rias</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -5506,7 +5506,7 @@
         <DataTanamanObat:hasBenefits>Treating sprains</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Coconut</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD013</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUIn5F0rFC52RLp5a286z7wuSGrVD7Fh-QtQ&amp;s</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUIn5F0rFC52RLp5a286z7wuSGrVD7Fh-QtQ&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Kalapa/ Harambir</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Increases the risk of obesity (overweight)</DataTanamanObat:hasSideEffect>
         <DataTanamanObat:hasSideEffect>Increases the risk of stomach cancer</DataTanamanObat:hasSideEffect>
@@ -5534,7 +5534,7 @@
         <DataTanamanObat:hasBenefits>Pains</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Moringa</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD059</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://i0.wp.com/umsu.ac.id/berita/wp-content/uploads/2024/05/cara-mengolah-daun-kelor-untuk-kesehatan-tubuh.jpg?fit=750%2C500&amp;ssl=1</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlEvAU9KAsvzb9NhUyfyn9TUypMoH6FOwQMA&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Kelor</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes hypoglycemia (blood sugar levels too low)</DataTanamanObat:hasSideEffect>
         <DataTanamanObat:hasSideEffect>Diarrhea</DataTanamanObat:hasSideEffect>
@@ -5573,7 +5573,7 @@
         <DataTanamanObat:hasBenefits>Treating high blood pressure</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Sweet basil</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD062</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://mentayanet.com/wp-content/uploads/2023/01/l-fbimg1593268443201c20e16b7798762a8ada3086cf070452c20200629123543-bimacms-e1674878694808.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYx19qbNn_JsmHsQ0qfGHEJ0iDKxRiZu9IZg&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Sirintak</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes allergies</DataTanamanObat:hasSideEffect>
         <DataTanamanObat:hasSideEffect>Contains vitamin K</DataTanamanObat:hasSideEffect>
@@ -5610,7 +5610,7 @@
         <DataTanamanObat:hasBenefits>Wound medicine</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Tree marigold</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD014</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://upload.wikimedia.org/wikipedia/commons/d/d8/Tithonia_diversifolia.JPG</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ4AE32t56C3vOXj_QQmZGoWTywlIyHKODJA&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Bunga Sipaet-paet</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -5646,7 +5646,7 @@
         <DataTanamanObat:hasBenefits>Uterus care</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Chinese hibiscus</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD048</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://worldoffloweringplants.com/wp-content/uploads/2021/08/Hibiscus-rosa-sinensis3.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKzLdllNWk7qHuVtT4ItWxPNWFT4QxWul60w&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Kembang Sipatu</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -5680,7 +5680,7 @@
         <DataTanamanObat:hasBenefits>Treats breast cancer</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Incense</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD012</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://agrozine.id/wp-content/uploads/2023/02/Pohon-kemenyan.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGPAs_jGasDvYE1TqAigrnnYe4MdhxPGAyPA&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Haminjon</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -5731,7 +5731,7 @@
         <DataTanamanObat:hasBenefits>Treating hives</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Candlenut</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD041</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://res.cloudinary.com/dk0z4ums3/image/upload/v1671590469/attached_image/kemiri-ketahui-kandungan-dan-manfaatnya-untuk-kesehatan.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5sAnA_D4V3JwAeVqzncfJmJrklF_0rYQ5Ig&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Gambiri</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes allergies: rash</DataTanamanObat:hasSideEffect>
         <DataTanamanObat:hasSideEffect>Causes oily hair</DataTanamanObat:hasSideEffect>
@@ -5761,7 +5761,7 @@
         <DataTanamanObat:hasBenefits>Stomach pain medicine</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Rose myrtle</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD098</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://tobaria.com/wp-content/uploads/2023/11/harimon.jpeg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLuFnK_XTMbo5aXd8mf7JC2KnEfWz0S_E56g&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Harimonting</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -5799,7 +5799,7 @@
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Rhizome"/>
         <DataTanamanObat:hasEnglishName>Aromatic ginger</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD067</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6qwB-oD97vFm6a4ABMjT1iZaPkw7dmbjhjlc6kd8l7fQjPlOD</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6qwB-oD97vFm6a4ABMjT1iZaPkw7dmbjhjlc6kd8l7fQjPlOD</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Hasior</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Increases blood pressure</DataTanamanObat:hasSideEffect>
         <DataTanamanObat:hasSideEffect>Mashed and attached to broken bones then wrapped with cloth, Squeezed and drunk water (ingredients for making taor / typical Batak health drinks), Treat Diarrhea, Overcoming constipation</DataTanamanObat:hasSideEffect>
@@ -5879,7 +5879,7 @@
         <DataTanamanObat:hasBenefits>Treating difficulty urinating</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Java tea</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD047</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://www.socfindoconservation.co.id/asset/plant/227-1-orthosiphon-aristatus-blume-miq.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQziGUk1zX7tV-cuSDCP4jBLoaRVBvw4l3xaA&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Kumis kucing</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -5931,7 +5931,7 @@
         <DataTanamanObat:hasBenefits>Improves digestion, Wound Medicine, Treating aches and pains, Treating canker sores, Accelerates fracture healing, Nourishes the fetus and increases body stamina, Itching medicine, Stomach pain medicine, Blood enhancement medicine, Treating hives, Treating ulcers, Removing toxins from the body</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Turmeric</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD066</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//86/MTA-40760120/tidak_ada_merk_kunyit_90_-_100_gr_full01_jy7zof37.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5iDvaIFqYYsnYXFlhffNTbIRMqvZJ7SedKg&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Hunik</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -5958,7 +5958,7 @@
         <DataTanamanObat:hasBenefits>Treating cancer</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>White turmeric&quot;</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD087</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://th.bing.com/th/id/OIP.BkTuSPz8wOcT7MisOEEYbgHaEC?w=520&amp;h=284&amp;rs=1&amp;pid=ImgDetMain</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu41NCxmPMsGtrvOQcU6CjvnFfYP4Mpz0pCw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Hunik bontar</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -5985,7 +5985,7 @@
         <DataTanamanObat:hasBenefits>Letting the wind out, Caring for the skin</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Turmeric burle</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD016</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl2BgPiQimF69m7SU-fz5DlVhRENS70UkZ1HPJuABvM8NW0q33g7QrA9FP97cZb2vXl1-F1izT_fSkJK-VtUW6E0Vr4iWiWiCUMB5K-cg7FQLJoaQRqzKFkED9gZ_flt1venfzjD8L4Qdm/s1600/Bangle+%2528Zingiber+purpureum+Roxb%2529.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ4jHOTnmjpcYcHZ1UIwWwAkH3QVXKf_mi1g&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Hunik burle</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasLocalName>Kunyit burle</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes digestive disorders such as heartburn</DataTanamanObat:hasSideEffect>
@@ -6044,7 +6044,7 @@
         <DataTanamanObat:hasBenefits>Treat Ulcer</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Pumpkin</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD035</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://cdn.hellosehat.com/wp-content/uploads/2017/07/manfaat-labu-kuning.jpg?w=1080&amp;q=75</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQapGgSLncPoYOC1a7WdYmhi19kNEzK3MD69g&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Jelok</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes allergies</DataTanamanObat:hasSideEffect>
         <DataTanamanObat:hasSideEffect>Causes problems in the digestive system</DataTanamanObat:hasSideEffect>
@@ -6080,7 +6080,7 @@
         <DataTanamanObat:hasBenefits>Treating insomnia</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Pipinola</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD033</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Sechium_edule_dsc07767.jpg/800px-Sechium_edule_dsc07767.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_HsfizrxLMRUN1KaK0tw5Nl4Pq649pg0-hQ&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Jipang</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes a drop in blood pressure</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -6145,7 +6145,7 @@
         <DataTanamanObat:hasBenefits>Treating Hernia, Treating Vaginal Discharge, New childbirth wound</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Black pepper</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD094</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB-uCT2CL9YsXRACpKQPYoYJfXLLWNacaWTA&amp;s</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrZAiRBrgVXuuxS_ustv8C1sbKY6nC9IOWUg&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Lada Birong</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -6209,7 +6209,7 @@
         <DataTanamanObat:hasBenefits>Treating Hives</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Hawai&apos;i woodnettle</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD070</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNHVufXjOG6AwrPHbwJk9cY_pkraWzrhmJOw&amp;s</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNHVufXjOG6AwrPHbwJk9cY_pkraWzrhmJOw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Jelatong</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -6388,7 +6388,7 @@
         <DataTanamanObat:hasBenefits>Treating high blood pressure</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Simpleleaf chastetree</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD045</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://www.socfindoconservation.co.id/asset/plant/414-3-vitex-trifolia-l.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu4zOMJgvAWqJyLmc7cNmnZiNi3FWVrtwbKw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Legundi</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -6414,7 +6414,7 @@
         <DataTanamanObat:hasBenefits>Treating Cough</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Lemon</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD091</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg1pbomLklchlleEH7pT6RszFS0TTO9MnP1A&amp;s</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg1pbomLklchlleEH7pT6RszFS0TTO9MnP1A&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Unte</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -6449,7 +6449,7 @@
         <DataTanamanObat:hasBenefits>Overcoming aches and pains, Treating Cough</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Greater galangal</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD088</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvOdFWAlKv8aJgGJKHGSe7y5rWdOXb42sD6md2Lv9pcPxUszltIwX2sA0H_WvjRDSMcF8&amp;usqp=CAU</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvOdFWAlKv8aJgGJKHGSe7y5rWdOXb42sD6md2Lv9pcPxUszltIwX2sA0H_WvjRDSMcF8&amp;usqp=CAU</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Halas</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -6493,7 +6493,7 @@
         <DataTanamanObat:hasBenefits>Hair care, Fertilises hair, Treat ulcers</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Aloe vera</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD017</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://asset.kompas.com/crops/MB8nDX0iBRGiHJzuTP5BFl5RmpI=/100x67:900x600/750x500/data/photo/2023/03/23/641c4b68bf5aa.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsG6sMpA2YrGnMOtVYeBPIfDmOeL_0K4z-uQ&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Dila Buea</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes allergic reactions, Causes bloody diarrhoea</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -6579,7 +6579,7 @@
         <DataTanamanObat:hasBenefits>Mengobati terkilir</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Crinum Lily</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD018</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz3ps_PKz7M2P6CkadelttHF2r9Zw6HXvjBX6CWH4ulZLjlWuX</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz3ps_PKz7M2P6CkadelttHF2r9Zw6HXvjBX6CWH4ulZLjlWuX</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Ompu-ompu</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -7027,7 +7027,7 @@
         <DataTanamanObat:hasBenefits>Treating fever, Lower high blood pressure, Treat ulcers, Prevent cancer, Treating fever, as Fever Medicine, Caring for the uterus, Smooth the labor process, Preventing colds, Cure menstrual pain, Treat itching, Nurture the fetus, dan Maintain body stamina</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Noni</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD079</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://umsu.ac.id/artikel/wp-content/uploads/2023/10/manfaat-buah-mengkudu-bagi-kesehatan.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUDvmqemQTxyFvKZorbVz3ZVI2_ujJ6_d9QQ&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Buah Pace</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -7075,7 +7075,7 @@
         <DataTanamanObat:hasBenefits>Treat Hypertension</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Cucumber</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD034</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://asset.kompas.com/crops/wxP17Yrh68rvSvPf3yuz8_I4i88=/0x1:1000x668/750x500/data/photo/2020/11/24/5fbca020a13ac.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7weMZ70CxWn8dDlSb0AeLHeBlqmmNJeGS6Q&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Ansimun singatngaton</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Interferes with the blood clotting process, invites allergic reactions: swelling, skin rash and causes excessive fluid loss</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -7114,7 +7114,7 @@
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Stem"/>
         <DataTanamanObat:hasBenefits>Treat Malaise, relaxation</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasId>MD039</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://storage.googleapis.com/powop-assets/kew_profiles/KPPCONT_070670_fullsize.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj6Z4_9nGRfTNP8yFgsYIqiKmPef7S_2f8tg&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Black paper</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasLocalName>Saesae</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Raises blood pressure, Causes respiratory problems, Pungent and hot taste, Causes digestive problems, Burning in the esophagus and stomach</DataTanamanObat:hasSideEffect>
@@ -7423,7 +7423,7 @@
         <DataTanamanObat:hasBenefits>Treat Cholesterol, Treat Hypertension, help Diet</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Pineapple</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD019</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://img2.beritasatu.com/cache/beritasatu/480x310-3/09122012125531.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://i0.wp.com/umsu.ac.id/berita/wp-content/uploads/2023/08/nanas-kandungan-dan-manfaat.jpg?fit=1200%2C675&amp;ssl=1</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Honas</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes allergies, Causes blood sugar levels and tooth decay, Spurs kidney stones</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -7476,7 +7476,7 @@
         <DataTanamanObat:hasBenefits>The sap is used to cure boils</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Jackfruit</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD057</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/YosriNangkaBuah.jpg/202px-YosriNangkaBuah.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiIBUDcz7ZfVqw37dJyqgqWh7QXrekzVHGCQ&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Pinasa</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -7587,7 +7587,7 @@
         <DataTanamanObat:hasBenefits>Wound medicine</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Patchouli</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD051</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH5HDW3-x1v2KicNnkJ2K8MP-15RAyCiI7ag&amp;s</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH5HDW3-x1v2KicNnkJ2K8MP-15RAyCiI7ag&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
     
@@ -7616,7 +7616,7 @@
         <DataTanamanObat:hasBenefits>Treating Dysentery</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Nipa palm</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD020</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://www.shutterstock.com/image-photo/nypa-fruticans-wurmb-mangrove-palm-260nw-1129323866.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuf0UU2gX_pzOuMxrvc8SOC6JSbjp9i4p2nQ&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Nipa</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -7816,7 +7816,7 @@
         <DataTanamanObat:hasBenefits>Treat diarrhea</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Rice</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD049</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://cdn.rri.co.id/berita/28/images/1695824443767-i/1695824443767-i.jpeg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK3RmyJDF42fiF4q4qJtZD0FupXyOMCPNnLQ&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Eme</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -7850,7 +7850,7 @@
         <DataTanamanObat:hasBenefits>Treat Incision Wounds</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Western brackenfern</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD037</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://d2seqvvyy3b8p2.cloudfront.net/a25e479141cce9e015ba66d1c671dd76.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjvo05jbUPIEEzRDrUU2e5BbxbKqSWot9Oqw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Arsam</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -7878,7 +7878,7 @@
         <DataTanamanObat:hasBenefits>Treating colds</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Nutmeg</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD101</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://image1ws.indotrading.com/s3/productimages/webp/co218562/p932681/w425-h425/b5e1382c-837b-4a58-bcc1-eed780da526e.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6telMvATKzV0KHwlYk5B-y8SoPpEiJfbdAw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Pala</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -7939,7 +7939,7 @@
         <DataTanamanObat:hasBenefits>Improves digestion or Overcome constipation, as a cough remedy, Treat cracked feet, Treat swelling due to bee bites, as a dewormer</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Papaya</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD021</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://agfl.com.au/wp-content/uploads/2023/03/What-Is-Papaya-1024x1024.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdk1KO5VQQmqtN4DUZHAxKngiT2UHDFOyIzA&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Botik/ Kates</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes allergies and triggers poisoning, Causes bloating, Increases the risk of miscarriage</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -7966,7 +7966,7 @@
         <DataTanamanObat:hasBenefits>Treat Worms</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Lead Tree</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD042</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://radarlampung.disway.id/upload/a657714ead4394d95a7c31efab74afce.jpeg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeC6Hj-Xyu6QwZmbUHRtWlnZq_he7jnPu4_A&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Pote Sina</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes Bad Breath, Odor in Urine and Sweat</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -8092,7 +8092,7 @@
         <DataTanamanObat:hasBenefits>Alleviating Ear Pain, treating Wound (hit by exhaust)</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Betel nut</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD022</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://www.mongabay.co.id/wp-content/uploads/2022/06/Pinang2-768x512.jpeg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu3s3PwzpBP3jUTyzHLg6zjz6Ba9KWdNBEmQ&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Ririt</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>At risk of developing oral cancer</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -8174,7 +8174,7 @@
         <DataTanamanObat:hasBenefits>Treating kidney disease, Treating kidney disease</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Indian gooseberry</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD023</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://cdn.idntimes.com/content-images/community/2023/05/whatsapp-image-2023-05-14-at-000145-2156d57505b8dae02fda653ffd669442-d18288322f8ff6785a773c3b26adcd66_600x400.jpeg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDG0nLZUzF96C0kv9uyZCF_h7IM0qpVhVpuQ&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Pirdot</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -8206,7 +8206,7 @@
         <DataTanamanObat:hasBenefits>Treating constipation, Treating hives, Treating wounds, Prevent bone and tooth loss, As a dysentery medicine, Treating worms</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Cavendish banana</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD104</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://hargabuah.com/file/pisang-ambon.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzOd6_-2owDNRDzheNORvHnaE_4-zZJhDFuA&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Pisang Ambon</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -8232,7 +8232,7 @@
         <DataTanamanObat:hasBenefits>Prevents cancer cells, Prevent cancer, regulate blood pressure, treat diarrhea, Treat intestinal problems, Lose weight, Constipation, and Cabbage</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Plantain</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD102</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://www.shutterstock.com/image-photo/musa-acuminata-linn-pisang-barangan-260nw-2436511161.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSCRBb9wiv8iIrhhCq1OHZjYWeH0hTkFbOJQ&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Pisang Barangan</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -8266,7 +8266,7 @@
         <DataTanamanObat:hasBenefits>Treating Sprains</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Cooking banana</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD103</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://www.researchgate.net/publication/340714835/figure/fig1/AS:881339804962819@1587139192352/Gambar-1-Pisang-kepok-kuning-Musa-acuminata-x-Musa-balbisiana-ABB-a-Buah-pisang.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT99G5VMIs9DCp0oUhWL1S7iCqhVExBjwPJ4Q&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Pisang Kepok</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -8570,7 +8570,7 @@
         <DataTanamanObat:hasBenefits>Treat leg cramps (calf raises)</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Shame Plant</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD043</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://umsu.ac.id/health/wp-content/uploads/2024/02/kandungan-dan-manfaat-bunga-putri-malu-bagi-kesehatan.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4nRfMqn1d8oDRRi57Vde36cgGjh1sHCvuHw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Sihirput</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -8685,7 +8685,7 @@
         <DataTanamanObat:hasBenefits>As a cough medicine, Nurture the fetus, Treats eyes, treats ulcers, As a medicine for shortness of breath</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Balanced</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD072</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://manfaat.co.id/wp-content/uploads/2015/12/buah-rimbang.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv-htSWCIUEwnIro_KUnsNGeuOQkEJJq2WNw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Rimbang</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -8882,7 +8882,7 @@
         <DataTanamanObat:hasBenefits>Warms the Body</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Wild cane</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD085</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQwuFxjksa_8EXkkABkNMfY78PzjrEr899dQnFEuAnvcMUwmYhPLzFUR7UYcUoxzwXeL2PmxZZMK-G4tqM</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbh80FSO0aB-nRZjF-IrQuUgvispx7beacJQ&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Tolong</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -8994,7 +8994,7 @@
         <DataTanamanObat:hasBenefits>As a headache remedy, Cure ulcers</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Chiretta</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD024</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://globinmed.com/wp-content/uploads/2012/05/NKEA_A.paniculata_Nees_hempedubumi1.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScFoSdyBUV03SzQptc_da-eIVffWs93gPZSw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Sambiloto</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes loss of appetite and diarrhea</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -9023,7 +9023,7 @@
         <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaves"/>
         <DataTanamanObat:hasEnglishName>Longevity spinach</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD025</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gynura_procumbens_%28Diabetes_plant%29_%281%29.jpg/800px-Gynura_procumbens_%28Diabetes_plant%29_%281%29.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMQDTGH3m9EdgLCUquUWAKr-4h88QCWL3i2A&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Udut ngolu</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes mild indigestion, Relieves stomach pain</DataTanamanObat:hasSideEffect>
         <DataTanamanObat:hasSideEffect>Treat Fever</DataTanamanObat:hasSideEffect>
@@ -9127,7 +9127,7 @@
         <DataTanamanObat:hasBenefits>As kidney medicine, Increase stamina</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>indian lettuce</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD026</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://techieoldfox.wordpress.com/wp-content/uploads/2013/09/828cb-imag2007.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVVCUd9Kdh4Afs3PJ1PobMTtLJZ21Xdj5dog&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Sijungkot</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -9153,7 +9153,7 @@
         <DataTanamanObat:hasBenefits>Treating Cholesterol</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>False pakchoi</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD027</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://www.shutterstock.com/shutterstock/photos/2319738377/display_1500/stock-photo-mustard-greens-or-brassica-chinensis-var-parachinensis-or-choy-sum-planted-in-the-yard-2319738377.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJY_MX976Xa_AFd_DJZL-fXlu8bSxEFU4xfw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Marata Sabi</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes headache, eye irritation, skin irritation; Causes loss of body coordination and loss of consciousness.</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -9261,7 +9261,7 @@
         <DataTanamanObat:hasBenefits>Treats high blood pressure</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Celery</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD028</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Celery_%282905891576%29.jpg/250px-Celery_%282905891576%29.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRcU5dsWNSUvX5BHbOuJaOXxeZKie3Q55bTw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Bulung Baoang Pre</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes indigestion, such as diarrhea and stomach pain</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -9290,7 +9290,7 @@
         <DataTanamanObat:hasBenefits>Nourishes the fetus and body stamina</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Water melon</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD015</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://rsisurabaya.com/wp-content/uploads/2023/12/artikel-1.png</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnOTCMcSu9_1_HEojarSunKzw555ziobWD-A&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Haramoja</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes stomach discomfort, gas and diarrhea, causes flatulence, interferes with heart health</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -9336,7 +9336,7 @@
         <DataTanamanObat:hasBenefits>Stomach pain medicine</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>malabar melastome</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD055</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRG1Zwws3ZQWqc0jZ38U56whcgIPWpK2qeK3_uBXkTajJY2qpJj</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRG1Zwws3ZQWqc0jZ38U56whcgIPWpK2qeK3_uBXkTajJY2qpJj</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Senduduk</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -9401,7 +9401,7 @@
         <DataTanamanObat:hasBenefits>Warms the Body, Cough Medicine, Treats Aches, Treats Cough, Reduces stroke symptoms, Warms the body, dan Increases appetite</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Lemon grass</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD080</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://infokes.dinus.ac.id/wp-content/uploads/sites/14/2020/08/SERAI_WANGI_ATAU_SEREH_WANGI.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO6wivB46aEWQE6ra6b_pcq4CBqi9T4CAcww&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Sanggesangge</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -9435,7 +9435,7 @@
         <DataTanamanObat:hasBenefits>Treat Aches and Pains, Treat stomach pain, Scrub, Soap, Anti-bacterial</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Citronella grass</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD083</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRccEk0iotjTHoejjk02-7uhEcOSus_pZYbrkkmxuDOU3hTJP_jlA8K0ddMo4K8VKd7629j9EUfQWJnLJUAowr2q-G9NOiby2W16gokJg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYJLVFTTtU1xAjzSLSYohBYBieAmKaeJF_zg&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Sanggesangge</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -9501,7 +9501,7 @@
         <DataTanamanObat:hasBenefits>Treat wasp / bee stings</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Indian lettuce</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD092</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Akinonogeshi.JPG/220px-Akinonogeshi.JPG</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPkXEiAaMT2HD8HZkLaR6r_bPqMlW3JyEdMQ&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Sijungkot</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -9556,7 +9556,7 @@
         <DataTanamanObat:hasBenefits>Iron enhancer, Prevents bone and tooth loss, As a dysentery medicine&quot;</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Cassava</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD036</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://distan.bulelengkab.go.id/public/uploads/konten/budidaya-tanaman-singkong-41.jpeg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQidGK2CU7ujQv_AaOSTD2EUlceJnFTTva98Q&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Gadong antirha</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Toxic to the body, 
 Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanObat:hasSideEffect>
@@ -9602,7 +9602,7 @@ Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanO
         <DataTanamanObat:hasBenefits>Healing newborn wounds, Treating back pain, Overcoming difficulty urinating</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Betel leaf</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD093</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://t3.ftcdn.net/jpg/04/09/44/04/360_F_409440490_7OzamYcvvgF0Tz7vrAb6eEUquTpnCDC9.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgpUiqLrrqLI34e3ZvNsmjGp6mx3yPWLk2jg&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Burangir</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasLocalName>Demban</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasLocalName>Napuran</DataTanamanObat:hasLocalName>
@@ -9630,7 +9630,7 @@ Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanO
         <DataTanamanObat:hasBenefits>Relieves asthma</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Soursop</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD029</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://cdn.antaranews.com/cache/1200x800/2017/10/20171020ilustrasi_daun_dan_buah_sirsak.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStxNUbE79bTFOnc5cKKERsuT7XlJCT5f-oBQ&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Durian Bolanda</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes the blood pressure to drop dramatically, Making the kidneys and liver work harder</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -10190,7 +10190,7 @@ Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanO
         <DataTanamanObat:hasBenefits>Treat wasp/bee stings</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Taro</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD030</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/03/13064547/Kenali-Kandungan-Nutrisi-dan-7-Manfaat-Talas-untuk-Kesehatan-Tubuh.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSBhF119Uu27BIkVO9VXH1CYYGc4A4Dsz4eg&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Suhat</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes itching, Causes calcium absorption to be impaired</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -10245,7 +10245,7 @@ Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanO
         <DataTanamanObat:hasBenefits>Kills cancer cells</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Madagascar Periwinkle</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD031</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://d2seqvvyy3b8p2.cloudfront.net/b27a2dd750dfcb7b17b16eccb1d40f36.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRvjq-plBVGdfcfTBrWnKErSsWfd7QD4Uv6g&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Lapak Boruboru</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Lower the white blood cell count</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -10289,7 +10289,7 @@ Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanO
         <DataTanamanObat:hasBenefits>Treating body weakness</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Sugarcane</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD086</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://jateng.disway.id/upload/d5ff35d8879884ef05f8a97460ed0973.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw6Ovb9kaWPY_wzos2mbuUnW6ZZeehlgHVJw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Tobu</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -10324,7 +10324,7 @@ Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanO
         <DataTanamanObat:hasBenefits>Treating flatulence</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Curcuma</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD064</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnULbYdDS4uL4qFzUoTQUtQyM4E2o_y3v_YVwQ04jFvY_FZZVQcWzxQQPNdGeexkEWeyg&amp;usqp=CAU</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQASBVLAG4K53JA09nIMiphaQSjwb-DDF5EVw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Mardomu Londong</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>Causes diarrhea, Stomach pain, Triggers stomach irritation and Vomiting if consumed too much</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -10359,7 +10359,7 @@ Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanO
         <DataTanamanObat:hasBenefits>Treating Thrush, Treating Low Blood, Maintain body stamina</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Tree tomato</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD071</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://lenteradesa.id/api/v1/assets/article/artikelfd3c6e46da112ae20223b95a244db4f6210a2252_1694731215.png</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUJBJYPasN960YVhcPEW4-CxgB1ZC40uudwA&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Torung bolanda</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -10385,7 +10385,7 @@ Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanO
         <DataTanamanObat:hasBenefits>As a medicine for ulcers</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Tree tomato</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD075</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://pasarsegar.co.id/wp-content/uploads/2022/02/image_picker4619142711715022988-1.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnwQwX-WZfdjIzeSfVH-ZZD0v-E8h2EcKC6g&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Torung Ungu</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -10527,7 +10527,7 @@ Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanO
         <DataTanamanObat:hasBenefits>Lowering tension</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Tomato</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD076</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://kebunkumara.id/wp-content/uploads/2024/01/tomato.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhMsNonyFVV8QB7GXPbvfcZqw9CntirjE_Hw&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Tommat</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -10683,7 +10683,7 @@ Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanO
         <DataTanamanObat:hasBenefits>Cure Constipation</DataTanamanObat:hasBenefits>
         <DataTanamanObat:hasEnglishName>Sweet potato</DataTanamanObat:hasEnglishName>
         <DataTanamanObat:hasId>MD032</DataTanamanObat:hasId>
-        <DataTanamanObat:hasImageURL>https://img.lazcdn.com/g/ff/kf/S119204d3294f468c81130a4bb460f9d05.jpg_720x720q80.jpg</DataTanamanObat:hasImageURL>
+        <DataTanamanObat:hasImageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEfUHPofSaFjJAA2WvDHnoGg9jIf6luzL5Cg&amp;s</DataTanamanObat:hasImageURL>
         <DataTanamanObat:hasLocalName>Gadong insir</DataTanamanObat:hasLocalName>
         <DataTanamanObat:hasSideEffect>-</DataTanamanObat:hasSideEffect>
     </owl:NamedIndividual>
@@ -11931,5 +11931,5 @@ Risk of Defects in Infants if consumed by pregnant women in excess</DataTanamanO
 
 
 
-<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 

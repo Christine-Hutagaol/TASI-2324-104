@@ -1,66 +1,106 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
     <title>Toba Medicinal Plant</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/starter-template/">
+
     <!-- Bootstrap core CSS -->
-    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" media="screen"/>
+    <link th:href="@{css/bootstrap.css}" rel="stylesheet" media="screen"/>
+
     <!-- Favicons -->
     <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#563d7c">
+
+    <!-- Custom styles -->
     <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            width: 100%; /* Set width to fill the container */
-            height: auto; /* Maintain aspect ratio */
-        }
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
+        /* Font family */
         body {
-            margin: 0;
-            padding: 0;
-            background-color: #F5FFF4;
+            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
+            min-height: 100vh; /* Ensure full height of viewport */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            position: relative; /* Positioning context for footer */
         }
-        main {
-            flex: 1;
+
+        /* Navigation bar */
+        .navbar {
+            background-color: #333;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        /* New style for overlay */
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .navbar-toggler {
+            border: none;
+            padding: 0;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Table styles */
+        .table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .table th,
+        .table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #f8f9fa;
+        }
+
+        /* Additional styles */
+        .starter-template {
+            flex: 1; /* Take remaining vertical space */
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
         .overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity as needed */
+            background-color: rgba(255, 255, 255, 0.5);
         }
-        /* Additional style for table */
-        .table th,
-        .table td {
-            vertical-align: middle;
+
+        /* Footer styles */
+        footer {
+            padding: 1rem;
+            background-color: #f8f9fa; /* Light background */
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
         }
-        .table th {
-            background-color: #f8f9fa; /* Light gray background */
-            border-color: #dee2e6; /* Lighter border color */
-        }
-        /* Smaller width for the "Nomor" column */
-        .small-col {
-            width: 50px; /* Adjust width as needed */
+
+        /* Set main container to fill remaining space */
+        main {
+            flex: 1;
         }
     </style>
     <!-- Custom styles for this template -->

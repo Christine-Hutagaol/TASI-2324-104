@@ -1,0 +1,647 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat/"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat/"
+     xmlns:ex="http://example.org/ontology#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:DataTanamanObat="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#UtilizedByPlants -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#UtilizedByPlants">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#utilizingParts"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#PlantParts"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#containedByPlants -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#containedByPlants">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#containsActiveCompounds"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ActiveCompound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#containsActiveCompounds -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#containsActiveCompounds">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ActiveCompound"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasClass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasClass">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantClass"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Class"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasDivisions -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasDivisions">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantDivision"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Division"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasFamily -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasFamily">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantFamily"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Family"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasGenus -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasGenus">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantGenus"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Genus"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasKingdom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasKingdom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantKingdom"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Kingdom"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasOrder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasOrder">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantOrder"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Order"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasSpecies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasSpecies">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantSpecies"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantClass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantClass">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Class"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantDivision -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantDivision">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Division"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantFamily -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantFamily">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Family"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantGenus -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantGenus">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Genus"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantKingdom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantKingdom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Kingdom"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantOrder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantOrder">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Order"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantSpecies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAPlantSpecies">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAWayOfProcessingPlants -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAWayOfProcessingPlants">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#managedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ProcessingMethod"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAWayOfUsingPlants -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isAWayOfUsingPlants">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#usedByMeansOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#HowToUse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isTreatedCompound -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#isTreatedCompound">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Diseases"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ActiveCompound"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#managedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#managedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#PlantParts"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ProcessingMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#treatDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#treatDisease">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#treatedByPlants"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Diseases"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#treatedByPlants -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#treatedByPlants">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Diseases"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#usedByMeansOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#usedByMeansOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#HowToUse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#utilizingParts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#utilizingParts">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#PlantParts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasBenefits -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasBenefits">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasEnglishName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasEnglishName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasImage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasImage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasLocalName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasLocalName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasSideEffect -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#hasSideEffect">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ActiveCompound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ActiveCompound">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Class -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Class">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Diseases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Diseases">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Division -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Division">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Family -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Family">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Genus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Genus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#HowToUse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#HowToUse">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Kingdom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Kingdom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Order">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#PlantParts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#PlantParts">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ProcessingMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ProcessingMethod">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Taxonomy">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Asteraceae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Asteraceae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Family"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Asterales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Asterales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Order"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Bathed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Bathed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#HowToUse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Bidens_pilosa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Bidens_pilosa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Species"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Boiled -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Boiled">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ProcessingMethod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Flavanoid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Flavanoid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ActiveCompound"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Gynura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Gynura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Genus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Halosi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Halosi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#MedicinalPlants"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Flavanoid"/>
+        <DataTanamanObat:containsActiveCompounds rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Polyphenols"/>
+        <DataTanamanObat:hasClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliopsida"/>
+        <DataTanamanObat:hasDivisions rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliophyta"/>
+        <DataTanamanObat:hasFamily rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Asteraceae"/>
+        <DataTanamanObat:hasGenus rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Gynura"/>
+        <DataTanamanObat:hasKingdom rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae"/>
+        <DataTanamanObat:hasOrder rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Asterales"/>
+        <DataTanamanObat:hasSpecies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Bidens_pilosa"/>
+        <DataTanamanObat:treatDisease rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Malaise"/>
+        <DataTanamanObat:usedByMeansOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Bathed"/>
+        <DataTanamanObat:utilizingParts rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaves"/>
+        <DataTanamanObat:hasBenefits>Treat Malaise</DataTanamanObat:hasBenefits>
+        <DataTanamanObat:hasEnglishName>Halosi</DataTanamanObat:hasEnglishName>
+        <DataTanamanObat:hasId>MD001</DataTanamanObat:hasId>
+        <DataTanamanObat:hasImage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.nparks.gov.sg/-/media/ffw/migrated/round2/flora/3312/a6690e0565e4474993abed25190e6da9.jpg</DataTanamanObat:hasImage>
+        <DataTanamanObat:hasLocalName>Halosi</DataTanamanObat:hasLocalName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaves -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Leaves">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#PlantParts"/>
+        <DataTanamanObat:managedBy rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Boiled"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliophyta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliophyta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Division"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliopsida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Magnoliopsida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Class"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Malaise -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Malaise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Diseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Plantae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Kingdom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Polyphenols -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Polyphenols">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#ActiveCompound"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/1/DataTanamanObat#Diseases"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

@@ -58,7 +58,7 @@
         }
 
         /* Table design */
-        .table {
+        .table-fixed th {
             border-collapse: collapse;
             width: 100%;
         }
@@ -330,7 +330,7 @@
                             // Append related articles to #wikipedia-extract div
                             jQuery("#wikipedia-extract").append("<h5>Related Articles:</h>");
                             searchResults.forEach(function (result) {
-                                if (/plant|herb|species|flora|botany|disease|taxonomy/.test(result.snippet.toLowerCase())) {
+                                if (/plant|herb|species|genus|family|flora|botany|disease|taxonomy/.test(result.snippet.toLowerCase())) {
                                     jQuery("#wikipedia-extract").append(
                                         "<p><a href='https://en.wikipedia.org/wiki/" + encodeURIComponent(result.title.replace(/ /g, '_')) + "'>" + result.title + "</a></p>"
                                     );
@@ -346,7 +346,7 @@
                 });
             }
             
-          function getWikidataResults(medicinalPlantName) {
+            function getWikidataResults(medicinalPlantName) {
                 // URL for Wikidata API
                 var wikidataUrl = "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=" + encodeURIComponent(medicinalPlantName) + "&language=en&format=json";
     
@@ -378,7 +378,7 @@
                 });
             }
         });
-        </script>    
+    </script>    
 
     <!-- Copyright section -->
     <footer class="text-center mt-4">
